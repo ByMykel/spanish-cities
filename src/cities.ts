@@ -1,4 +1,4 @@
-import data from "./data.js";
+import data from "./data";
 
 interface City {
 	code_autonomous_community: string;

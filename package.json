@@ -1,5 +1,5 @@
 {
-  "name": "spanish-cities",
+  "name": "all-spanish-cities",
   "version": "0.0.1",
   "description": "List of spanish cities",
   "main": "dist/index.js",
