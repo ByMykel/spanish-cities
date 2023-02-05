@@ -1,0 +1,27 @@
+{
+  "name": "spanish-cities",
+  "version": "0.0.1",
+  "description": "List of spanish cities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ByMykel/spanish-cities.git"
+  },
+  "keywords": [
+    "spanish",
+    "cities"
+  ],
+  "author": "ByMykel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ByMykel/spanish-cities/issues"
+  },
+  "homepage": "https://github.com/ByMykel/spanish-cities#readme"
+}
