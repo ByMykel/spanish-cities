@@ -8,7 +8,7 @@
     "/dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node src/test.ts"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/ByMykel/spanish-cities/issues"
   },
-  "homepage": "https://github.com/ByMykel/spanish-cities#readme"
+  "homepage": "https://github.com/ByMykel/spanish-cities#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.19"
+  }
 }

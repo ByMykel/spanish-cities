@@ -1,5 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const autonomies = [
+    { code: "01", name: "Andalucía" },
+    { code: "02", name: "Aragón" },
+    { code: "03", name: "Asturias, Principado de" },
+    { code: "04", name: "Balears, Illes" },
+    { code: "05", name: "Canarias" },
+    { code: "06", name: "Cantabria" },
+    { code: "07", name: "Castilla y León" },
+    { code: "08", name: "Castilla-La Mancha" },
+    { code: "09", name: "Cataluña" },
+    { code: "10", name: "Comunitat Valenciana" },
+    { code: "11", name: "Extremadura" },
+    { code: "12", name: "Galicia" },
+    { code: "13", name: "Madrid, Comunidad de" },
+    { code: "14", name: "Murcia, Región de" },
+    { code: "15", name: "Navarra, Comunidad Foral de" },
+    { code: "16", name: "País Vasco" },
+    { code: "17", name: "Rioja, La" },
+    // Ceuta and Melilla are not autonomous communities, but I include them here.
+    { code: "18", name: "Ceuta" },
+    { code: "19", name: "Melilla" },
+];
 const cities = [
     {
         name: "Agurain/Salvatierra",
@@ -56920,5 +56942,6 @@ const cities = [
     },
 ];
 exports.default = {
+    autonomies,
     cities,
 };

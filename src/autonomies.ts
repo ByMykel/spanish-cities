@@ -1,11 +1,15 @@
 import data from "./data";
 
-interface Options {
+export interface Autonomy {
+	code: string;
+	name: string;
+}
+interface AutonomyOptions {
 	with_code?: boolean;
 	code?: string | number;
 }
 
-export const autonomies = (options: Options) => {
+export const autonomies = (options: AutonomyOptions = {}): Autonomy[] | string[] | Autonomy | string | undefined => {
 	const { with_code, code } = options;
 
 	if (code !== undefined && typeof code !== "number" && typeof code !== "string") {
