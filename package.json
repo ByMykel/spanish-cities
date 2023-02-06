@@ -1,6 +1,6 @@
 {
   "name": "all-spanish-cities",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "List of spanish cities",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
