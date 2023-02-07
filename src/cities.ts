@@ -1,6 +1,12 @@
 import data from "./data";
+interface OptionsCity {
+  code_autonomous_community?: string | number;
+  code_province?: string | number;
+  code_municipality?: string | number;
+  extra_digit?: string | number;
+}
 
-interface City {
+export interface City {
   code_autonomous_community: string;
   code_province: string;
   code_municipality: string;
@@ -8,45 +14,39 @@ interface City {
   name: string;
 }
 
-interface Filters {
-  code_autonomous_community?: string | number;
-  code_province?: string | number;
-  code_municipality?: string | number;
-  extra_digit?: string | number;
-}
-
-const filterCities = (item: City, filters: Filters) => {
+export const cities = (options: OptionsCity = {}): City[] => {
   const {
     code_autonomous_community,
     code_province,
     code_municipality,
     extra_digit,
-  } = filters;
+  } = options;
 
-  const options = [];
+  return data.cities.filter((item) => {
+    if (code_autonomous_community !== undefined) {
+      if (item.code_autonomous_community != code_autonomous_community) {
+        return false;
+      }
+    }
 
-  if (code_autonomous_community !== undefined) {
-    options.push({ code_autonomous_community });
-  }
+    if (code_province !== undefined) {
+      if (item.code_province != code_province) {
+        return false;
+      }
+    }
 
-  if (code_province !== undefined) {
-    options.push({ code_province });
-  }
+    if (code_municipality !== undefined) {
+      if (item.code_municipality != code_municipality) {
+        return false;
+      }
+    }
 
-  if (code_municipality !== undefined) {
-    options.push({ code_municipality });
-  }
+    if (extra_digit !== undefined) {
+      if (item.extra_digit != extra_digit) {
+        return false;
+      }
+    }
 
-  if (extra_digit !== undefined) {
-    options.push({ extra_digit });
-  }
-
-  return options.every((option) => {
-    const key = Object.keys(option)[0];
-    return item[key as keyof City] == option[key as keyof Filters];
+    return true;
   });
-};
-
-export const getCities = (filters: Filters) => {
-  return data.cities.filter((item) => filterCities(item, filters));
-};
+}

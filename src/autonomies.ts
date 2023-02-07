@@ -1,6 +1,6 @@
 import data from "./data";
 
-interface AutonomyOptions {
+interface optionsAutonomy {
   code?: string | number;
 }
 export interface Autonomy {
@@ -8,7 +8,7 @@ export interface Autonomy {
   name: string;
 }
 
-export const autonomies = (options: AutonomyOptions = {}): Autonomy[] => {
+export const autonomies = (options: optionsAutonomy = {}): Autonomy[] => {
   const { code } = options;
 
   const filteredAutonomies = code !== undefined
