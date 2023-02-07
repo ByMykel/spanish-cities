@@ -3,29 +3,32 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getCities = void 0;
+exports.cities = void 0;
 const data_1 = __importDefault(require("./data"));
-const filterCities = (item, filters) => {
-    const { code_autonomous_community, code_province, code_municipality, extra_digit, } = filters;
-    const options = [];
-    if (code_autonomous_community !== undefined) {
-        options.push({ code_autonomous_community });
-    }
-    if (code_province !== undefined) {
-        options.push({ code_province });
-    }
-    if (code_municipality !== undefined) {
-        options.push({ code_municipality });
-    }
-    if (extra_digit !== undefined) {
-        options.push({ extra_digit });
-    }
-    return options.every((option) => {
-        const key = Object.keys(option)[0];
-        return item[key] == option[key];
+const cities = (options = {}) => {
+    const { code_autonomous_community, code_province, code_municipality, extra_digit, } = options;
+    return data_1.default.cities.filter((item) => {
+        if (code_autonomous_community !== undefined) {
+            if (item.code_autonomous_community != code_autonomous_community) {
+                return false;
+            }
+        }
+        if (code_province !== undefined) {
+            if (item.code_province != code_province) {
+                return false;
+            }
+        }
+        if (code_municipality !== undefined) {
+            if (item.code_municipality != code_municipality) {
+                return false;
+            }
+        }
+        if (extra_digit !== undefined) {
+            if (item.extra_digit != extra_digit) {
+                return false;
+            }
+        }
+        return true;
     });
 };
-const getCities = (filters) => {
-    return data_1.default.cities.filter((item) => filterCities(item, filters));
-};
-exports.getCities = getCities;
+exports.cities = cities;
