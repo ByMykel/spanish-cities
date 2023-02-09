@@ -1,6 +1,7 @@
 import assert from 'assert';
 import { Autonomy, autonomies } from './autonomies';
 import { City, cities } from './cities';
+import { Province, provinces } from './provinces';
 
 const test = ({ name, fn, }: { name: string; fn: () => void }) => {
   console.log(`Testing: ${name}`);
@@ -49,7 +50,52 @@ test({
   }
 });
 
-console.log('Testing cities.ts:');
+console.log('\nTesting provinces.ts:');
+
+test({
+  name: 'should return an array of provinces',
+  fn: () => {
+    const result = provinces();
+
+    assert(Array.isArray(result));
+
+    assert((<Province[]>result)[0].code);
+    assert((<Province[]>result)[0].name);
+    assert((<Province[]>result)[0].code_autonomous_community);
+  }
+});
+
+test({
+  name: 'should return an array with 52 items',
+  fn: () => {
+    const result = provinces();
+
+    assert.strictEqual((<Province[]>result).length, 52);
+  }
+});
+
+test({
+  name: 'should return 1 provinces of Madrid when code_autonomous_community is 13',
+  fn: () => {
+    const result = provinces({ code_autonomous_community: '13' });
+
+    assert.strictEqual((<Province[]>result)[0].code_autonomous_community, '13');
+    assert.strictEqual((<Province[]>result).length, 1);
+  }
+});
+
+test({
+  name: 'should return 1 provinces of Castilla y León when code_autonomous_community is 07 and code is 09',
+  fn: () => {
+    const result = provinces({ code_autonomous_community: '07', code: '09' });
+
+    assert.strictEqual((<Province[]>result)[0].code_autonomous_community, '07');
+    assert.strictEqual((<Province[]>result)[0].code, '09');
+    assert.strictEqual((<Province[]>result).length, 1);
+  }
+});
+
+console.log('\nTesting cities.ts:');
 
 test({
   name: 'should return an array of cities',
