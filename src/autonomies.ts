@@ -1,12 +1,5 @@
 import data from "./data";
-
-interface optionsAutonomy {
-  code?: string | number;
-}
-export interface Autonomy {
-  code: string;
-  name: string;
-}
+import { optionsAutonomy, Autonomy } from "./types";
 
 export const autonomies = (options: optionsAutonomy = {}): Autonomy[] => {
   const { code } = options;

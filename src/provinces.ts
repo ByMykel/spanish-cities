@@ -1,17 +1,9 @@
 import data from "./data";
-
-interface optionsProvince {
-  code?: string | number;
-  code_autonomous_community?: string | number;
-}
-export interface Province {
-  code: string;
-  name: string;
-  code_autonomous_community: string;
-}
+import { optionsProvince, Province } from "./types";
 
 export const provinces = (options: optionsProvince = {}): Province[] => {
-  const attributes = ["code", "code_autonomous_community"].filter(option => options[option as keyof optionsProvince] !== undefined);
+  const attributes = ["code", "code_autonomous_community"]
+    .filter(option => options[option as keyof optionsProvince] !== undefined);
 
   return data.provinces.filter((item) => {
     for (const attribute of attributes) {

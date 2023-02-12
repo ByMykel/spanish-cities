@@ -1,14 +1,15 @@
 import assert from 'assert';
-import { Autonomy, autonomies } from './autonomies';
-import { City, cities } from './cities';
-import { Province, provinces } from './provinces';
+import { autonomies } from './autonomies';
+import { cities } from './cities';
+import { provinces } from './provinces';
+import { Autonomy, City, Province } from './types';
 
 const test = ({ name, fn, }: { name: string; fn: () => void }) => {
   console.log(`Testing: ${name}`);
   fn();
 };
 
-console.log('Testing autonomies.ts:');
+console.group('Testing autonomies.ts:');
 
 test({
   name: 'should return an array of autonomies',
@@ -50,7 +51,8 @@ test({
   }
 });
 
-console.log('\nTesting provinces.ts:');
+console.groupEnd();
+console.group('\nTesting provinces.ts:');
 
 test({
   name: 'should return an array of provinces',
@@ -95,7 +97,8 @@ test({
   }
 });
 
-console.log('\nTesting cities.ts:');
+console.groupEnd();
+console.group('\nTesting cities.ts:');
 
 test({
   name: 'should return an array of cities',
