@@ -2,7 +2,7 @@
 
 [![Downloads][downloads-badge]][downloads]
 
-List of spanish cities and autonomies.
+List of spanish autonomies, provinces and cities.
 
 ## Install
 
@@ -32,6 +32,22 @@ console.log(autonomies({ code: "DOES_NOT_EXIST" }));
 ```
 
 ```js
+import { provinces } from "all-spanish-cities";
+
+console.log(provinces());
+// [
+//   { code: "04", name: "Almería", code_autonomous_community: "01" },
+//   { code: "11", name: "Cádiz", code_autonomous_community: "01" },
+//   { code: "14", name: "Córdoba", code_autonomous_community: "01" },
+//   // …and many more
+// ]
+
+// You can filter by any of the properties (except `name`).
+console.log(provinces({ code: "44" code_autonomous_community: "02" }));
+// [{ code: "44", name: "Teruel", code_autonomous_community: "02" }]
+```
+
+```js
 import { cities } from "all-spanish-cities";
 
 console.log(cities());
@@ -56,7 +72,7 @@ console.log(cities({ code_autonomous_community: "16", code_municipality: "001" }
 //     code_province: "01",
 //     code_municipality: "001",
 //     extra_digit: "4",
-//   },
+//   }
 // ]
 ```
 
@@ -68,4 +84,4 @@ console.log(cities({ code_autonomous_community: "16", code_municipality: "001" }
 
 [downloads-badge]: https://img.shields.io/npm/dm/all-spanish-cities.svg
 [downloads]: https://www.npmjs.com/package/all-spanish-cities
-[license]: license
+[license]: LICENSE
