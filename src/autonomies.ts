@@ -1,12 +1,17 @@
-import data from "./data";
-import { optionsAutonomy, Autonomy } from "./types";
+import data from "./data/names/autonomies.json";
+import geojson from "./data/geojson/autonomies/index";
+import { optionsAutonomy, Autonomy, MultipleFeatures } from "./types/index";
 
 export const autonomies = (options: optionsAutonomy = {}): Autonomy[] => {
-  const { code } = options;
+  const { code, with_geojson } = options;
 
-  const filteredAutonomies = code !== undefined
-    ? data.autonomies.filter((item) => item.code == code)
-    : data.autonomies;
+  return data.flatMap((item: Autonomy) => {
+    if (code !== undefined && item.code != code) return [];
 
-  return filteredAutonomies;
+    if (with_geojson === true) {
+      item.geojson = (<MultipleFeatures>geojson)[item.code];
+    }
+
+    return [item];
+  });
 }
