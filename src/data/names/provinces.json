@@ -1,0 +1,262 @@
+[
+  {
+    "code": "04",
+    "name": "Almería",
+    "code_autonomy": "01"
+  },
+  {
+    "code": "11",
+    "name": "Cádiz",
+    "code_autonomy": "01"
+  },
+  {
+    "code": "14",
+    "name": "Córdoba",
+    "code_autonomy": "01"
+  },
+  {
+    "code": "18",
+    "name": "Granada",
+    "code_autonomy": "01"
+  },
+  {
+    "code": "21",
+    "name": "Huelva",
+    "code_autonomy": "01"
+  },
+  {
+    "code": "23",
+    "name": "Jaén",
+    "code_autonomy": "01"
+  },
+  {
+    "code": "29",
+    "name": "Málaga",
+    "code_autonomy": "01"
+  },
+  {
+    "code": "41",
+    "name": "Sevilla",
+    "code_autonomy": "01"
+  },
+  {
+    "code": "22",
+    "name": "Huesca",
+    "code_autonomy": "02"
+  },
+  {
+    "code": "44",
+    "name": "Teruel",
+    "code_autonomy": "02"
+  },
+  {
+    "code": "50",
+    "name": "Zaragoza",
+    "code_autonomy": "02"
+  },
+  {
+    "code": "33",
+    "name": "Asturias",
+    "code_autonomy": "03"
+  },
+  {
+    "code": "07",
+    "name": "Balears, Illes",
+    "code_autonomy": "04"
+  },
+  {
+    "code": "35",
+    "name": "Palmas, Las",
+    "code_autonomy": "05"
+  },
+  {
+    "code": "38",
+    "name": "Santa Cruz de Tenerife",
+    "code_autonomy": "05"
+  },
+  {
+    "code": "39",
+    "name": "Cantabria",
+    "code_autonomy": "06"
+  },
+  {
+    "code": "05",
+    "name": "Ávila",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "09",
+    "name": "Burgos",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "24",
+    "name": "León",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "34",
+    "name": "Palencia",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "37",
+    "name": "Salamanca",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "40",
+    "name": "Segovia",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "42",
+    "name": "Soria",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "47",
+    "name": "Valladolid",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "49",
+    "name": "Zamora",
+    "code_autonomy": "07"
+  },
+  {
+    "code": "06",
+    "name": "Albacete",
+    "code_autonomy": "08"
+  },
+  {
+    "code": "13",
+    "name": "Ciudad Real",
+    "code_autonomy": "08"
+  },
+  {
+    "code": "16",
+    "name": "Cuenca",
+    "code_autonomy": "08"
+  },
+  {
+    "code": "19",
+    "name": "Guadalajara",
+    "code_autonomy": "08"
+  },
+  {
+    "code": "45",
+    "name": "Toledo",
+    "code_autonomy": "08"
+  },
+  {
+    "code": "08",
+    "name": "Barcelona",
+    "code_autonomy": "09"
+  },
+  {
+    "code": "17",
+    "name": "Girona",
+    "code_autonomy": "09"
+  },
+  {
+    "code": "25",
+    "name": "Lleida",
+    "code_autonomy": "09"
+  },
+  {
+    "code": "43",
+    "name": "Tarragona",
+    "code_autonomy": "09"
+  },
+  {
+    "code": "03",
+    "name": "Alicante/Alacant",
+    "code_autonomy": "10"
+  },
+  {
+    "code": "12",
+    "name": "Castellón/Castelló",
+    "code_autonomy": "10"
+  },
+  {
+    "code": "46",
+    "name": "Valencia/València",
+    "code_autonomy": "10"
+  },
+  {
+    "code": "06",
+    "name": "Badajoz",
+    "code_autonomy": "11"
+  },
+  {
+    "code": "10",
+    "name": "Cáceres",
+    "code_autonomy": "11"
+  },
+  {
+    "code": "15",
+    "name": "Coruña, A",
+    "code_autonomy": "12"
+  },
+  {
+    "code": "27",
+    "name": "Lugo",
+    "code_autonomy": "12"
+  },
+  {
+    "code": "32",
+    "name": "Ourense",
+    "code_autonomy": "12"
+  },
+  {
+    "code": "36",
+    "name": "Pontevedra",
+    "code_autonomy": "12"
+  },
+  {
+    "code": "28",
+    "name": "Madrid",
+    "code_autonomy": "13"
+  },
+  {
+    "code": "30",
+    "name": "Murcia",
+    "code_autonomy": "14"
+  },
+  {
+    "code": "31",
+    "name": "Navarra",
+    "code_autonomy": "15"
+  },
+  {
+    "code": "01",
+    "name": "Araba/Álava",
+    "code_autonomy": "16"
+  },
+  {
+    "code": "48",
+    "name": "Bizkaia",
+    "code_autonomy": "16"
+  },
+  {
+    "code": "20",
+    "name": "Gipuzkoa",
+    "code_autonomy": "16"
+  },
+  {
+    "code": "26",
+    "name": "Rioja, La",
+    "code_autonomy": "17"
+  },
+  {
+    "code": "51",
+    "name": "Ceuta",
+    "code_autonomy": "18"
+  },
+  {
+    "code": "52",
+    "name": "Melilla",
+    "code_autonomy": "19"
+  }
+]

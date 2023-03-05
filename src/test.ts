@@ -63,7 +63,7 @@ test({
 
     assert((<Province[]>result)[0].code);
     assert((<Province[]>result)[0].name);
-    assert((<Province[]>result)[0].code_autonomous_community);
+    assert((<Province[]>result)[0].code_autonomy);
   }
 });
 
@@ -77,21 +77,21 @@ test({
 });
 
 test({
-  name: 'should return 1 provinces of Madrid when code_autonomous_community is 13',
+  name: 'should return 1 provinces of Madrid when code_autonomy is 13',
   fn: () => {
-    const result = provinces({ code_autonomous_community: '13' });
+    const result = provinces({ code_autonomy: '13' });
 
-    assert.strictEqual((<Province[]>result)[0].code_autonomous_community, '13');
+    assert.strictEqual((<Province[]>result)[0].code_autonomy, '13');
     assert.strictEqual((<Province[]>result).length, 1);
   }
 });
 
 test({
-  name: 'should return 1 provinces of Castilla y León when code_autonomous_community is 07 and code is 09',
+  name: 'should return 1 provinces of Castilla y León when code_autonomy is 07 and code is 09',
   fn: () => {
-    const result = provinces({ code_autonomous_community: '07', code: '09' });
+    const result = provinces({ code_autonomy: '07', code: '09' });
 
-    assert.strictEqual((<Province[]>result)[0].code_autonomous_community, '07');
+    assert.strictEqual((<Province[]>result)[0].code_autonomy, '07');
     assert.strictEqual((<Province[]>result)[0].code, '09');
     assert.strictEqual((<Province[]>result).length, 1);
   }
@@ -107,7 +107,7 @@ test({
 
     assert(Array.isArray(result));
 
-    assert((<City[]>result)[0].code_autonomous_community);
+    assert((<City[]>result)[0].code_autonomy);
     assert((<City[]>result)[0].code_province);
     assert((<City[]>result)[0].code_municipality);
     assert((<City[]>result)[0].extra_digit);
@@ -125,32 +125,32 @@ test({
 });
 
 test({
-  name: 'should return 179 cities of Madrid when code_autonomous_community is 13',
+  name: 'should return 179 cities of Madrid when code_autonomy is 13',
   fn: () => {
-    const result = cities({ code_autonomous_community: '13' });
+    const result = cities({ code_autonomy: '13' });
 
-    assert.strictEqual((<City[]>result)[0].code_autonomous_community, '13');
+    assert.strictEqual((<City[]>result)[0].code_autonomy, '13');
     assert.strictEqual((<City[]>result).length, 179);
   }
 });
 
 test({
-  name: 'should return 179 cities of Madrid when code_autonomous_community is 13 and code_province is 30',
+  name: 'should return 179 cities of Madrid when code_autonomy is 13 and code_province is 30',
   fn: () => {
-    const result = cities({ code_autonomous_community: '13', code_province: '28' });
+    const result = cities({ code_autonomy: '13', code_province: '28' });
 
-    assert.strictEqual((<City[]>result)[0].code_autonomous_community, '13');
+    assert.strictEqual((<City[]>result)[0].code_autonomy, '13');
     assert.strictEqual((<City[]>result)[0].code_province, '28');
     assert.strictEqual((<City[]>result).length, 179);
   }
 });
 
 test({
-  name: 'should return 1 city of Madrid when code_autonomous_community is 13 and code_province is 30 and code_municipality is 79',
+  name: 'should return 1 city of Madrid when code_autonomy is 13 and code_province is 30 and code_municipality is 79',
   fn: () => {
-    const result = cities({ code_autonomous_community: '13', code_province: '28', code_municipality: '001' });
+    const result = cities({ code_autonomy: '13', code_province: '28', code_municipality: '001' });
 
-    assert.strictEqual((<City[]>result)[0].code_autonomous_community, '13');
+    assert.strictEqual((<City[]>result)[0].code_autonomy, '13');
     assert.strictEqual((<City[]>result)[0].code_province, '28');
     assert.strictEqual((<City[]>result)[0].code_municipality, '001');
     assert.strictEqual((<City[]>result).length, 1);
@@ -158,11 +158,11 @@ test({
 });
 
 test({
-  name: 'should return 1 city of Madrid when code_autonomous_community is 13 and code_province is 30 and code_municipality is 79 and extra_digit is 4',
+  name: 'should return 1 city of Madrid when code_autonomy is 13 and code_province is 30 and code_municipality is 79 and extra_digit is 4',
   fn: () => {
-    const result = cities({ code_autonomous_community: '13', code_province: '28', code_municipality: '001', extra_digit: '4' });
+    const result = cities({ code_autonomy: '13', code_province: '28', code_municipality: '001', extra_digit: '4' });
 
-    assert.strictEqual((<City[]>result)[0].code_autonomous_community, '13');
+    assert.strictEqual((<City[]>result)[0].code_autonomy, '13');
     assert.strictEqual((<City[]>result)[0].code_province, '28');
     assert.strictEqual((<City[]>result)[0].code_municipality, '001');
     assert.strictEqual((<City[]>result)[0].extra_digit, '4');
@@ -171,36 +171,36 @@ test({
 });
 
 test({
-  name: 'should return empty array when code_autonomous_community is DOES_NOT_EXIST',
+  name: 'should return empty array when code_autonomy is DOES_NOT_EXIST',
   fn: () => {
-    const result = cities({ code_autonomous_community: 'DOES_NOT_EXIST' });
+    const result = cities({ code_autonomy: 'DOES_NOT_EXIST' });
 
     assert.strictEqual((<City[]>result).length, 0);
   }
 });
 
 test({
-  name: 'should return empty array when code_autonomous_community is 13 and code_province is DOES_NOT_EXIST',
+  name: 'should return empty array when code_autonomy is 13 and code_province is DOES_NOT_EXIST',
   fn: () => {
-    const result = cities({ code_autonomous_community: '13', code_province: 'DOES_NOT_EXIST' });
+    const result = cities({ code_autonomy: '13', code_province: 'DOES_NOT_EXIST' });
 
     assert.strictEqual((<City[]>result).length, 0);
   }
 });
 
 test({
-  name: 'should return empty array when code_autonomous_community is 13 and code_province is 30 and code_municipality is DOES_NOT_EXIST',
+  name: 'should return empty array when code_autonomy is 13 and code_province is 30 and code_municipality is DOES_NOT_EXIST',
   fn: () => {
-    const result = cities({ code_autonomous_community: '13', code_province: '28', code_municipality: 'DOES_NOT_EXIST' });
+    const result = cities({ code_autonomy: '13', code_province: '28', code_municipality: 'DOES_NOT_EXIST' });
 
     assert.strictEqual((<City[]>result).length, 0);
   }
 });
 
 test({
-  name: 'should return empty array when code_autonomous_community is 13 and code_province is 30 and code_municipality is 79 and extra_digit is DOES_NOT_EXIST',
+  name: 'should return empty array when code_autonomy is 13 and code_province is 30 and code_municipality is 79 and extra_digit is DOES_NOT_EXIST',
   fn: () => {
-    const result = cities({ code_autonomous_community: '13', code_province: '28', code_municipality: '001', extra_digit: 'DOES_NOT_EXIST' });
+    const result = cities({ code_autonomy: '13', code_province: '28', code_municipality: '001', extra_digit: 'DOES_NOT_EXIST' });
 
     assert.strictEqual((<City[]>result).length, 0);
   }
