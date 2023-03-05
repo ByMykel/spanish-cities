@@ -20,10 +20,9 @@ export interface optionsProvince {
 }
 
 export interface OptionsCity {
+  code?: string | number;
   code_autonomy?: string | number;
   code_province?: string | number;
-  code_municipality?: string | number;
-  extra_digit?: string | number;
 }
 
 export interface Autonomy {
@@ -39,9 +38,8 @@ export interface Province {
 }
 
 export interface City {
+  code: string;
+  name: string;
   code_autonomy: string;
   code_province: string;
-  code_municipality: string;
-  extra_digit: string;
-  name: string;
 }

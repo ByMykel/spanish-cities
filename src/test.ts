@@ -107,10 +107,9 @@ test({
 
     assert(Array.isArray(result));
 
+    assert((<City[]>result)[0].code);
     assert((<City[]>result)[0].code_autonomy);
     assert((<City[]>result)[0].code_province);
-    assert((<City[]>result)[0].code_municipality);
-    assert((<City[]>result)[0].extra_digit);
     assert((<City[]>result)[0].name);
   }
 });
@@ -146,26 +145,12 @@ test({
 });
 
 test({
-  name: 'should return 1 city of Madrid when code_autonomy is 13 and code_province is 30 and code_municipality is 79',
+  name: 'should return 1 city of Madrid when code_autonomy is 13 and code_province is 30 and code is 280796',
   fn: () => {
-    const result = cities({ code_autonomy: '13', code_province: '28', code_municipality: '001' });
+    const result = cities({ code_autonomy: '13', code_province: '28', code: '280796' });
 
     assert.strictEqual((<City[]>result)[0].code_autonomy, '13');
     assert.strictEqual((<City[]>result)[0].code_province, '28');
-    assert.strictEqual((<City[]>result)[0].code_municipality, '001');
-    assert.strictEqual((<City[]>result).length, 1);
-  }
-});
-
-test({
-  name: 'should return 1 city of Madrid when code_autonomy is 13 and code_province is 30 and code_municipality is 79 and extra_digit is 4',
-  fn: () => {
-    const result = cities({ code_autonomy: '13', code_province: '28', code_municipality: '001', extra_digit: '4' });
-
-    assert.strictEqual((<City[]>result)[0].code_autonomy, '13');
-    assert.strictEqual((<City[]>result)[0].code_province, '28');
-    assert.strictEqual((<City[]>result)[0].code_municipality, '001');
-    assert.strictEqual((<City[]>result)[0].extra_digit, '4');
     assert.strictEqual((<City[]>result).length, 1);
   }
 });
@@ -183,24 +168,6 @@ test({
   name: 'should return empty array when code_autonomy is 13 and code_province is DOES_NOT_EXIST',
   fn: () => {
     const result = cities({ code_autonomy: '13', code_province: 'DOES_NOT_EXIST' });
-
-    assert.strictEqual((<City[]>result).length, 0);
-  }
-});
-
-test({
-  name: 'should return empty array when code_autonomy is 13 and code_province is 30 and code_municipality is DOES_NOT_EXIST',
-  fn: () => {
-    const result = cities({ code_autonomy: '13', code_province: '28', code_municipality: 'DOES_NOT_EXIST' });
-
-    assert.strictEqual((<City[]>result).length, 0);
-  }
-});
-
-test({
-  name: 'should return empty array when code_autonomy is 13 and code_province is 30 and code_municipality is 79 and extra_digit is DOES_NOT_EXIST',
-  fn: () => {
-    const result = cities({ code_autonomy: '13', code_province: '28', code_municipality: '001', extra_digit: 'DOES_NOT_EXIST' });
 
     assert.strictEqual((<City[]>result).length, 0);
   }
