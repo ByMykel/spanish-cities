@@ -5,12 +5,13 @@ export const provinces = (options: optionsProvince = {}): Province[] => {
   const attributes = ["code", "code_autonomy"]
     .filter(option => options[option as keyof optionsProvince] !== undefined);
 
-  return data.filter((item: Province) => {
+  return data.flatMap((item: Province) => {
     for (const attribute of attributes) {
       if (item[attribute as keyof optionsProvince] != options[attribute as keyof optionsProvince]) {
-        return false;
+        return [];
       }
     }
-    return true;
+
+    return [item];
   });
 };
