@@ -76,11 +76,26 @@ console.log(cities({ code_autonomous_community: "16", code_municipality: "001" }
 // ]
 ```
 
+## Source
+
+- The names and code are extracted from the [INE][ine] website.
+
+- The Administrative boundaries are extracted from the [Eurostat][Eurostat] website, the usage of these data is subject to the acceptance of the following [clauses][clauses]
+
+  > 1. The Commission agrees to grant the non-exclusive and not transferable right to use and process the Eurostat/GISCO geographical data downloaded from this page (the "data").
+  > 2. The permission to use the data is granted on condition that:
+  >     - the data will not be used for commercial purposes;
+  >     - the source will be acknowledged. A copyright notice, as specified below, will have to be visible on any printed or electronic publication using the data downloaded from this page.
+
 ## License
 
 [MIT][license]
 
 <!-- Definition -->
+
+[ine]: https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031&menu=ultiDatos&idp=1254734710990
+[eurostat]: https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/countries
+[clauses]: https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units
 
 [downloads-badge]: https://img.shields.io/npm/dm/all-spanish-cities.svg
 [downloads]: https://www.npmjs.com/package/all-spanish-cities
