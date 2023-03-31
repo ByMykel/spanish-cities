@@ -1,20 +1,16 @@
 import data from "./data/names/autonomies.json";
-import geojson from "./data/geojson/autonomies/index";
-import { optionsAutonomy, Autonomy, MultipleFeatures } from "./types/index";
+import { optionsAutonomy, Autonomy } from "./types/index";
 
+/**
+ * Returns an array of autonomies that match the specified filter criteria.
+ * @param options (optional) An object with options.
+ * @param options.code A string or number representing the code of the autonomy to filter by.
+ */
 export const autonomies = (options: optionsAutonomy = {}): Autonomy[] => {
-  const { code, with_geojson } = options;
+  const { code } = options;
 
-  const filtered = data.filter((item: Autonomy) => {
+  return data.filter((item: Autonomy) => {
     if (code !== undefined && item.code != code) return false;
     return true;
-  });
-
-  return filtered.map((item: Autonomy) => {
-    if (with_geojson === true) {
-      item.geojson = (<MultipleFeatures>geojson)[item.code];
-    }
-
-    return item;
   });
 }
