@@ -18,6 +18,7 @@ import { autonomies } from "all-spanish-cities";
 // options object is optional.
 const options = {
   // code: "01",
+  // name: "Andalucía"
 };
 
 console.log(autonomies(options));
@@ -37,6 +38,7 @@ import { provinces } from "all-spanish-cities";
 const options = {
   // code: "18",
   // code_autonomy: "01",
+  // name: "Almería"
 };
 
 console.log(provinces(options));
@@ -58,6 +60,7 @@ const options = {
   // code: "280783",
   // code_autonomy: "13",
   // code_province: "28"
+  // name: "Madrid"
 };
 
 console.log(cities(options));
