@@ -16,7 +16,9 @@
   },
   "keywords": [
     "spanish",
-    "cities"
+    "cities",
+    "provinces",
+    "autonomies"
   ],
   "author": "ByMykel",
   "license": "MIT",
@@ -25,7 +27,6 @@
   },
   "homepage": "https://github.com/ByMykel/spanish-cities#readme",
   "devDependencies": {
-    "@types/geojson": "^7946.0.10",
     "@types/node": "^18.11.19"
   }
 }

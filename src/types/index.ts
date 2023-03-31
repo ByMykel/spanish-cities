@@ -1,17 +1,5 @@
-import { Geometry } from "geojson";
-import { Feature } from "geojson";
-
-interface MultipleProperties {
-  [key: string]: string | number;
-}
-
-export interface MultipleFeatures {
-  [key: string]: Feature<Geometry, MultipleProperties>;
-}
-
 export interface optionsAutonomy {
   code?: string | number;
-  with_geojson?: boolean;
 }
 
 export interface optionsProvince {
@@ -28,7 +16,6 @@ export interface OptionsCity {
 export interface Autonomy {
   code: string;
   name: string;
-  geojson?: Feature<Geometry, MultipleProperties>;
 }
 
 export interface Province {
