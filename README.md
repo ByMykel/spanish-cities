@@ -78,14 +78,7 @@ console.log(cities({ code_autonomous_community: "16", code_municipality: "001" }
 
 ## Source
 
-- The names and code are extracted from the [INE][ine] website, read the [terms of use][ine-terms-of-use] before use.
-
-- The Administrative boundaries are extracted from the [Eurostat][Eurostat] website, the usage of these data is subject to the acceptance of the following [clauses][eurostat-clauses]
-
-  > 1. The Commission agrees to grant the non-exclusive and not transferable right to use and process the Eurostat/GISCO geographical data downloaded from this page (the "data").
-  > 2. The permission to use the data is granted on condition that:
-  >     - the data will not be used for commercial purposes;
-  >     - the source will be acknowledged. A copyright notice, as specified below, will have to be visible on any printed or electronic publication using the data downloaded from this page.
+- The names and code are extracted from the [INE][ine] website.
 
 ## License
 
@@ -94,9 +87,6 @@ console.log(cities({ code_autonomous_community: "16", code_municipality: "001" }
 <!-- Definition -->
 
 [ine]: https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031&menu=ultiDatos&idp=1254734710990
-[ine-terms-of-use]: https://www.ine.es/ss/Satellite?L=0&c=Page&cid=1254735849170&p=1254735849170&pagename=Ayuda%2FINELayout
-[eurostat]: https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts
-[eurostat-clauses]: https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units
 
 [downloads]: https://www.npmjs.com/package/all-spanish-cities
 [downloads-badge]: https://img.shields.io/npm/dm/all-spanish-cities.svg
