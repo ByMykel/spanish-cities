@@ -1,7 +1,7 @@
 {
   "name": "all-spanish-cities",
   "version": "0.3.0",
-  "description": "List of spanish cities",
+  "description": "List of spanish autonomies, provinces and cities.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -15,10 +15,13 @@
     "url": "git+https://github.com/ByMykel/spanish-cities.git"
   },
   "keywords": [
+    "spain",
     "spanish",
     "cities",
     "provinces",
-    "autonomies"
+    "autonomies",
+    "names",
+    "images"
   ],
   "author": "ByMykel",
   "license": "MIT",
