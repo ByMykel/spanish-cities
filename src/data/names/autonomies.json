@@ -1,78 +1,97 @@
 [
   {
     "code": "01",
-    "name": "Andalucía"
+    "name": "Andalucía",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Andaluc%C3%ADa.svg"
   },
   {
     "code": "02",
-    "name": "Aragón"
+    "name": "Aragón",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Bandera_de_Arag%C3%B3n.svg"
   },
   {
     "code": "03",
-    "name": "Asturias, Principado de"
+    "name": "Asturias, Principado de",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Asturias.svg"
   },
   {
     "code": "04",
-    "name": "Balears, Illes"
+    "name": "Balears, Illes",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg"
   },
   {
     "code": "05",
-    "name": "Canarias"
+    "name": "Canarias",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_the_Canary_Islands.svg"
   },
   {
     "code": "06",
-    "name": "Cantabria"
+    "name": "Cantabria",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_%28Official%29.svg"
   },
   {
     "code": "07",
-    "name": "Castilla y León"
+    "name": "Castilla y León",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Castile_and_Le%C3%B3n.svg"
   },
   {
     "code": "08",
-    "name": "Castilla-La Mancha"
+    "name": "Castilla-La Mancha",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bandera_Castilla-La_Mancha.svg"
   },
   {
     "code": "09",
-    "name": "Cataluña"
+    "name": "Cataluña",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg"
   },
   {
     "code": "10",
-    "name": "Comunitat Valenciana"
+    "name": "Comunitat Valenciana",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_the_Land_of_Valencia_%28official%29.svg"
   },
   {
     "code": "11",
-    "name": "Extremadura"
+    "name": "Extremadura",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Extremadura%2C_Spain_%28with_coat_of_arms%29.svg"
   },
   {
     "code": "12",
-    "name": "Galicia"
+    "name": "Galicia",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Galicia.svg"
   },
   {
     "code": "13",
-    "name": "Madrid, Comunidad de"
+    "name": "Madrid, Comunidad de",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_the_Community_of_Madrid.svg"
   },
   {
     "code": "14",
-    "name": "Murcia, Región de"
+    "name": "Murcia, Región de",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_Region_of_Murcia.svg"
   },
   {
     "code": "15",
-    "name": "Navarra, Comunidad Foral de"
+    "name": "Navarra, Comunidad Foral de",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bandera_de_Navarra.svg"
   },
   {
     "code": "16",
-    "name": "País Vasco"
+    "name": "País Vasco",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Flag_of_the_Basque_Country.svg"
   },
   {
     "code": "17",
-    "name": "Rioja, La"
+    "name": "Rioja, La",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_%28with_coat_of_arms%29.svg"
   },
   {
     "code": "18",
-    "name": "Ceuta"
+    "name": "Ceuta",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_Ceuta.svg"
   },
   {
     "code": "19",
-    "name": "Melilla"
+    "name": "Melilla",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Melilla.svg"
   }
 ]
