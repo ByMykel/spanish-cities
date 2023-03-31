@@ -51,6 +51,15 @@ test({
   }
 });
 
+test({
+  name: 'should return 2 autonomies when name is "tilla"',
+  fn: () => {
+    const result = autonomies({ name: 'tilla' });
+
+    assert.strictEqual((<Autonomy[]>result).length, 2);
+  }
+});
+
 console.groupEnd();
 console.group('\nTesting provinces.ts:');
 
@@ -94,6 +103,15 @@ test({
     assert.strictEqual((<Province[]>result)[0].code_autonomy, '07');
     assert.strictEqual((<Province[]>result)[0].code, '09');
     assert.strictEqual((<Province[]>result).length, 1);
+  }
+});
+
+test({
+  name: 'should return 1 provinces when name is "Ri"',
+  fn: () => {
+    const result = provinces({ name: 'Ri' });
+
+    assert.strictEqual((<Province[]>result).length, 6);
   }
 });
 
@@ -170,5 +188,14 @@ test({
     const result = cities({ code_autonomy: '13', code_province: 'DOES_NOT_EXIST' });
 
     assert.strictEqual((<City[]>result).length, 0);
+  }
+});
+
+test({
+  name: 'should return 10 cities when name is "Valverde"',
+  fn: () => {
+    const result = cities({ name: 'Valverde' });
+
+    assert.strictEqual((<City[]>result).length, 25);
   }
 });

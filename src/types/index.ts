@@ -1,16 +1,19 @@
 export interface optionsAutonomy {
   code?: string | number;
+  name?: string;
 }
 
 export interface optionsProvince {
   code?: string | number;
   code_autonomy?: string | number;
+  name?: string;
 }
 
 export interface OptionsCity {
   code?: string | number;
   code_autonomy?: string | number;
   code_province?: string | number;
+  name?: string;
 }
 
 export interface Autonomy {
