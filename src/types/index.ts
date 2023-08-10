@@ -45,6 +45,10 @@ export interface Province {
   code: string;
   name: string;
   code_autonomy: string;
+  flag: Nullable<string>;
+  coat_of_arms: Nullable<string>;
+  coordinates: Coordinates;
+  links: Links;
   autonomy?: Autonomy
   cities?: City[]
 }
