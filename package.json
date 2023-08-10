@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/ByMykel/spanish-cities#readme",
   "devDependencies": {
-    "@types/node": "^18.11.19"
+    "@types/node": "^18.11.19",
+    "ts-node": "^10.9.1"
   }
 }
