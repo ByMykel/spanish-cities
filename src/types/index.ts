@@ -17,6 +17,8 @@ export interface optionsProvince {
   code?: string | number;
   code_autonomy?: string | number;
   name?: string;
+  with_autonomy?: boolean;
+  with_cities?: boolean;
 }
 
 export interface OptionsCity {
@@ -24,6 +26,8 @@ export interface OptionsCity {
   code_autonomy?: string | number;
   code_province?: string | number;
   name?: string;
+  with_autonomy?: boolean;
+  with_province?: boolean;
 }
 
 export interface Autonomy {
@@ -42,6 +46,8 @@ export interface Province {
   code: string;
   name: string;
   code_autonomy: string;
+  autonomy?: Autonomy
+  cities?: City[]
 }
 
 export interface City {
@@ -49,4 +55,6 @@ export interface City {
   name: string;
   code_autonomy: string;
   code_province: string;
+  autonomy?: Autonomy
+  province?: Province
 }
