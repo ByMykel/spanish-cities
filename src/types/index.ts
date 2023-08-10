@@ -3,7 +3,6 @@ type Coordinates = { latitude: Nullable<number>, longitude: Nullable<number> };
 type Links = {
   wikipedia: Nullable<string>;
   geohack: Nullable<string>;
-  website: Nullable<string>;
 }
 
 export interface optionsAutonomy {
