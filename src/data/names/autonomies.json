@@ -3,16 +3,16 @@
     "code": "01",
     "name": "Andalucía",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Andaluc%C3%ADa.svg",
-    "coat_of_arms": null,
-    "hymn": null,
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/20/Escudo_de_Andaluc%C3%ADa_%28oficial2%29.svg",
+    "hymn": "https://upload.wikimedia.org/wikipedia/commons/3/39/Himno_de_Andaluc%C3%ADa_%28Coral%29.ogg",
     "coordinates": {
-      "latitude": null,
-      "longitude": null
+      "latitude": 37.460000,
+      "longitude": -4.160000
     },
     "links": {
-      "wikipedia": null,
-      "geohack": null,
-      "website": null
+      "wikipedia": "https://es.wikipedia.org/wiki/Andaluc%C3%ADa",
+      "geohack": "https://geohack.toolforge.org/geohack.php?language=es&pagename=Andaluc%C3%ADa&params=37.46_N_-4.16_E_type:city",
+      "website": "https://www.juntadeandalucia.es/"
     }
   },
   {
