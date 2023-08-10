@@ -12,19 +12,7 @@ const test = ({ name, fn, }: { name: string; fn: () => void }) => {
 console.group('Testing autonomies.ts:');
 
 test({
-  name: 'should return an array of autonomies',
-  fn: () => {
-    const result = autonomies();
-
-    assert(Array.isArray(result));
-
-    assert.strictEqual((<Autonomy[]>result)[0].code, '01');
-    assert.strictEqual((<Autonomy[]>result)[0].name, 'Andalucía');
-  },
-});
-
-test({
-  name: 'should return an array with 19 items',
+  name: 'should return all autonomies',
   fn: () => {
     const result = autonomies();
 
@@ -33,28 +21,78 @@ test({
 });
 
 test({
-  name: 'should return autonomy of Cataluña when code is 09',
+  name: 'should return an array with the autonomy of Extremadura when code is "11"',
   fn: () => {
-    const result = autonomies({ code: '11' });
+    const result = autonomies({ code: 11 });
 
-    assert.strictEqual((<Autonomy[]>result)[0].code, '11');
-    assert.strictEqual((<Autonomy[]>result)[0].name, 'Extremadura');
+    assert(Array.isArray(result));
+
+    assert.deepStrictEqual((<Autonomy[]>result)[0], {
+      "code": "11",
+      "name": "Extremadura",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Extremadura%2C_Spain_%28with_coat_of_arms%29.svg",
+      "coat_of_arms": null,
+      "hymn": null,
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "links": {
+        "wikipedia": null,
+        "geohack": null,
+        "website": null
+      }
+    });
   },
 });
 
 test({
-  name: 'should return empty array when code is 99',
+  name: 'should return empty array when code is "DOES_NOT_EXIST"',
   fn: () => {
-    const result = autonomies({ code: '99' });
+    const result = autonomies({ code: 'DOES_NOT_EXIST' });
 
     assert.strictEqual((<Autonomy[]>result).length, 0);
   }
 });
 
 test({
-  name: 'should return 2 autonomies when name is "tilla"',
+  name: 'should return 2 autonomies ("Castilla y León" and "Castilla-La Mancha") when name is "tilla"',
   fn: () => {
     const result = autonomies({ name: 'tilla' });
+
+    assert.deepStrictEqual((<Autonomy[]>result)[0], {
+      "code": "07",
+      "name": "Castilla y León",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Castile_and_Le%C3%B3n.svg",
+      "coat_of_arms": null,
+      "hymn": null,
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "links": {
+        "wikipedia": null,
+        "geohack": null,
+        "website": null
+      }
+    });
+
+    assert.deepStrictEqual((<Autonomy[]>result)[1], {
+      "code": "08",
+      "name": "Castilla-La Mancha",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bandera_Castilla-La_Mancha.svg",
+      "coat_of_arms": null,
+      "hymn": null,
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      },
+      "links": {
+        "wikipedia": null,
+        "geohack": null,
+        "website": null
+      }
+    });
 
     assert.strictEqual((<Autonomy[]>result).length, 2);
   }
