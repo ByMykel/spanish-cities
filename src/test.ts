@@ -203,6 +203,16 @@ test({
       code: "09",
       name: "Burgos",
       code_autonomy: "07",
+      flag: null,
+      coat_of_arms: null,
+      coordinates: {
+        latitude: null,
+        longitude: null,
+      },
+      links: {
+        wikipedia: null,
+        geohack: null,
+      },
     });
   },
 });
@@ -217,11 +227,31 @@ test({
       code: "06",
       name: "Badajoz",
       code_autonomy: "11",
+      flag: null,
+      coat_of_arms: null,
+      coordinates: {
+        latitude: null,
+        longitude: null,
+      },
+      links: {
+        wikipedia: null,
+        geohack: null,
+      },
     });
     assert.deepStrictEqual((<Province[]>result)[1], {
       code: "10",
       name: "Cáceres",
       code_autonomy: "11",
+      flag: null,
+      coat_of_arms: null,
+      coordinates: {
+        latitude: null,
+        longitude: null,
+      },
+      links: {
+        wikipedia: null,
+        geohack: null,
+      },
     });
   },
 });
