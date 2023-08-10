@@ -3,15 +3,15 @@
     "code": "04",
     "name": "Almería",
     "code_autonomy": "01",
-    "flag": null,
-    "coat_of_arms": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_Almer%C3%ADa_Province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/02/Escudo_de_la_Provincia_de_Almer%C3%ADa.svg",
     "coordinates": {
-      "latitude": null,
-      "longitude": null
+      "latitude": 37.166667,
+      "longitude": -2.333333
     },
     "links": {
-      "wikipedia": null,
-      "geohack": null
+      "wikipedia": "https://es.wikipedia.org/wiki/Provincia_de_Almer%C3%ADa",
+      "geohack": "https://geohack.toolforge.org/geohack.php?language=es&pagename=Provincia_de_Almer%C3%ADa&params=37.166666666667_N_-2.3333333333333_E_type:city"
     }
   },
   {
