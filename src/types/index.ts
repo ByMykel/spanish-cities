@@ -9,6 +9,8 @@ type Links = {
 export interface optionsAutonomy {
   code?: string | number;
   name?: string;
+  with_provinces?: boolean;
+  with_cities?: boolean;
 }
 
 export interface optionsProvince {
@@ -32,6 +34,8 @@ export interface Autonomy {
   hymn: Nullable<string>;
   coordinates: Coordinates;
   links: Links;
+  provinces?: Province[]
+  cities?: City[]
 }
 
 export interface Province {

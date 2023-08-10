@@ -1,4 +1,7 @@
 import data from "./data/names/autonomies.json";
+
+import { cities } from "./cities";
+import { provinces } from "./provinces";
 import { optionsAutonomy, Autonomy } from "./types/index";
 
 /**
@@ -8,15 +11,16 @@ import { optionsAutonomy, Autonomy } from "./types/index";
  * @param options.name A string representing the name of the autonomy to filter by.
  */
 export const autonomies = (options: optionsAutonomy = {}): Autonomy[] => {
-  const { code, name } = options;
+  const { code, name, with_provinces = false, with_cities = false } = options;
 
-  return data.filter((item: Autonomy) => {
-    if (code !== undefined && item.code != code) return false;
+  const filtered = data.filter((item: Autonomy) =>
+    (code === undefined || item.code == code) &&
+    (name === undefined || item.name.toLocaleLowerCase().includes(name.toLocaleLowerCase()))
+  );
 
-    if (name !== undefined && !item.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())) {
-      return false;
-    }
-
-    return true;
-  });
+  return filtered.map((item: Autonomy) => ({
+    ...item,
+    ...(with_provinces && { provinces: provinces({ code_autonomy: item.code }) }),
+    ...(with_cities && { cities: cities({ code_autonomy: item.code }) })
+  }));
 }

@@ -4,20 +4,52 @@ import { cities } from './cities';
 import { provinces } from './provinces';
 import { Autonomy, City, Province } from './types';
 
-const test = ({ name, fn, }: { name: string; fn: () => void }) => {
-  console.log(`Testing: ${name}`);
-  fn();
+const test = ({ name, fn }: { name: string; fn: () => void }) => {
+  try {
+    fn();
+    console.log(`✅ ${name}`);
+  } catch (error) {
+    console.error(`❌ ${name}`);
+    console.error(error);
+  }
 };
 
 console.group('Testing autonomies.ts:');
 
 test({
-  name: 'should return all autonomies',
+  name: 'should return all 19 autonomies',
   fn: () => {
     const result = autonomies();
 
     assert.strictEqual((<Autonomy[]>result).length, 19);
   },
+});
+
+test({
+  name: 'should return all autonomies with their provinces',
+  fn: () => {
+    const result = autonomies({ with_provinces: true });
+
+    assert(result.every((item: Autonomy) => Array.isArray(item.provinces)))
+  }
+});
+
+test({
+  name: 'should return all autonomies with their cities',
+  fn: () => {
+    const result = autonomies({ with_cities: true });
+
+    assert(result.every((item: Autonomy) => Array.isArray(item.cities)))
+  }
+});
+
+test({
+  name: 'should return all autonomies without their provinces and cities',
+  fn: () => {
+    const result = autonomies({ with_provinces: false, with_cities: false });
+
+    assert(result.every((item: Autonomy) => item?.provinces === undefined && item?.cities === undefined))
+  }
 });
 
 test({
@@ -98,6 +130,46 @@ test({
   }
 });
 
+test({
+  name: 'should return the autonomy of Madrid with the province of Madrid',
+  fn: () => {
+    const result = autonomies({ code: 13, with_provinces: true });
+
+    assert.deepStrictEqual((<Autonomy[]>result)[0], {
+      coat_of_arms: null,
+      code: '13',
+      coordinates: {
+        latitude: null,
+        longitude: null
+      },
+      flag: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_the_Community_of_Madrid.svg',
+      hymn: null,
+      links: {
+        geohack: null,
+        website: null,
+        wikipedia: null
+      },
+      name: 'Madrid, Comunidad de',
+      provinces: [
+        {
+          code: '28',
+          code_autonomy: '13',
+          name: 'Madrid'
+        }
+      ]
+    });
+  }
+});
+
+test({
+  name: 'should return the autonomy of La Rioja with their 174 cities',
+  fn: () => {
+    const result = autonomies({ code: 17, with_cities: true });
+
+    assert.strictEqual((<Autonomy[]>result)[0]?.cities?.length, 174);
+  }
+});
+
 console.groupEnd();
 console.group('\nTesting provinces.ts:');
 
@@ -145,7 +217,7 @@ test({
 });
 
 test({
-  name: 'should return 1 provinces when name is "Ri"',
+  name: 'should return 6 provinces when name is "Ri"',
   fn: () => {
     const result = provinces({ name: 'Ri' });
 
@@ -171,7 +243,7 @@ test({
 });
 
 test({
-  name: 'should return an array with 8129 items',
+  name: 'should return an array with 8131 items',
   fn: () => {
     const result = cities();
 
