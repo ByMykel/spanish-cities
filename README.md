@@ -1,6 +1,8 @@
 # `all-spanish-cities`
 
 [![Downloads][downloads-badge]][downloads]
+[![jsdelivr][jsdelivr-badge]][jsdelivr]
+
 
 A library that provides data on Spain's autonomies, provinces, and cities, including their codes, names, flags, and coats of arms for seamless integration into your applications.
 
@@ -169,4 +171,7 @@ console.log(cities({
 
 [downloads]: https://www.npmjs.com/package/all-spanish-cities
 [downloads-badge]: https://img.shields.io/npm/dm/all-spanish-cities.svg
+[jsdelivr]: https://www.jsdelivr.com/package/npm/all-spanish-cities
+[jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/all-spanish-cities/badge
+
 [license]: LICENSE
