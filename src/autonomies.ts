@@ -1,19 +1,19 @@
-import data from "./data/names/autonomies.json";
+import data from "./data/autonomies.json";
 
 import { cities } from "./cities";
 import { provinces } from "./provinces";
-import { optionsAutonomy, Autonomy } from "./types/index";
+import { FiltersAutonomy, Autonomy } from "./types/index";
 
 /**
  * Returns an array of autonomies that match the specified filter criteria.
- * @param options (optional) An object with options.
- * @param options.code A string or number representing the code of the autonomy to filter by.
- * @param options.name A string representing the name of the autonomy to filter by.
- * @param options.with_provinces A boolean indicating if the result should include provinces associated with each autonomy.
- * @param options.with_cities A boolean indicating if the result should include cities associated with each autonomy.
+ * @param filters (optional) An object with filters.
+ * @param filters.code A string or number representing the code of the autonomy to filter by.
+ * @param filters.name A string representing the name of the autonomy to filter by.
+ * @param filters.with_provinces A boolean indicating if the result should include provinces associated with each autonomy.
+ * @param filters.with_cities A boolean indicating if the result should include cities associated with each autonomy.
  */
-export const autonomies = (options: optionsAutonomy = {}): Autonomy[] => {
-  const { code, name, with_provinces = false, with_cities = false } = options;
+export const autonomies = (filters: FiltersAutonomy = {}): Autonomy[] => {
+  const { code, name, with_provinces = false, with_cities = false } = filters;
 
   const filtered = data.filter((autonomy: Autonomy) =>
     (code === undefined || autonomy.code == code) &&

@@ -2,7 +2,7 @@
 
 [![Downloads][downloads-badge]][downloads]
 
-List of spanish autonomies, provinces and cities.
+A library that provides data on Spain's autonomies, provinces, and cities, including their codes, names, flags, and coats of arms for seamless integration into your applications.
 
 ## Install
 
@@ -10,38 +10,59 @@ List of spanish autonomies, provinces and cities.
 npm install all-spanish-cities
 ```
 
-## Use
+## Usage
+
+### Autonomies
 
 ```js
 import { autonomies } from "all-spanish-cities";
 
-// options object is optional.
-const options = {
-  // code: "01",
-  // name: "Andalucía"
-};
-
-console.log(autonomies(options));
+console.log(autonomies());
 // [
 //   {
 //     "code": "01",
-//     "name": "Andalucía"
+//     "name": "Andalucía",
+//     "flag": "...",
+//     "coat_of_arms": "...",
+//   },
+//   // …and many more
+// ]
+
+// You can filter by any of the following attributes.
+console.log(autonomies({
+  code: '...', 
+  name: '...', 
+}));
+// [
+//   { ... },
+//   { ... },
+//   // autonomies that match your filters
+// ]
+
+// You can also include the provinces and cities of that autonomy.
+console.log(autonomies({
+  with_provinces = true, 
+  with_cities = true
+}));
+// [
+//   {
+//     "code": "01",
+//     "name": "Andalucía",
+//     "flag": "...",
+//     "coat_of_arms": "...",
+//     "provinces": [{ ... }, { ... }]
+//     "cities": [{ ... }, { ... }]
 //   },
 //   // …and many more
 // ]
 ```
 
+### Provinces
+
 ```js
 import { provinces } from "all-spanish-cities";
 
-// options object is optional.
-const options = {
-  // code: "18",
-  // code_autonomy: "01",
-  // name: "Almería"
-};
-
-console.log(provinces(options));
+console.log(provinces());
 // [
 //   {
 //     "code": "04",
@@ -50,26 +71,84 @@ console.log(provinces(options));
 //   },
 //   // …and many more
 // ]
+
+// You can filter by any of the following attributes.
+console.log(provinces({
+  code: '...', 
+  code_autonomy: '...',
+  name: '...', 
+}));
+// [
+//   { ... },
+//   { ... },
+//   // provinces that match your filters
+// ]
+
+// You can also include the autonomy and cities of that province.
+console.log(provinces({
+  with_autonomy = true, 
+  with_cities = true
+}));
+// [
+//   {
+//     "code": "04",
+//     "name": "Almería",
+//     "code_autonomy": "01",
+//     "flag": "...",
+//     "coat_of_arms": "...",
+//     "autonomy": { ... }
+//     "cities": [{ ... }, { ... }]
+//   },
+//   // …and many more
+// ]
 ```
+
+### Cities
 
 ```js
 import { cities } from "all-spanish-cities";
 
-// options object is optional.
-const options = {
-  // code: "280783",
-  // code_autonomy: "13",
-  // code_province: "28"
-  // name: "Madrid"
-};
-
-console.log(cities(options));
+console.log(cities());
 // [
 //   {
 //     "code": "010014",
 //     "name": "Alegría-Dulantzi",
 //     "code_autonomy": "16",
-//     "code_province": "01"
+//     "code_province": "01",
+//     "flag": null,
+//     "coat_of_arms": null
+//   },
+//   // …and many more
+// ]
+
+// You can filter by any of the following attributes.
+console.log(cities({
+  code: '...', 
+  code_autonomy: '...',
+  code_province: '...',
+  name: '...', 
+}));
+// [
+//   { ... },
+//   { ... },
+//   // cities that match your filters
+// ]
+
+// You can also include the autonomy and cities of that province.
+console.log(cities({
+  with_autonomy = true, 
+  with_province = true
+}));
+// [
+//   {
+//     "code": "010014",
+//     "name": "Alegría-Dulantzi",
+//     "code_autonomy": "16",
+//     "code_province": "01",
+//     "flag": null,
+//     "coat_of_arms": null
+//     "autonomy": { ... }
+//     "province": { ... }
 //   },
 //   // …and many more
 // ]
@@ -78,6 +157,7 @@ console.log(cities(options));
 ## Source
 
 - The names and code are extracted from the [INE][ine] website.
+- The flags and coat of arms are extracted from Wikipedia articles.
 
 ## License
 

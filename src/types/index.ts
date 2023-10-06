@@ -1,18 +1,13 @@
 type Nullable<T> = T | null;
-type Coordinates = { latitude: Nullable<number>, longitude: Nullable<number> };
-type Links = {
-  wikipedia: Nullable<string>;
-  geohack: Nullable<string>;
-}
 
-export interface optionsAutonomy {
+export interface FiltersAutonomy {
   code?: string | number;
   name?: string;
   with_provinces?: boolean;
   with_cities?: boolean;
 }
 
-export interface optionsProvince {
+export interface FiltersProvince {
   code?: string | number;
   code_autonomy?: string | number;
   name?: string;
@@ -20,7 +15,7 @@ export interface optionsProvince {
   with_cities?: boolean;
 }
 
-export interface OptionsCity {
+export interface FiltersCity {
   code?: string | number;
   code_autonomy?: string | number;
   code_province?: string | number;
@@ -34,9 +29,6 @@ export interface Autonomy {
   name: string;
   flag: Nullable<string>;
   coat_of_arms: Nullable<string>;
-  hymn: Nullable<string>;
-  coordinates: Coordinates;
-  links: Links;
   provinces?: Province[]
   cities?: City[]
 }
@@ -47,8 +39,6 @@ export interface Province {
   code_autonomy: string;
   flag: Nullable<string>;
   coat_of_arms: Nullable<string>;
-  coordinates: Coordinates;
-  links: Links;
   autonomy?: Autonomy
   cities?: City[]
 }
