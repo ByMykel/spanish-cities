@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo `all-spanish-cities`</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        #root {
+            padding: 0 1rem;
+        }
+
+        table {
+            width: 100%;
+            max-width: 60rem;
+            margin: 50px auto;
+            border: 1px solid #dcdcdc;
+            border-spacing: 0;
+        }
+
+        th,
+        td {
+            padding: 8px 15px;
+            text-align: left;
+            border: 1px solid #dcdcdc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        td img {
+            width: 50px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <!-- Autonomies Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Flag</th>
+                    <th>Coat of Arms</th>
+                </tr>
+            </thead>
+            <tbody id="root-autonomies">
+                <!-- Rows for autonomies will be appended here -->
+            </tbody>
+        </table>
+
+        <!-- Provinces Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Code Autonomy</th>
+                    <th>Flag</th>
+                    <th>Coat of Arms</th>
+                </tr>
+            </thead>
+            <tbody id="root-provinces">
+                <!-- Rows for provinces will be appended here -->
+            </tbody>
+        </table>
+
+        <!-- Cities Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Code Autonomy</th>
+                    <th>Code Province</th>
+                    <th>Flag</th>
+                    <th>Coat of Arms</th>
+                </tr>
+            </thead>
+            <tbody id="root-cities">
+                <!-- Rows for cities will be appended here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module">
+        import { autonomies, provinces, cities } from 'https://cdn.jsdelivr.net/npm/all-spanish-cities/+esm'
+
+        function populateTable(data, targetId) {
+            const tableBody = document.querySelector(targetId);
+
+            data.forEach(item => {
+                const row = document.createElement('tr');
+
+                Object.keys(item).forEach(key => {
+                    const cell = document.createElement('td');
+
+                    if (['flag', 'coat_of_arms'].includes(key) && item[key]) {
+                        const image = document.createElement('img');
+                        image.src = item[key];
+                        image.alt = `${key.replace('_', ' ')} of ${item.name}`;
+                        cell.appendChild(image);
+                    } else if (!['flag', 'coat_of_arms'].includes(key)) {
+                        cell.textContent = item[key];
+                    }
+
+                    row.appendChild(cell);
+                });
+
+                tableBody.appendChild(row);
+            });
+        }
+
+        populateTable(autonomies(), '#root-autonomies');
+        populateTable(provinces(), '#root-provinces');
+        populateTable(cities(), '#root-cities');
+    </script>
+</body>
+
+</html>
