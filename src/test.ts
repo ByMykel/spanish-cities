@@ -173,8 +173,8 @@ test({
       code: "09",
       name: "Burgos",
       code_autonomy: "07",
-      flag: null,
-      coat_of_arms: null,
+      flag: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_Burgos_Province.svg",
+      coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Escudo_de_la_Provincia_de_Burgos.svg",
     });
   },
 });
@@ -189,15 +189,15 @@ test({
       code: "06",
       name: "Badajoz",
       code_autonomy: "11",
-      flag: null,
-      coat_of_arms: null,
+      flag: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Provincia_de_Badajoz_-_Bandera.svg",
+      coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Provincia_de_Badajoz_-_Escudo.svg",
     });
     assert.deepStrictEqual((<Province[]>result)[1], {
       code: "10",
       name: "Cáceres",
       code_autonomy: "11",
-      flag: null,
-      coat_of_arms: null,
+      flag: "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_the_province_of_C%C3%A1ceres.svg",
+      coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_la_Diputaci%C3%B3n_de_C%C3%A1ceres.svg",
     });
   },
 });
