@@ -10,50 +10,50 @@
     "code": "11",
     "name": "Cádiz",
     "code_autonomy": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_C%C3%A1diz_Province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Escudo_de_la_provincia_de_C%C3%A1diz.svg"
   },
   {
     "code": "14",
     "name": "Córdoba",
     "code_autonomy": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Provincia_de_C%C3%B3rdoba_-_Bandera.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Provincia_de_C%C3%B3rdoba_-_Escudo.svg"
   },
   {
     "code": "18",
     "name": "Granada",
     "code_autonomy": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Bandera_de_la_provincia_de_Granada_%28Espa%C3%B1a%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Escudo_de_la_provincia_de_Granada_%28Espa%C3%B1a%29.svg"
   },
   {
     "code": "21",
     "name": "Huelva",
     "code_autonomy": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/24/Bandera_de_la_Provincia_De_Huelva.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/80/Escudo_Provincia_de_Huelva.svg"
   },
   {
     "code": "23",
     "name": "Jaén",
     "code_autonomy": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/87/Bandera_de_la_provincia_de_Ja%C3%A9n.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Escudo_de_la_provincia_de_Ja%C3%A9n.svg"
   },
   {
     "code": "29",
     "name": "Málaga",
     "code_autonomy": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Flag_M%C3%A1laga_Province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Escudo_de_la_provincia_de_M%C3%A1laga.svg"
   },
   {
     "code": "41",
     "name": "Sevilla",
     "code_autonomy": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Diputacion_de_Sevilla_Spain.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Escudo_de_la_provincia_de_Sevilla.svg"
   },
   {
     "code": "22",
