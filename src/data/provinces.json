@@ -59,308 +59,308 @@
     "code": "22",
     "name": "Huesca",
     "code_autonomy": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Huesca.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Blas%C3%B3n_de_Uesca.svg"
   },
   {
     "code": "44",
     "name": "Teruel",
     "code_autonomy": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Teruel_%28province%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Escudo_de_la_Provincia_de_Teruel.svg"
   },
   {
     "code": "50",
     "name": "Zaragoza",
     "code_autonomy": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Bandera_de_la_provincia_de_Zaragoza.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Escudo_de_la_Provincia_de_Zaragoza.svg"
   },
   {
     "code": "33",
     "name": "Asturias",
     "code_autonomy": "03",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Asturias.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Escudo_de_Asturias_%28oficial%29.svg"
   },
   {
     "code": "07",
     "name": "Balears, Illes",
     "code_autonomy": "04",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_the_Balearic_Islands.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/50/Escudo_de_las_Islas_Baleares.svg"
   },
   {
     "code": "35",
     "name": "Palmas, Las",
     "code_autonomy": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Bandera_Provincial_de_Las_Palmas.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/85/Provincia_de_Las_Palmas_-_Escudo.svg"
   },
   {
     "code": "38",
     "name": "Santa Cruz de Tenerife",
     "code_autonomy": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/07/Bandera_Provincial_de_Santa_Cruz_de_Tenerife.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/31/Provincia_de_Santa_Cruz_de_Tenerife_-_Escudo.svg"
   },
   {
     "code": "39",
     "name": "Cantabria",
     "code_autonomy": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Cantabria_%28Official%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/56/Escudo_de_Cantabria_%28oficial%29.svg"
   },
   {
     "code": "05",
     "name": "Ávila",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Bandera_de_la_provincia_de_%C3%81vila.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Escudo_de_la_provincia_de_%C3%81vila.svg"
   },
   {
     "code": "09",
     "name": "Burgos",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_Burgos_Province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Escudo_de_la_Provincia_de_Burgos.svg"
   },
   {
     "code": "24",
     "name": "León",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bandera_de_Le%C3%B3n.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Escudo_de_Le%C3%B3n.svg"
   },
   {
     "code": "34",
     "name": "Palencia",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Bandera_de_la_provincia_de_Palencia1.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Escudo_de_la_Provincia_de_Palencia.svg"
   },
   {
     "code": "37",
     "name": "Salamanca",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/00/Bandera_de_la_provincia_de_Salamanca.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_la_Provincia_de_Salamanca.svg"
   },
   {
     "code": "40",
     "name": "Segovia",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_Segovia_province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/77/Escudo_de_la_provincia_de_Segovia.svg"
   },
   {
     "code": "42",
     "name": "Soria",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_Soria_province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Escudo_de_la_provincia_de_Soria2.svg"
   },
   {
     "code": "47",
     "name": "Valladolid",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bandera_de_la_provincia_de_Valladolid.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Va-dip.svg"
   },
   {
     "code": "49",
     "name": "Zamora",
     "code_autonomy": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Bandera_de_Zamora.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/57/Escudo_de_la_provincia_de_Zamora.svg"
   },
   {
     "code": "02",
     "name": "Albacete",
     "code_autonomy": "08",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bandera_provincia_Albacete.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/18/Escudo_provincia_de_Albacete.svg"
   },
   {
     "code": "13",
     "name": "Ciudad Real",
     "code_autonomy": "08",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_Ciudad_Real_Province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Escudo_de_la_provincia_de_Ciudad_Real.svg"
   },
   {
     "code": "16",
     "name": "Cuenca",
     "code_autonomy": "08",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_Cuenca_Province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Escudo_de_la_Provincia_de_Cuenca.svg"
   },
   {
     "code": "19",
     "name": "Guadalajara",
     "code_autonomy": "08",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_Guadalajara_Province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Escudo_de_la_provincia_de_Guadalajara.svg"
   },
   {
     "code": "45",
     "name": "Toledo",
     "code_autonomy": "08",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Bandera_de_la_provincia_de_Toledo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/00/Escudo_de_la_provincia_de_Toledo.svg"
   },
   {
     "code": "08",
     "name": "Barcelona",
     "code_autonomy": "09",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Flag_of_Barcelona_%28province%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Escudo_de_la_provincia_de_Barcelona.svg"
   },
   {
     "code": "17",
     "name": "Girona",
     "code_autonomy": "09",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Girona_province_%28unofficial%29.svg"
   },
   {
     "code": "25",
     "name": "Lleida",
     "code_autonomy": "09",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/07/Escut_de_la_provincia_de_Lleida.svg"
   },
   {
     "code": "43",
     "name": "Tarragona",
     "code_autonomy": "09",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bandera_actual_de_la_provincia_de_Tarragona.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/21/Escudo_de_la_Provincia_de_Tarragona.svg"
   },
   {
     "code": "03",
     "name": "Alicante/Alacant",
     "code_autonomy": "10",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/75/Escut_de_la_Prov%C3%ADncia_d%27Alacant.svg"
   },
   {
     "code": "12",
     "name": "Castellón/Castelló",
     "code_autonomy": "10",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/79/Escut_de_la_Prov%C3%ADncia_de_Castell%C3%B3.svg"
   },
   {
     "code": "46",
     "name": "Valencia/València",
     "code_autonomy": "10",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Escut_de_la_Prov%C3%ADncia_de_Val%C3%A8ncia.svg"
   },
   {
     "code": "06",
     "name": "Badajoz",
     "code_autonomy": "11",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Provincia_de_Badajoz_-_Bandera.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Provincia_de_Badajoz_-_Escudo.svg"
   },
   {
     "code": "10",
     "name": "Cáceres",
     "code_autonomy": "11",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_the_province_of_C%C3%A1ceres.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_la_Diputaci%C3%B3n_de_C%C3%A1ceres.svg"
   },
   {
     "code": "15",
     "name": "Coruña, A",
     "code_autonomy": "12",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/41/Escudo_de_la_provincia_de_A_Coru%C3%B1a.svg"
   },
   {
     "code": "27",
     "name": "Lugo",
     "code_autonomy": "12",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Lugo_province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/47/Escudo_de_la_provincia_de_Lugo.svg"
   },
   {
     "code": "32",
     "name": "Ourense",
     "code_autonomy": "12",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Provincia_de_Ourense_-_Bandera.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Provincia_de_Ourense_-_Escudo.svg"
   },
   {
     "code": "36",
     "name": "Pontevedra",
     "code_autonomy": "12",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_Pontevedra_Province.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/46/Escudo_de_la_provincia_de_Pontevedra.svg"
   },
   {
     "code": "28",
     "name": "Madrid",
     "code_autonomy": "13",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_the_Community_of_Madrid.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/da/Escudo_de_la_Comunidad_de_Madrid_%28oficial%29.svg"
   },
   {
     "code": "30",
     "name": "Murcia",
     "code_autonomy": "14",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_Region_of_Murcia.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Escudo-ca-murcia.svg"
   },
   {
     "code": "31",
     "name": "Navarra",
     "code_autonomy": "15",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bandera_de_Navarra.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Escudo_de_Navarra_%28oficial%29.svg"
   },
   {
     "code": "01",
     "name": "Araba/Álava",
     "code_autonomy": "16",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_%C3%81lava.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/12/Escudo_de_%C3%81lava.svg"
   },
   {
     "code": "48",
     "name": "Bizkaia",
     "code_autonomy": "16",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/00/Bandera_de_Vizcaya.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/20/Escudo_de_Bizkaia_2007.svg"
   },
   {
     "code": "20",
     "name": "Gipuzkoa",
     "code_autonomy": "16",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Flag_of_Guip%C3%BAzcoa.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Escudo_de_Guipuzcoa.svg"
   },
   {
     "code": "26",
     "name": "Rioja, La",
     "code_autonomy": "17",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_La_Rioja_%28with_coat_of_arms%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/25/Escudo_de_la_Comunidad_Autonoma_de_La_Rioja.svg"
   },
   {
     "code": "51",
     "name": "Ceuta",
     "code_autonomy": "18",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_Ceuta.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Escudo_de_Ceuta.svg"
   },
   {
     "code": "52",
     "name": "Melilla",
     "code_autonomy": "19",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Melilla.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Escudo_de_Melilla.svg"
   }
 ]
