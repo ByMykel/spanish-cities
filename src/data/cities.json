@@ -53,7 +53,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/08/Escudo_de_Asp%C3%A1rrena_%28%C3%81lava%29.svg"
   },
   {
     "code": "010105",
@@ -61,7 +61,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Escudo_de_Ayala_%28%C3%81lava%29.svg"
   },
   {
     "code": "010112",
@@ -69,7 +69,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Escudo_de_Ba%C3%B1os_de_Ebro.svg"
   },
   {
     "code": "010133",
@@ -77,7 +77,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/66/Escudo_de_Barrundia.svg"
   },
   {
     "code": "010148",
@@ -93,7 +93,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/92/Escudo_de_Bernedo.svg"
   },
   {
     "code": "010170",
@@ -101,7 +101,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/24/Escudo_de_Campezo.svg"
   },
   {
     "code": "010186",
@@ -117,7 +117,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/94/Escudo_de_Kripan.svg"
   },
   {
     "code": "010203",
@@ -125,7 +125,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Escudo_de_Cuartango_%28%C3%81lava%29.svg"
   },
   {
     "code": "010210",
@@ -133,7 +133,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/87/Escudo_de_Elburgo.svg"
   },
   {
     "code": "010225",
@@ -141,15 +141,15 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/95/Escudo_de_Elciego.svg"
   },
   {
     "code": "010231",
     "name": "Elvillar/Bilar",
     "code_autonomy": "16",
     "code_province": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Bandera_de_Elvillar.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Elvillar-Bilar.svg"
   },
   {
     "code": "010278",
@@ -157,15 +157,15 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Iruraiz_gauna_armarria.svg"
   },
   {
     "code": "010284",
     "name": "Labastida/Bastida",
     "code_autonomy": "16",
     "code_province": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Bandera_de_labastida.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/36/Escudo_de_Labastida.svg"
   },
   {
     "code": "010301",
@@ -173,7 +173,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/17/Escudo_de_Lagr%C3%A1n_%28%C3%81lava%29.svg"
   },
   {
     "code": "010318",
@@ -189,7 +189,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Escudo_de_Lanciego.svg"
   },
   {
     "code": "010339",
@@ -197,7 +197,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Lapuebla_de_Labarca.svg"
   },
   {
     "code": "010344",
@@ -205,15 +205,15 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_de_Leza.svg"
   },
   {
     "code": "010360",
     "name": "Laudio/Llodio",
     "code_autonomy": "16",
     "code_province": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Banderallodiooficial.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Escudo_de_Llodio-Laudio.svg"
   },
   {
     "code": "010376",
