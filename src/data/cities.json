@@ -5,7 +5,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Escudo_de_Alegria_de_Alava-Dulantzi.svg"
   },
   {
     "code": "010029",
@@ -13,7 +13,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Escudo_de_Amurrio.svg"
   },
   {
     "code": "010035",
@@ -21,7 +21,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/24/Escudo_de_Aramaio.svg"
   },
   {
     "code": "010040",
@@ -37,7 +37,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Escudo_de_Armi%C3%B1on.svg"
   },
   {
     "code": "010088",
@@ -45,7 +45,7 @@
     "code_autonomy": "16",
     "code_province": "01",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/94/Escudo_de_Arrazua-Ubarrundia.svg"
   },
   {
     "code": "010091",
@@ -65028,8 +65028,8 @@
     "name": "Villamayor de Gállego",
     "code_autonomy": "02",
     "code_province": "50",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bandera_de_Villamayor_de_G%C3%A1llego_%28Zaragoza%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Escudo_de_Villamayor_de_G%C3%A1llego_%28Zaragoza%29.svg"
   },
   {
     "code": "510013",
