@@ -413,7 +413,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Abengibre.svg"
   },
   {
     "code": "020024",
@@ -421,15 +421,15 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Escudo_de_Alatoz.svg"
   },
   {
     "code": "020030",
     "name": "Albacete",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Albacete-Bandera.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Escudo_de_Albacete.svg"
   },
   {
     "code": "020045",
@@ -437,7 +437,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/09/Escudo_de_Albatana.svg"
   },
   {
     "code": "020058",
@@ -445,7 +445,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/83/Escudo_de_Alborea.svg"
   },
   {
     "code": "020061",
@@ -453,7 +453,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Escudo_de_Alcadozo.svg"
   },
   {
     "code": "020077",
@@ -461,7 +461,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_Alcal%C3%A1_del_J%C3%BAcar.svg"
   },
   {
     "code": "020083",
@@ -469,7 +469,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/37/Escudo_de_Alcaraz.svg"
   },
   {
     "code": "020096",
@@ -477,7 +477,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/29/Escudo_de_Almansa.svg"
   },
   {
     "code": "020100",
@@ -485,7 +485,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Alpera.svg"
   },
   {
     "code": "020117",
@@ -493,7 +493,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/53/Escudo_de_Ayna.svg"
   },
   {
     "code": "020122",
@@ -501,7 +501,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/70/Escudo_de_Balazote.svg"
   },
   {
     "code": "020138",
@@ -509,23 +509,23 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/37/Escudo_de_Balsa_de_Ves.svg"
   },
   {
     "code": "020143",
     "name": "Ballestero, El",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Flag_of_El_Ballestero.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Escudo_de_El_Ballestero_%28Albacete%29.svg"
   },
   {
     "code": "020156",
     "name": "Barrax",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/70/Bandera_Barrax.jpg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/26/Escudo_de_Barrax.svg"
   },
   {
     "code": "020169",
@@ -533,7 +533,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Bienservida.svg"
   },
   {
     "code": "020175",
@@ -541,7 +541,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Escudo_de_Bogarra.svg"
   },
   {
     "code": "020181",
@@ -549,7 +549,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Escudo_de_Bonete.svg"
   },
   {
     "code": "020194",
@@ -557,7 +557,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/03/Escudo_de_El_Bonillo_%28Albacete%29.svg"
   },
   {
     "code": "020208",
@@ -565,7 +565,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/88/Escudo_de_Carcel%C3%A9n.svg"
   },
   {
     "code": "020215",
@@ -573,7 +573,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Casas_de_Juan_N%C3%BA%C3%B1ez.svg"
   },
   {
     "code": "020220",
@@ -581,7 +581,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/53/Escudo_de_Casas_de_L%C3%A1zaro.svg"
   },
   {
     "code": "020236",
@@ -589,7 +589,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/30/Casas_de_V%C3%A9s.svg"
   },
   {
     "code": "020241",
@@ -597,7 +597,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/30/Casas_Ib%C3%A1%C3%B1ez.svg"
   },
   {
     "code": "020254",
@@ -605,7 +605,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Escudo_de_Caudete.svg"
   },
   {
     "code": "020267",
@@ -613,7 +613,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Escudo_de_Cenizate.svg"
   },
   {
     "code": "020273",
@@ -621,7 +621,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Corral-Rubio.svg"
   },
   {
     "code": "020289",
@@ -629,7 +629,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Cotillas.svg"
   },
   {
     "code": "020292",
@@ -637,7 +637,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Chinchilla_de_Montearag%C3%B3n.svg"
   },
   {
     "code": "020306",
@@ -645,7 +645,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Escudo_de_Elche_de_la_Sierra.svg"
   },
   {
     "code": "020313",
@@ -653,7 +653,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Escudo_de_F%C3%A9rez.svg"
   },
   {
     "code": "020328",
@@ -669,7 +669,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Escudo_de_Fuente-%C3%81lamo.svg"
   },
   {
     "code": "020349",
@@ -677,7 +677,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Escudo_de_Fuentealbilla.svg"
   },
   {
     "code": "020352",
@@ -685,7 +685,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Escudo_de_La_Gineta.svg"
   },
   {
     "code": "020365",
@@ -693,15 +693,15 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Escudo_de_Golosalvo.svg"
   },
   {
     "code": "020371",
     "name": "Hellín",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Hell%C3%ADn.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Escudo_de_Hell%C3%ADn.svg"
   },
   {
     "code": "020387",
@@ -725,15 +725,15 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Escudo_de_Hoya-Gonzalo.svg"
   },
   {
     "code": "020411",
     "name": "Jorquera",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Flag_of_Jorquera_Spain.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/41/Escudo_de_Jorquera.svg"
   },
   {
     "code": "020426",
@@ -741,7 +741,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/76/Escudo_de_Letur.svg"
   },
   {
     "code": "020432",
@@ -749,15 +749,15 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Escudo_de_Lezuza.svg"
   },
   {
     "code": "020447",
     "name": "Liétor",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1d/ETM_Li%C3%A9tor.PNG",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Escudo_de_Li%C3%A9tor.svg"
   },
   {
     "code": "020450",
@@ -773,7 +773,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_Mahora.svg"
   },
   {
     "code": "020479",
@@ -789,7 +789,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Escudo_de_Minaya.svg"
   },
   {
     "code": "020498",
@@ -805,7 +805,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Escudo_de_Montalvos.svg"
   },
   {
     "code": "020518",
@@ -821,7 +821,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/64/Escudo_de_Motilleja.svg"
   },
   {
     "code": "020539",
@@ -829,7 +829,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Escudo_de_Munera.svg"
   },
   {
     "code": "020544",
@@ -837,7 +837,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/88/Escudo_de_Navas_de_Jorquera.svg"
   },
   {
     "code": "020557",
@@ -877,7 +877,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/72/Escudo_de_Pe%C3%B1ascosa.svg"
   },
   {
     "code": "020609",
@@ -885,7 +885,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/91/Escudo_de_Pe%C3%B1as_de_San_Pedro.svg"
   },
   {
     "code": "020616",
@@ -901,7 +901,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Escudo_de_Povedilla.svg"
   },
   {
     "code": "020637",
@@ -909,7 +909,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Escudo_de_Pozohondo.jpg"
   },
   {
     "code": "020642",
@@ -917,7 +917,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/93/Escudo_de_Pozo_Lorente.svg"
   },
   {
     "code": "020655",
@@ -925,7 +925,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/30/Escudo_de_Pozuelo.svg"
   },
   {
     "code": "020668",
@@ -933,15 +933,15 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Escudo_de_La_Recueja.svg"
   },
   {
     "code": "020674",
     "name": "Riópar",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Bandera_Ri%C3%B3par.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Escudo_de_Ri%C3%B3par.svg"
   },
   {
     "code": "020680",
@@ -949,23 +949,23 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/80/Escudo_de_El_Robledo.svg"
   },
   {
     "code": "020693",
     "name": "Roda, La",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Bandera_de_La_Roda_%28Albacete%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Escudo_de_La_Roda_%28Albacete%29.svg"
   },
   {
     "code": "020707",
     "name": "Salobre",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Salobre_Spain.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Escudo_de_Salobre_%28Albacete%29.svg"
   },
   {
     "code": "020714",
@@ -973,7 +973,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Escudo_de_San_Pedro.svg"
   },
   {
     "code": "020729",
@@ -981,7 +981,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Escudo_de_Socovos.svg"
   },
   {
     "code": "020735",
@@ -989,7 +989,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/76/Escudo_de_Tarazona_de_la_Mancha.svg"
   },
   {
     "code": "020740",
@@ -997,15 +997,15 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/03/Escudo_de_Tobarra.svg"
   },
   {
     "code": "020753",
     "name": "Valdeganga",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Bandera_de_Valdeganga_%28Albacete%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Escudo_de_Valdeganga_%28Albacete%29.svg"
   },
   {
     "code": "020766",
@@ -1021,7 +1021,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_Villa_de_Ves.svg"
   },
   {
     "code": "020788",
@@ -1045,15 +1045,15 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Escudo_de_Villapalacios.svg"
   },
   {
     "code": "020812",
     "name": "Villarrobledo",
     "code_autonomy": "08",
     "code_province": "02",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandera_Villarrobledo_Albacete.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Escudo_de_Villarrobledo.svg"
   },
   {
     "code": "020827",
@@ -1061,7 +1061,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/45/Escudo_de_Villatoya.svg"
   },
   {
     "code": "020833",
@@ -1085,7 +1085,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Escudo_de_Viveros.svg"
   },
   {
     "code": "020864",
@@ -1101,7 +1101,7 @@
     "code_autonomy": "08",
     "code_province": "02",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/66/Escudo_de_Pozo_Ca%C3%B1ada.svg"
   },
   {
     "code": "030015",
@@ -17805,7 +17805,7 @@
     "code_autonomy": "08",
     "code_province": "16",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Escudo_de_La_Alberca_de_Z%C3%A1ncara.svg"
   },
   {
     "code": "160088",
