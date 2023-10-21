@@ -48,6 +48,8 @@ export interface City {
   name: string;
   code_autonomy: string;
   code_province: string;
+  flag: Nullable<string>;
+  coat_of_arms: Nullable<string>;
   autonomy?: Autonomy
   province?: Province
 }
