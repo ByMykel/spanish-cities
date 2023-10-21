@@ -1,6 +1,6 @@
 {
   "name": "all-spanish-cities",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A library that provides data on Spain's autonomies, provinces, and cities, including their codes, names, flags, and coats of arms for seamless integration into your applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
