@@ -39852,32 +39852,32 @@
     "name": "Allande",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Bandera_de_Allande.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Escudo_de_Allande.svg"
   },
   {
     "code": "330024",
     "name": "Aller",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Aller.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Escudo_de_Aller.svg"
   },
   {
     "code": "330030",
     "name": "Amieva",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Bandera_de_Amieva.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Escudo_de_Amieva.svg"
   },
   {
     "code": "330045",
     "name": "Avilés",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Avil%C3%A9s.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Coat_of_Arms_of_Avil%C3%A9s.svg"
   },
   {
     "code": "330058",
@@ -39885,7 +39885,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Escudo_de_Belmonte_de_Miranda.svg"
   },
   {
     "code": "330061",
@@ -39893,7 +39893,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/44/Escudo_de_Bimenes.svg"
   },
   {
     "code": "330077",
@@ -39901,31 +39901,31 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Escudo_de_Boal.svg"
   },
   {
     "code": "330083",
     "name": "Cabrales",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/98/Bandera_de_Cabrales.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Escudo_de_Cabrales.svg"
   },
   {
     "code": "330096",
     "name": "Cabranes",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/91/Bandera_de_Cabranes.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Escudo_de_Cabranes_%28Asturias%29.svg"
   },
   {
     "code": "330100",
     "name": "Candamo",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Bandera_de_Candamo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Candamo.svg"
   },
   {
     "code": "330117",
@@ -39933,7 +39933,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Coat_of_Arms_of_Cangas_del_Narcea.svg"
   },
   {
     "code": "330122",
@@ -39941,7 +39941,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/af/Coat_of_Arms_of_Cangas_de_On%C3%ADs.svg"
   },
   {
     "code": "330138",
@@ -39949,7 +39949,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Escudo_de_Caravia.svg"
   },
   {
     "code": "330143",
@@ -39957,7 +39957,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Escudo_de_Carre%C3%B1o.svg"
   },
   {
     "code": "330156",
@@ -39965,7 +39965,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/72/Escudo_de_Caso.svg"
   },
   {
     "code": "330169",
@@ -39973,15 +39973,15 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Coat_of_Arms_of_Castrill%C3%B3n.svg"
   },
   {
     "code": "330175",
     "name": "Castropol",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_castropol.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/89/Escudo_de_Castropol.svg"
   },
   {
     "code": "330181",
@@ -39989,31 +39989,31 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Escudo_de_Coa%C3%B1a.svg"
   },
   {
     "code": "330194",
     "name": "Colunga",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Colunga.SVG",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Escudo_de_Colunga.svg"
   },
   {
     "code": "330208",
     "name": "Corvera de Asturias",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Pe%C3%B1amellera_Baja%2C_Asturias.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/07/Coat_of_Arms_of_Corvera_%28Asturias%29.svg"
   },
   {
     "code": "330215",
     "name": "Cudillero",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bandera_de_Cudillero.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Coat_of_Arms_of_Cudillero.svg"
   },
   {
     "code": "330220",
@@ -40021,7 +40021,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Escudo_de_Dega%C3%B1a.svg"
   },
   {
     "code": "330236",
@@ -40029,31 +40029,31 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/91/Escudo_de_El_Franco.svg"
   },
   {
     "code": "330241",
     "name": "Gijón",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Bandera_gijon.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/64/Arms_of_Gij%C3%B3n.svg"
   },
   {
     "code": "330254",
     "name": "Gozón",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gozon_flag.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Escudo_de_Goz%C3%B3n.svg"
   },
   {
     "code": "330267",
     "name": "Grado",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Bandera_de_Grado.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Grado.svg"
   },
   {
     "code": "330273",
@@ -40061,7 +40061,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Escudo_de_Grandas_de_Salime.svg"
   },
   {
     "code": "330289",
@@ -40069,7 +40069,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ibias.svg"
   },
   {
     "code": "330292",
@@ -40077,7 +40077,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Illano.svg"
   },
   {
     "code": "330306",
@@ -40085,15 +40085,15 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Illas.svg"
   },
   {
     "code": "330313",
     "name": "Langreo",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Bandera_de_Langreo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/68/Coat_of_Arms_of_Langreo.svg"
   },
   {
     "code": "330328",
@@ -40101,15 +40101,15 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/81/Coat_of_Arms_of_Laviana_%28Official%29.svg"
   },
   {
     "code": "330334",
     "name": "Lena",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Bandera_de_Lena.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Escudo_de_Lena.svg"
   },
   {
     "code": "330349",
@@ -40117,7 +40117,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Coat_of_Arms_of_Vald%C3%A9s.svg"
   },
   {
     "code": "330352",
@@ -40125,31 +40125,31 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Escudo_Llanera_%28Asturias%29.svg"
   },
   {
     "code": "330365",
     "name": "Llanes",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_llanes.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Escudo_Llanes.svg"
   },
   {
     "code": "330371",
     "name": "Mieres",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bandera_de_Mieres.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Coat_of_Arms_of_Mieres.svg"
   },
   {
     "code": "330387",
     "name": "Morcín",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Morcin_flag.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/73/Escudo_de_Morc%C3%ADn.svg"
   },
   {
     "code": "330390",
@@ -40157,31 +40157,31 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/42/Escudo_de_Muros_de_Nal%C3%B3n.svg"
   },
   {
     "code": "330404",
     "name": "Nava",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bandera_de_Nava.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Escudo_de_Nava.svg"
   },
   {
     "code": "330411",
     "name": "Navia",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandera_de_Navia.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/73/Escudo_de_Navia.svg"
   },
   {
     "code": "330426",
     "name": "Noreña",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_norena.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_de_Nore%C3%B1a_%28Asturias%29.svg"
   },
   {
     "code": "330432",
@@ -40196,16 +40196,16 @@
     "name": "Oviedo",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/25/Oviedo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Coat_of_Arms_of_Oviedo.svg"
   },
   {
     "code": "330450",
     "name": "Parres",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/47/Bandera_de_Parres.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/87/Escudo_de_Parres.png"
   },
   {
     "code": "330463",
@@ -40213,22 +40213,22 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/46/Escudo_de_Pe%C3%B1amellera_Alta.svg"
   },
   {
     "code": "330479",
     "name": "Peñamellera Baja",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Pe%C3%B1amellera_Baja%2C_Asturias.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Escudo_de_Pe%C3%B1amellera_Baja.svg"
   },
   {
     "code": "330485",
     "name": "Pesoz",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Flag_of_Pesoz_%282021%29.svg",
     "coat_of_arms": null
   },
   {
@@ -40237,23 +40237,23 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Escudo_de_Pilona.svg"
   },
   {
     "code": "330501",
     "name": "Ponga",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bandera_de_Ponga.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/de/Escudo_de_Ponga.svg"
   },
   {
     "code": "330518",
     "name": "Pravia",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bandera_de_Pravia.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Coat_of_Arms_of_Pravia.svg"
   },
   {
     "code": "330523",
@@ -40261,7 +40261,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/03/Escudo_de_Proaza.svg"
   },
   {
     "code": "330539",
@@ -40269,7 +40269,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/01/Escudo_de_Quir%C3%B3s.svg"
   },
   {
     "code": "330544",
@@ -40277,7 +40277,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Escudo_de_Las_Regueras.svg"
   },
   {
     "code": "330557",
@@ -40285,31 +40285,31 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Escudo_de_armas_de_Ribadedeva.svg"
   },
   {
     "code": "330560",
     "name": "Ribadesella",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Bandera_de_Ribadesella.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Coat_of_Arms_of_Ribadesella.svg"
   },
   {
     "code": "330576",
     "name": "Ribera de Arriba",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Flag_riberadearriba.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/08/Escudo_de_Ribera_de_Arriba.svg"
   },
   {
     "code": "330582",
     "name": "Riosa",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Bandera_de_Riosa.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Escudo_de_Municipal_Riosa.svg"
   },
   {
     "code": "330595",
@@ -40317,7 +40317,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/46/Escudo_de_Salas_%28Asturias%29.svg"
   },
   {
     "code": "330609",
@@ -40325,7 +40325,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Coat_of_Arms_of_San_Mart%C3%ADn_del_Rey_Aurelio.svg"
   },
   {
     "code": "330616",
@@ -40340,7 +40340,7 @@
     "name": "Santa Eulalia de Oscos",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_santaeulaliadeoscos.svg",
     "coat_of_arms": null
   },
   {
@@ -40349,7 +40349,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Escudo_de_San_Tirso_de_Abres.svg"
   },
   {
     "code": "330642",
@@ -40357,38 +40357,38 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Escudo_de_Santo_Adriano.svg"
   },
   {
     "code": "330655",
     "name": "Sariego",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_sariego.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/15/Escudo_de_Sariego.svg"
   },
   {
     "code": "330668",
     "name": "Siero",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/18/Siero_flag.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_Siero.svg"
   },
   {
     "code": "330674",
     "name": "Sobrescobio",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bandera_de_Sobrescobio.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Escudo_de_Sobrescobio.svg"
   },
   {
     "code": "330680",
     "name": "Somiedo",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Flag_somiedo.svg",
     "coat_of_arms": null
   },
   {
@@ -40396,16 +40396,16 @@
     "name": "Soto del Barco",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Bandera_de_Soto_del_Barco.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Escudo_de_Soto_del_Barco.svg"
   },
   {
     "code": "330707",
     "name": "Tapia de Casariego",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_sariego.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Escudo_de_Tapia_de_Casariego.svg"
   },
   {
     "code": "330714",
@@ -40413,23 +40413,23 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Escudo_de_Taramundi.svg"
   },
   {
     "code": "330729",
     "name": "Teverga",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bandera_de_Teverga.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/51/Escudo_de_Teverga.svg"
   },
   {
     "code": "330735",
     "name": "Tineo",
     "code_autonomy": "03",
     "code_province": "33",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_tineo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Escudo_de_Tineo.svg"
   },
   {
     "code": "330740",
@@ -40437,7 +40437,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Escudo_de_Vegadeo.svg"
   },
   {
     "code": "330753",
@@ -40445,7 +40445,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/98/Escudo_de_Villanueva_de_Oscos.svg"
   },
   {
     "code": "330766",
@@ -40453,7 +40453,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/65/Coat_of_Arms_of_Villaviciosa_%28Asturias%29.svg"
   },
   {
     "code": "330772",
@@ -40461,7 +40461,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Escudo_de_Villay%C3%B3n.svg"
   },
   {
     "code": "330788",
@@ -40469,7 +40469,7 @@
     "code_autonomy": "03",
     "code_province": "33",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Escudo_de_Yernes_y_Tameza.svg"
   },
   {
     "code": "340014",
