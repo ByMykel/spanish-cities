@@ -3060,8 +3060,8 @@
     "name": "Adanero",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bandera_de_Adanero.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Escudo_de_Adanero.svg"
   },
   {
     "code": "050028",
@@ -3069,7 +3069,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/41/Escudo_de_La_Adrada.svg"
   },
   {
     "code": "050052",
@@ -3077,31 +3077,31 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Escudo_de_Albornos.svg"
   },
   {
     "code": "050071",
     "name": "Aldeanueva de Santa Cruz",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Bandera_de_Aldeanueva_de_Santa_cruz.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Escudo_de_Aldeanueva_de_Santa_cruz.svg"
   },
   {
     "code": "050087",
     "name": "Aldeaseca",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/46/Bandera_de_Aldeaseca.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Escudo_de_Aldeaseca.svg"
   },
   {
     "code": "050104",
     "name": "Aldehuela, La",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Bandera_de_La_Aldehuela.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/05/Escudo_de_La_Aldehuela.svg"
   },
   {
     "code": "050126",
@@ -3117,15 +3117,15 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Escudo_de_El_Arenal.svg"
   },
   {
     "code": "050147",
     "name": "Arenas de San Pedro",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bandera_de_Arenas_de_San_Pedro_%28%C3%81vila%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Escudo_de_Arenas_de_San_Pedro_%28%C3%81vila%29.svg"
   },
   {
     "code": "050150",
@@ -3140,8 +3140,8 @@
     "name": "Arévalo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/80/Bandera_de_San_Vicente_de_Ar%C3%A9valo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Escudo_de_Ar%C3%A9valo.svg"
   },
   {
     "code": "050179",
@@ -3156,32 +3156,32 @@
     "name": "Avellaneda",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Bandera_de_Avellaneda.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/37/Escudo_de_Avellaneda.svg"
   },
   {
     "code": "050198",
     "name": "Ávila",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Bandera_de_%C3%81vila.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/62/Escudo_de_%C3%81vila.svg"
   },
   {
     "code": "050219",
     "name": "Barco de Ávila, El",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bandera_de_El_Barco_de_%C3%81vila.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/67/Escudo_de_El_Barco_de_%C3%81vila.svg"
   },
   {
     "code": "050224",
     "name": "Barraco, El",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Bandera_del_Barraco.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Escudo_del_Barraco.svg"
   },
   {
     "code": "050230",
@@ -3189,55 +3189,55 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/90/Escudo_de_Barrom%C3%A1n.svg"
   },
   {
     "code": "050245",
     "name": "Becedas",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Becedas.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Escudo_de_Becedas.svg"
   },
   {
     "code": "050258",
     "name": "Becedillas",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandera_de_Becedillas.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Escudo_de_Becedillas.svg"
   },
   {
     "code": "050261",
     "name": "Bercial de Zapardiel",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bandera_de_Bercial_de_Zapardiel.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Escudo_de_Bercial_de_Zapardiel.svg"
   },
   {
     "code": "050277",
     "name": "Berlanas, Las",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Bandera_de_Las_Berlanas.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Escudo_de_Las_Berlanas.svg"
   },
   {
     "code": "050296",
     "name": "Bernuy-Zapardiel",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Bandera_de_Bernuy_Zapardiel.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Escudo_de_Bernuy_Zapardiel.svg"
   },
   {
     "code": "050300",
     "name": "Berrocalejo de Aragona",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Bandera_de_Berrocalejo_de_Aragona.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Escudo_de_Berrocalejo_de_Aragona.svg"
   },
   {
     "code": "050338",
@@ -3268,16 +3268,16 @@
     "name": "Bohodón, El",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Bandera_de_El_Bohod%C3%B3n.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Escudo_de_El_Bohod%C3%B3n.svg"
   },
   {
     "code": "050375",
     "name": "Bohoyo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Bandera_de_Bohoyo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Escudo_de_Bohoyo.svg"
   },
   {
     "code": "050381",
@@ -3301,31 +3301,31 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Escudo_de_Bularros_%28%C3%81vila%29.svg"
   },
   {
     "code": "050415",
     "name": "Burgohondo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bandera_de_Burgohondo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Escudo_de_Burgohondo.svg"
   },
   {
     "code": "050420",
     "name": "Cabezas de Alambre",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Bandera_de_Cabezas_de_Alambre.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/82/Escudo_de_Cabezas_de_Alambre.svg"
   },
   {
     "code": "050436",
     "name": "Cabezas del Pozo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bandera_de_Cabezas_del_Pozo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Escudo_de_Cabezas_del_Pozo.svg"
   },
   {
     "code": "050441",
@@ -3356,8 +3356,8 @@
     "name": "Candeleda",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Bandera_de_Candeleda.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Escudo_de_Candeleda.svg"
   },
   {
     "code": "050489",
@@ -3365,7 +3365,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Escudo_de_Cantiveros_%28%C3%81vila%29.svg"
   },
   {
     "code": "050492",
@@ -3381,7 +3381,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Escudo_de_La_Carrera.svg"
   },
   {
     "code": "050527",
@@ -3404,31 +3404,31 @@
     "name": "Casavieja",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Bandera_de_Casavieja.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Escudo_de_Casavieja.svg"
   },
   {
     "code": "050551",
     "name": "Casillas",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Bandera_de_Casillas.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/62/Escudo_de_Casillas.svg"
   },
   {
     "code": "050564",
     "name": "Castellanos de Zapardiel",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Bandera_de_Castellanos_de_Zapardiel.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/83/Escudo_de_Castellanos_de_Zapardiel.svg"
   },
   {
     "code": "050570",
     "name": "Cebreros",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Bandera_de_Cebreros.svg",
     "coat_of_arms": null
   },
   {
@@ -3436,8 +3436,8 @@
     "name": "Cepeda la Mora",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Bandera_de_Cepeda_la_Mora.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Escudo_de_Cepeda_la_Mora.svg"
   },
   {
     "code": "050599",
@@ -3460,23 +3460,23 @@
     "name": "Colilla, La",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/28/Bandera_de_La_Colilla.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Escudo_de_La_colilla.svg"
   },
   {
     "code": "050625",
     "name": "Collado de Contreras",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Bandera_de_Collado_de_Contreras.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/08/Escudo_de_Collado_de_Contreras.svg"
   },
   {
     "code": "050631",
     "name": "Collado del Mirón",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/04/Bandera_de_Collado_del_Miron.svg",
     "coat_of_arms": null
   },
   {
@@ -3484,40 +3484,40 @@
     "name": "Constanzana",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandera_de_Constanzana.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Escudo_de_Constanzana_%28%C3%81vila%29.svg"
   },
   {
     "code": "050659",
     "name": "Crespos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bandera_de_Crespos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_de_Crespos.svg"
   },
   {
     "code": "050662",
     "name": "Cuevas del Valle",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bandera_de_Cuevas_del_Valle.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Escudo_de_Cuevas_del_Valle.svg"
   },
   {
     "code": "050678",
     "name": "Chamartín",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bandera_de_Chamartin.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Escudo_de_Chamartin.svg"
   },
   {
     "code": "050697",
     "name": "Donjimeno",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Bandera_de_Donjimeno.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/23/Escudo_de_Donjimeno.svg"
   },
   {
     "code": "050701",
@@ -3549,7 +3549,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/58/Escudo_de_Fontiveros_%28%C3%81vila%29.svg"
   },
   {
     "code": "050757",
@@ -3564,16 +3564,16 @@
     "name": "Fresno, El",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Bandera_de_El_Fresno.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/05/Escudo_de_El_Fresno.svg"
   },
   {
     "code": "050776",
     "name": "Fuente el Saúz",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Bandera_de_Fuente_el_Sauz.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Escudo_de_Fuente_el_Sauz.svg"
   },
   {
     "code": "050782",
@@ -3581,7 +3581,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Escudo_de_Fuentes_de_A%C3%B1o_%28%C3%81vila%29.svg"
   },
   {
     "code": "050795",
@@ -3589,7 +3589,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Escudo_de_Gallegos_de_Altamiros_%28%C3%81vila%29.svg"
   },
   {
     "code": "050809",
@@ -3604,16 +3604,16 @@
     "name": "Garganta del Villar",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/95/Bandera_de_Garganta_del_Villar_%28%C3%81vila%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/95/Escudo_de_Garganta_del_Villar_%28%C3%81vila%29.svg"
   },
   {
     "code": "050821",
     "name": "Gavilanes",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Bandera_de_Gavilanes.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Escudo_de_Gavilanes_%28%C3%81vila%29.svg"
   },
   {
     "code": "050837",
@@ -3652,8 +3652,8 @@
     "name": "Gotarrendura",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bandera_de_Gotarrendura.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Escudo_de_Gotarrendura.svg"
   },
   {
     "code": "050880",
@@ -3668,8 +3668,8 @@
     "name": "Guisando",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Bandera_de_Guisando_%28%C3%81vila%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/34/Escudo_de_Guisando_%28%C3%81vila%29.svg"
   },
   {
     "code": "050907",
@@ -3677,7 +3677,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Escudo_de_Gutierre-Mu%C3%B1oz_%28%C3%81vila%29.svg"
   },
   {
     "code": "050929",
@@ -3700,16 +3700,16 @@
     "name": "Herreros de Suso",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/39/Bandera_de_Herreros_de_Suso_%28%C3%81vila%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Escudo_de_Herreros_de_Suso_%28%C3%81vila%29.svg"
   },
   {
     "code": "050953",
     "name": "Higuera de las Dueñas",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Bandera_de_Higuera_de_las_Due%C3%B1as.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/49/Escudo_de_Higuera_de_las_Due%C3%B1as.svg"
   },
   {
     "code": "050966",
@@ -3717,38 +3717,38 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/81/Escudo_La_Hija_de_Dios.svg"
   },
   {
     "code": "050972",
     "name": "Horcajada, La",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Bandera_de_La_Horcajada.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Escudo_de_La_Horcajada.svg"
   },
   {
     "code": "050991",
     "name": "Horcajo de las Torres",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bandera_de_Horcajo_de_las_Torres.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Escudo_de_Horcajo_de_las_Torres.svg"
   },
   {
     "code": "051005",
     "name": "Hornillo, El",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Bandera_de_El_Hornillo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Escudo_de_El_Hornillo.svg"
   },
   {
     "code": "051012",
     "name": "Hoyocasero",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Bandera_de_Hoyocasero.svg",
     "coat_of_arms": null
   },
   {
@@ -3757,7 +3757,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Escudo_de_El_Hoyo_de_Pinares.svg"
   },
   {
     "code": "051033",
@@ -3765,7 +3765,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/53/Escudo_de_Hoyorredondo_%28%C3%81vila%29.svg"
   },
   {
     "code": "051048",
@@ -3780,8 +3780,8 @@
     "name": "Hoyos del Espino",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bandera_de_Hoyos_del_Espino.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/40/Escudo_de_Hoyos_del_Espino.svg"
   },
   {
     "code": "051064",
@@ -3812,16 +3812,16 @@
     "name": "Langa",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Bandera_de_Langa_%28%C3%81vila%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Escudo_de_Langa.svg"
   },
   {
     "code": "051103",
     "name": "Lanzahíta",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Bandera_de_Lanzah%C3%ADta.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/78/Escudo_de_Lanzah%C3%ADta_%28%C3%81vila%29.svg"
   },
   {
     "code": "051125",
@@ -3836,8 +3836,8 @@
     "name": "Llanos de Tormes, Los",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Bandera_de_Los_Llanos_de_Tormes.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Escudo_de_Los_Llanos_de_Tormes.svg"
   },
   {
     "code": "051146",
@@ -3845,15 +3845,15 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Coat_of_Arms_of_Madrigal_de_las_Altas_Torres.svg"
   },
   {
     "code": "051159",
     "name": "Maello",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/52/Bandera_de_Maello.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Escudo_de_Maello.svg"
   },
   {
     "code": "051162",
@@ -3868,8 +3868,8 @@
     "name": "Mamblas",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/10/Bandera_de_Mamblas.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Escudo_de_Mamblas.svg"
   },
   {
     "code": "051184",
@@ -3885,7 +3885,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Escudo_de_Manjab%C3%A1lago_y_Ortigosa_de_Rioalmar.svg"
   },
   {
     "code": "051201",
@@ -3901,7 +3901,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Escudo_de_Martiherrero.svg"
   },
   {
     "code": "051223",
@@ -3917,15 +3917,15 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Escudo_de_Mediana_de_Voltoya.svg"
   },
   {
     "code": "051244",
     "name": "Medinilla",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandera_de_Medinilla.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Escudo_de_Medinilla.svg"
   },
   {
     "code": "051257",
@@ -3933,39 +3933,39 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Escudo_de_Mengamu%C3%B1oz.svg"
   },
   {
     "code": "051260",
     "name": "Mesegar de Corneja",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Bandera_de_Mesegar_de_Corneja.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_de_Mesegar_de_Corneja.svg"
   },
   {
     "code": "051276",
     "name": "Mijares",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Bandera_de_Mijares.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Escudo_de_Mijares.svg"
   },
   {
     "code": "051282",
     "name": "Mingorría",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Bandera_de_Mingorr%C3%ADa.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_de_Mingorr%C3%ADa.svg"
   },
   {
     "code": "051295",
     "name": "Mirón, El",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Bandera_de_El_Mir%C3%B3n.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Escudo_de_El_Mir%C3%B3n.svg"
   },
   {
     "code": "051309",
@@ -3980,8 +3980,8 @@
     "name": "Mirueña de los Infanzones",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bandera_de_Mirue%C3%B1a_de_los_Infanzones.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Escudo_de_Mirue%C3%B1a_de_los_Infanzones.svg"
   },
   {
     "code": "051321",
@@ -3989,7 +3989,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Escudo_de_Mombeltr%C3%A1n.svg"
   },
   {
     "code": "051337",
@@ -3997,39 +3997,39 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Escudo_de_Monsalupe_%28%C3%81vila%29.svg"
   },
   {
     "code": "051342",
     "name": "Moraleja de Matacabras",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Bandera_de_Moraleja_de_Matacabras_%28%C3%81vila%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/68/Escudo_de_Moraleja_de_Matacabras_%28%C3%81vila%29.svg"
   },
   {
     "code": "051355",
     "name": "Muñana",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Bandera_de_Mu%C3%B1ana.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Escudo_de_Mu%C3%B1ana.svg"
   },
   {
     "code": "051368",
     "name": "Muñico",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bandera_de_Mu%C3%B1ico.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Escudo_de_Mu%C3%B1ico.svg"
   },
   {
     "code": "051380",
     "name": "Muñogalindo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Mu%C3%B1ogalindo_Spain.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Escudo_de_Mu%C3%B1ogalindo.svg"
   },
   {
     "code": "051393",
@@ -4044,8 +4044,8 @@
     "name": "Muñomer del Peco",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Bandera_de_Mu%C3%B1omer_del_Peco.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/60/Escudo_de_Mu%C3%B1omer_del_Peco.svg"
   },
   {
     "code": "051414",
@@ -4076,8 +4076,8 @@
     "name": "Narrillos del Álamo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bandera_de_Narrillos_del_Alamo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/43/Escudo_de_Narrillos_del_%C3%81lamo.svg"
   },
   {
     "code": "051453",
@@ -4100,16 +4100,16 @@
     "name": "Narros del Puerto",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Bandera_NarrosDelPuerto.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/77/Escudo_NarrosDelPuerto.svg"
   },
   {
     "code": "051491",
     "name": "Narros de Saldueña",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Bandera_de_Narros_de_Saldue%C3%B1a.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/93/Escudo_de_Narros_de_Saldue%C3%B1a.svg"
   },
   {
     "code": "051511",
@@ -4117,7 +4117,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Escudo_de_Navacepedilla_de_Corneja.svg"
   },
   {
     "code": "051526",
@@ -4140,8 +4140,8 @@
     "name": "Navadijos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bandera_de_Navadijos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/36/Escudo_de_Navadijos.svg"
   },
   {
     "code": "051550",
@@ -4156,24 +4156,24 @@
     "name": "Navahondilla",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Bandera_de_Navahondilla.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/84/Escudo_de_Navahondilla.svg"
   },
   {
     "code": "051579",
     "name": "Navalacruz",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bandera_de_Navalacruz.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Escudo_de_Navalacruz.svg"
   },
   {
     "code": "051585",
     "name": "Navalmoral",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/86/Bandera_de_Navalmoral_de_la_Sierra.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/88/Escudo_de_Navalmoral_de_la_Sierra_%28%C3%81vila%29.svg"
   },
   {
     "code": "051598",
@@ -4188,8 +4188,8 @@
     "name": "Navalosa",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Bandera_de_Navalosa.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_Navalosa.svg"
   },
   {
     "code": "051619",
@@ -4197,15 +4197,15 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/07/Escudo_de_Navalperal_de_Pinares_%28%C3%81vila%29.svg"
   },
   {
     "code": "051624",
     "name": "Navalperal de Tormes",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Bandera_de_Navalperal_deTormes.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/63/Escudo_de_Navalperal_de_Tormes.svg"
   },
   {
     "code": "051630",
@@ -4221,15 +4221,15 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Escudo_de_Navaquesera.svg"
   },
   {
     "code": "051658",
     "name": "Navarredonda de Gredos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/97/Bandera_de_Navarredonda_de_Gredos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/93/Escudo_de_Navarredonda_de_Gredos.svg"
   },
   {
     "code": "051661",
@@ -4245,31 +4245,31 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Escudo_de_Navarrevisca.svg"
   },
   {
     "code": "051683",
     "name": "Navas del Marqués, Las",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Bandera_de_Las_Navas_del_Marqu%C3%A9s.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Escudo_de_Las_Navas_del_Marqu%C3%A9s.svg"
   },
   {
     "code": "051696",
     "name": "Navatalgordo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bandera_de_Navatalgordo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Escudo_de_Navatalgordo.svg"
   },
   {
     "code": "051700",
     "name": "Navatejares",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Bandera_de_Navatejares.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Escudo_de_Navatejares.svg"
   },
   {
     "code": "051717",
@@ -4277,23 +4277,23 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/de/Escudo_de_Neila_de_San_Miguel_%28%C3%81vila%29.svg"
   },
   {
     "code": "051722",
     "name": "Niharra",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bandera_de_Niharra.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/05/Escudo_de_Niharra.svg"
   },
   {
     "code": "051738",
     "name": "Ojos-Albos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Bandera_de_Ojos_Albos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/15/Escudo_de_Ojos_Albos.svg"
   },
   {
     "code": "051743",
@@ -4316,24 +4316,24 @@
     "name": "Padiernos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Padiernos_Spain.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Escudo_de_Padiernos.svg"
   },
   {
     "code": "051775",
     "name": "Pajares de Adaja",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Bandera_de_Pajares_de_Adaja.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/96/Escudo_de_Pajares_de_Adaja.svg"
   },
   {
     "code": "051781",
     "name": "Palacios de Goda",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Bandera_de_Palacios_de_Goda.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Escudo_de_Palacios_de_Goda.svg"
   },
   {
     "code": "051794",
@@ -4364,16 +4364,16 @@
     "name": "Pedro Bernardo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Bandera_de_Pedro_Bernardo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Escudo_de_Pedro_Bernardo.svg"
   },
   {
     "code": "051836",
     "name": "Pedro-Rodríguez",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Bandera_de_Pedro_Rodriguez.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_de_Pedro_Rodriguez.svg"
   },
   {
     "code": "051841",
@@ -4381,7 +4381,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Escudo_de_Peguerinos_%28%C3%81vila%29.svg"
   },
   {
     "code": "051854",
@@ -4396,16 +4396,16 @@
     "name": "Piedrahíta",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/16/Bandera_de_Piedrahita.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Escudo_de_Piedrahita.svg"
   },
   {
     "code": "051873",
     "name": "Piedralaves",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bandera_de_Piedralaves.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Escudo_de_Piedralaves.svg"
   },
   {
     "code": "051889",
@@ -4460,16 +4460,16 @@
     "name": "Riocabado",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Bandera_de_Riocabado.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/81/Escudo_de_Riocabado.svg"
   },
   {
     "code": "051952",
     "name": "Riofrío",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Bandera_de_Riofrio.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Escudo_de_Riofrio.svg"
   },
   {
     "code": "051965",
@@ -4516,24 +4516,24 @@
     "name": "San Bartolomé de Pinares",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/04/Bandera_de_San_Bartolom%C3%A9_de_Pinares.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Escudo_de_San_Bartolom%C3%A9_de_Pinares.svg"
   },
   {
     "code": "052047",
     "name": "Sanchidrián",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Bandera_de_Sanchidri%C3%A1n.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Escudo_de_Sanchidri%C3%A1n.svg"
   },
   {
     "code": "052050",
     "name": "Sanchorreja",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/96/Bandera_de_Sanchorreja.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Escudo_de_Sanchorreja_%28%C3%81vila%29.svg"
   },
   {
     "code": "052063",
@@ -4548,8 +4548,8 @@
     "name": "San Esteban del Valle",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Bandera_de_San_Esteban_del_Valle.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Escudo_de_San_Esteban_del_Valle.svg"
   },
   {
     "code": "052085",
@@ -4580,8 +4580,8 @@
     "name": "San Juan de la Nava",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Bandera_de_San_Juan_de_la_Nava.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/62/Escudo_de_San_Juan_de_la_Nava_%28%C3%81vila%29.svg"
   },
   {
     "code": "052124",
@@ -4604,8 +4604,8 @@
     "name": "San Lorenzo de Tormes",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Bandera_de_San_Lorenzo_de_Tormes.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Escudo_de_San_Lorenzo_de_Tormes.svg"
   },
   {
     "code": "052158",
@@ -4613,7 +4613,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/41/Escudo_de_San_Mart%C3%ADn_de_la_Vega_del_Alberche_%28%C3%81vila%29.svg"
   },
   {
     "code": "052161",
@@ -4629,7 +4629,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/53/Escudo_de_San_Miguel_de_Corneja.svg"
   },
   {
     "code": "052183",
@@ -4653,7 +4653,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/79/Escudo_San_Pedro_del_Arroyo.svg"
   },
   {
     "code": "052217",
@@ -4668,8 +4668,8 @@
     "name": "Santa Cruz de Pinares",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bandera_Santa_Cruz_de_Pinares.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/53/Escudo_Santa_Cruz_de_Pinares.svg"
   },
   {
     "code": "052243",
@@ -4685,23 +4685,23 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/73/Escudo_de_Santa_Mar%C3%ADa_del_Berrocal.svg"
   },
   {
     "code": "052269",
     "name": "Santa María de los Caballeros",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/47/Bandera_de_Santa_Mar%C3%ADa_de_los_Caballeros.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Escudo_de_Santa_Mar%C3%ADa_de_los_Caballeros.svg"
   },
   {
     "code": "052275",
     "name": "Santa María del Tiétar",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/40/Bandera_de_Santa_Mar%C3%ADa_del_Ti%C3%A9tar.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/01/Escudo_de_Santa_Mar%C3%ADa_del_Ti%C3%A9tar.svg"
   },
   {
     "code": "052281",
@@ -4716,24 +4716,24 @@
     "name": "Santo Domingo de las Posadas",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bandera_de_Santo_Domingo_de_las_Posadas.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/50/Escudo_de_Santo_Domingo_de_las_Posadas.svg"
   },
   {
     "code": "052308",
     "name": "Santo Tomé de Zabarcos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Bandera_de_Santo_Tom%C3%A9_de_Zabarcos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Escudo_de_Santo_Tom%C3%A9_de_Zabarcos.svg"
   },
   {
     "code": "052315",
     "name": "San Vicente de Arévalo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/80/Bandera_de_San_Vicente_de_Ar%C3%A9valo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Escudo_de_San_Vicente_de_Ar%C3%A9valo.svg"
   },
   {
     "code": "052320",
@@ -4748,8 +4748,8 @@
     "name": "Serranillos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Bandera_de_Serranillos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Escudo_de_Serranillos.svg"
   },
   {
     "code": "052341",
@@ -4764,8 +4764,8 @@
     "name": "Sinlabajos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bandera_de_Sinlabajos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/16/Escudo_de_Sinlabajos.svg"
   },
   {
     "code": "052367",
@@ -4780,48 +4780,48 @@
     "name": "Solana de Rioalmar",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Bandera_de_Solana_de_Rioalmar.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/34/Escudo_de_Solana_de_Rioalmar.svg"
   },
   {
     "code": "052389",
     "name": "Solosancho",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/05/Bandera_de_Solosancho.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Escudo_de_Solosancho.svg"
   },
   {
     "code": "052392",
     "name": "Sotalbo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/15/Bandera_de_Sotalbo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/04/Escudo_de_Sotalbo.svg"
   },
   {
     "code": "052406",
     "name": "Sotillo de la Adrada",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bandera_de_Sotillo_de_la_Adrada.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/14/Escudo_de_Sotillo_de_la_Adrada.svg"
   },
   {
     "code": "052413",
     "name": "Tiemblo, El",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bandera_de_El_Tiemblo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/65/Escudo_de_El_Tiemblo.svg"
   },
   {
     "code": "052428",
     "name": "Tiñosillos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/00/Bandera_de_Ti%C3%B1osillos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Escudo_de_Ti%C3%B1osillos.svg"
   },
   {
     "code": "052434",
@@ -4829,7 +4829,7 @@
     "code_autonomy": "07",
     "code_province": "05",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/15/Escudo_de_Tolba%C3%B1os.svg"
   },
   {
     "code": "052449",
@@ -4844,8 +4844,8 @@
     "name": "Tornadizos de Ávila",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Bandera_de_Tornadizos_de_%C3%81vila.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Escudo_de_Tornadizos_de_%C3%81vila.svg"
   },
   {
     "code": "052465",
@@ -4892,48 +4892,48 @@
     "name": "Vega de Santa María",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bandera_de_Vega_de_Santa_Mar%C3%ADa.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Escudo_de_Vega_de_Santa_Mar%C3%ADa.svg"
   },
   {
     "code": "052546",
     "name": "Velayos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Bandera_de_Velayos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/69/Escudo_de_Velayos.svg"
   },
   {
     "code": "052562",
     "name": "Villaflor",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Bandera_de_Villaflor.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/08/Escudo_de_Villaflor.svg"
   },
   {
     "code": "052578",
     "name": "Villafranca de la Sierra",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/be/Bandera_de_Villafranca_de_la_sierra.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Escudo_de_Villafranca_de_la_sierra.svg"
   },
   {
     "code": "052584",
     "name": "Villanueva de Gómez",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/95/Bandera_de_Villanueva_de_G%C3%B3mez.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/12/Escudo_de_Villanueva_de_G%C3%B3mez.svg"
   },
   {
     "code": "052597",
     "name": "Villanueva del Aceral",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Bandera_de_Villanueva_del_Aceral.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Escudo_de_Villanueva_del_Aceral.svg"
   },
   {
     "code": "052601",
@@ -4956,16 +4956,16 @@
     "name": "Villarejo del Valle",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Bandera_de_Villarejo_del_Valle.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/38/Escudo_de_Villarejo_del_Valle.svg"
   },
   {
     "code": "052639",
     "name": "Villatoro",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Bandera_de_Villatoro.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/89/Escudo_de_Villatoro_%28%C3%81vila%29.svg"
   },
   {
     "code": "052644",
@@ -4980,16 +4980,16 @@
     "name": "Vita",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bandera_de_Vita.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_Vita.svg"
   },
   {
     "code": "052660",
     "name": "Zapardiel de la Cañada",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Zapardiel_de_la_Ca%C3%B1ada.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Coat_of_arms_of_Zapardiel_de_la_Ca%C3%B1ada.svg"
   },
   {
     "code": "052676",
@@ -5004,24 +5004,24 @@
     "name": "San Juan de Gredos",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Bandera_de_San_Juan_de_Gredos.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/95/Escudo_de_San_Juan_de_Gredos.svg"
   },
   {
     "code": "059029",
     "name": "Santa María del Cubillo",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Bandera_de_Santa_Maria_del_Cubillo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/12/Escudo_de_Santa_Maria_del_Cubillo.svg"
   },
   {
     "code": "059035",
     "name": "Diego del Carpio",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Bandera_de_Diego_del_Carpio.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Escudo_de_Diego_del_Carpio.svg"
   },
   {
     "code": "059040",
@@ -5036,8 +5036,8 @@
     "name": "Villanueva de Ávila",
     "code_autonomy": "07",
     "code_province": "05",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Bandera_de_Villanueva_de_%C3%81vila.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/35/Escudo_de_Villanueva_de_%C3%81vila.svg"
   },
   {
     "code": "060016",
