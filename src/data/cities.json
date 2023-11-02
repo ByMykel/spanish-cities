@@ -5045,15 +5045,15 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Escudo_de_Acedera.svg"
   },
   {
     "code": "060021",
     "name": "Aceuchal",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Aceuchal.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Escudo_de_Aceuchal.svg"
   },
   {
     "code": "060037",
@@ -5069,7 +5069,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/79/Escudo_de_Alange.svg"
   },
   {
     "code": "060055",
@@ -5085,7 +5085,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Coat_of_Arms_of_Alburquerque_%28Badajoz%29.svg"
   },
   {
     "code": "060074",
@@ -5093,15 +5093,15 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Escudo_Alconchel.svg"
   },
   {
     "code": "060080",
     "name": "Alconera",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_Alconera_Spain.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/21/Escudo_de_Alconera.svg"
   },
   {
     "code": "060093",
@@ -5109,7 +5109,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/02/Escudo_de_Aljuc%C3%A9n.svg"
   },
   {
     "code": "060107",
@@ -5124,15 +5124,15 @@
     "name": "Almendralejo",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Bandera_de_Almendralejo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Escudo_de_Almendralejo.svg"
   },
   {
     "code": "060129",
     "name": "Arroyo de San Serván",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Arroyo_de_San_Serv%C3%A1n_Spain.svg",
     "coat_of_arms": null
   },
   {
@@ -5156,8 +5156,8 @@
     "name": "Badajoz",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bandera_de_la_Ciudad_de_Badajoz.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Coat_of_Arms_of_Badajoz.svg"
   },
   {
     "code": "060166",
@@ -5165,14 +5165,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/99/Escudo_de_Barcarrota.svg"
   },
   {
     "code": "060172",
     "name": "Baterno",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bandera_de_Baterno.svg",
     "coat_of_arms": null
   },
   {
@@ -5180,8 +5180,8 @@
     "name": "Benquerencia de la Serena",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Flag_of_Villanueva_de_la_Serena_Spain.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Escudo_de_Benquerencia_de_la_Serena.svg"
   },
   {
     "code": "060191",
@@ -5197,7 +5197,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/16/Escudo_de_Bienvenida.svg"
   },
   {
     "code": "060212",
@@ -5205,7 +5205,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Escudo_de_Bodonal_de_la_Sierra.svg"
   },
   {
     "code": "060227",
@@ -5213,7 +5213,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Escudo_de_Burguillos_del_Cerro.svg"
   },
   {
     "code": "060233",
@@ -5229,7 +5229,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/49/Escudo_de_Cabeza_la_Vaca.svg"
   },
   {
     "code": "060251",
@@ -5237,7 +5237,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/39/Escudo_de_Calamonte.svg"
   },
   {
     "code": "060264",
@@ -5245,7 +5245,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Escudo_de_Calera_de_Le%C3%B3n.svg"
   },
   {
     "code": "060270",
@@ -5253,14 +5253,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Escudo_de_Calzadilla_de_los_Barros.svg"
   },
   {
     "code": "060286",
     "name": "Campanario",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bandera_de_Campanario.svg",
     "coat_of_arms": null
   },
   {
@@ -5285,7 +5285,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/20/Escudo_de_Carmonita.svg"
   },
   {
     "code": "060325",
@@ -5293,7 +5293,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Escudo_de_El_Carrascalejo_%28Badajoz%29.svg"
   },
   {
     "code": "060331",
@@ -5301,14 +5301,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Escudo_de_Casas_de_Don_Pedro.svg"
   },
   {
     "code": "060346",
     "name": "Casas de Reina",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Bandera_de_Casas_de_Reina.svg",
     "coat_of_arms": null
   },
   {
@@ -5316,8 +5316,8 @@
     "name": "Castilblanco",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/79/Bandera_de_Castilblanco_Badajoz.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Escudo_de_Castilblanco.svg"
   },
   {
     "code": "060362",
@@ -5325,7 +5325,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Escudo_de_Castuera.svg"
   },
   {
     "code": "060378",
@@ -5333,7 +5333,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/01/Escudo_de_La_Codosera.svg"
   },
   {
     "code": "060384",
@@ -5341,7 +5341,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Escudo_de_Cordobilla_de_L%C3%A1cara.svg"
   },
   {
     "code": "060397",
@@ -5349,14 +5349,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Escudo_de_La_Coronada_%28Badajoz%29.svg"
   },
   {
     "code": "060401",
     "name": "Corte de Peleas",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bandera_de_Corte_de_Peleas.svg",
     "coat_of_arms": null
   },
   {
@@ -5381,15 +5381,15 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Escudo_de_Don_%C3%81lvaro.svg"
   },
   {
     "code": "060444",
     "name": "Don Benito",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Bandera_de_Don_Benito.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Coat_of_Arms_of_Don_Benito.svg"
   },
   {
     "code": "060457",
@@ -5397,14 +5397,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Escudo_de_Entr%C3%ADn_Bajo.svg"
   },
   {
     "code": "060460",
     "name": "Esparragalejo",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Esparragalejo.svg",
     "coat_of_arms": null
   },
   {
@@ -5420,7 +5420,7 @@
     "name": "Esparragosa de Lares",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/Bandera_Esparragosa_de_Lares.svg",
     "coat_of_arms": null
   },
   {
@@ -5429,14 +5429,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Escudo_de_Feria.svg"
   },
   {
     "code": "060508",
     "name": "Fregenal de la Sierra",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bandera_de_Fregenal.svg",
     "coat_of_arms": null
   },
   {
@@ -5469,7 +5469,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/01/Escudo_de_Fuente_del_Maestre.svg"
   },
   {
     "code": "060554",
@@ -5477,7 +5477,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Escudo_de_Fuentes_de_Le%C3%B3n_%28chorros_de_agua_de_azur%2C_leon_todo_de_gules%29.svg"
   },
   {
     "code": "060567",
@@ -5492,7 +5492,7 @@
     "name": "Garlitos",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bandera_de_Garlitos.svg",
     "coat_of_arms": null
   },
   {
@@ -5508,7 +5508,7 @@
     "name": "Granja de Torrehermosa",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/80/Bandera_de_Granja_de_Torrehermosa.svg",
     "coat_of_arms": null
   },
   {
@@ -5525,7 +5525,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Escudo_de_La_Haba_%28Badajoz%29.svg"
   },
   {
     "code": "060628",
@@ -5540,15 +5540,15 @@
     "name": "Herrera del Duque",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bandera_de_Herrera_del_Duque.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/28/Escudo_de_Herrera_del_Duque.svg"
   },
   {
     "code": "060649",
     "name": "Higuera de la Serena",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Bandera_de_Higuera_de_la_Serena.png",
     "coat_of_arms": null
   },
   {
@@ -5565,7 +5565,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/62/Escudo_de_Higuera_de_Vargas.svg"
   },
   {
     "code": "060671",
@@ -5581,7 +5581,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/56/Escudo_de_Hinojosa_del_Valle.svg"
   },
   {
     "code": "060690",
@@ -5589,7 +5589,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Escudo_de_Hornachos.svg"
   },
   {
     "code": "060704",
@@ -5597,7 +5597,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Coat_of_Arms_of_Jerez_de_los_Caballeros.svg"
   },
   {
     "code": "060711",
@@ -5613,15 +5613,15 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Escudo_de_Lob%C3%B3n.svg"
   },
   {
     "code": "060732",
     "name": "Llera",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Bandera_de_Llera_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Escudo_de_Llera_%28Badajoz%29.svg"
   },
   {
     "code": "060747",
@@ -5636,8 +5636,8 @@
     "name": "Magacela",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/27/Bandera_de_Magacela_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/97/Escudo_de_Magacela_%28Badajoz%29.svg"
   },
   {
     "code": "060763",
@@ -5669,15 +5669,15 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Escudo_de_Manchita_%28Badajoz%29.svg"
   },
   {
     "code": "060802",
     "name": "Medellín",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bandera_de_Medell%C3%ADn_%28Badajoz%29.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Escudo_de_Medell%C3%ADn_%28Badajoz%29.svg"
   },
   {
     "code": "060819",
@@ -5685,7 +5685,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Escudo_de_Medina_de_las_Torres.svg"
   },
   {
     "code": "060824",
@@ -5693,15 +5693,15 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Escudo_de_Mengabril_%28Badajoz%29.svg"
   },
   {
     "code": "060830",
     "name": "Mérida",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/41/Bandera_de_M%C3%A9rida.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/89/Escudo_de_M%C3%A9rida.svg"
   },
   {
     "code": "060845",
@@ -5733,7 +5733,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Escudo_de_Monterrubio_de_la_Serena.svg"
   },
   {
     "code": "060883",
@@ -5749,7 +5749,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/44/Escudo_de_La_Morera_%28Badajoz%29.svg"
   },
   {
     "code": "060900",
@@ -5772,8 +5772,8 @@
     "name": "Nogales",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Bandera_de_Nogales_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Escudo_de_Nogales_%28Badajoz%29.svg"
   },
   {
     "code": "060938",
@@ -5796,8 +5796,8 @@
     "name": "Olivenza",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/31/Bandera_de_Olivenza_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/06/Escudo_de_Olivenza_%28corona_mural%29.svg"
   },
   {
     "code": "060969",
@@ -5821,14 +5821,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/16/Escudo_de_Palomas.svg"
   },
   {
     "code": "060994",
     "name": "Parra, La",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Laparra.bandera.png",
     "coat_of_arms": null
   },
   {
@@ -5837,14 +5837,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Escudo_de_Pe%C3%B1alsordo.svg"
   },
   {
     "code": "061015",
     "name": "Peraleda del Zaucejo",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bandera_de_Peraleda_del_Zaucejo.svg",
     "coat_of_arms": null
   },
   {
@@ -5852,23 +5852,23 @@
     "name": "Puebla de Alcocer",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bandera_de_Puebla_de_Alcocer.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/68/Escudo_de_Puebla_de_Alcocer_%28Badajoz%29.svg"
   },
   {
     "code": "061036",
     "name": "Puebla de la Calzada",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bandera_de_Puebla_de_la_Calzada.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Escudo_de_Puebla_de_la_Calzada.svg"
   },
   {
     "code": "061041",
     "name": "Puebla de la Reina",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Bandera_de_Puebla_de_la_Reina_%28Badajoz%29.svg",
     "coat_of_arms": null
   },
   {
@@ -5885,7 +5885,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Escudo_de_Puebla_del_Prior_%28Badajoz%29.svg"
   },
   {
     "code": "061073",
@@ -5893,7 +5893,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Escudo_de_Puebla_de_Obando.svg"
   },
   {
     "code": "061089",
@@ -5901,7 +5901,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Escudo_de_Puebla_de_Sancho_P%C3%A9rez.svg"
   },
   {
     "code": "061092",
@@ -5941,7 +5941,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Escudo_de_Ribera_del_Fresno.svg"
   },
   {
     "code": "061149",
@@ -5965,7 +5965,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Escudo_de_Salvale%C3%B3n.svg"
   },
   {
     "code": "061171",
@@ -5981,7 +5981,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Escudo_de_Sancti-Sp%C3%ADritus.svg"
   },
   {
     "code": "061190",
@@ -5996,7 +5996,7 @@
     "name": "Santa Amalia",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Bandera_de_Santa_Amalia.svg",
     "coat_of_arms": null
   },
   {
@@ -6028,8 +6028,8 @@
     "name": "Segura de León",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Bandera_de_Segura_de_Le%C3%B3n.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/92/Escudo_Segura_de_Le%C3%B3n.svg"
   },
   {
     "code": "061250",
@@ -6037,14 +6037,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Escudo_de_Siruela_%28Badajoz%29.svg"
   },
   {
     "code": "061263",
     "name": "Solana de los Barros",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Banderasolana.svg",
     "coat_of_arms": null
   },
   {
@@ -6052,8 +6052,8 @@
     "name": "Talarrubias",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Bandera_de_Talarrubias.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Escudo_de_Talarrubias.svg"
   },
   {
     "code": "061285",
@@ -6061,15 +6061,15 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_de_Talavera_la_Real.svg"
   },
   {
     "code": "061298",
     "name": "Táliga",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bandera_de_T%C3%A1liga_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_de_T%C3%A1liga.svg"
   },
   {
     "code": "061302",
@@ -6092,16 +6092,16 @@
     "name": "Torremayor",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bandera_de_Torremayor_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Escudo_de_Torremayor_%28Badajoz%29.svg"
   },
   {
     "code": "061330",
     "name": "Torremejía",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Bandera_de_Torremej%C3%ADa_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Escudo_de_Torremej%C3%ADa.svg"
   },
   {
     "code": "061345",
@@ -6109,14 +6109,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Escudo_de_Trasierra_%28Badajoz%29.svg"
   },
   {
     "code": "061358",
     "name": "Trujillanos",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/15/Bandera_de_Trujillanos.svg",
     "coat_of_arms": null
   },
   {
@@ -6124,7 +6124,7 @@
     "name": "Usagre",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Flag_of_Usagre.png",
     "coat_of_arms": null
   },
   {
@@ -6132,16 +6132,16 @@
     "name": "Valdecaballeros",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Bandera_de_Valdecaballeros.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Escudo_de_Valdecaballeros.svg"
   },
   {
     "code": "061383",
     "name": "Valdetorres",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Bandera_de_Valdetorres_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Escudo_de_Valdetorres_%28Badajoz%29.svg"
   },
   {
     "code": "061396",
@@ -6165,7 +6165,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Escudo_de_Valencia_del_Ventoso.svg"
   },
   {
     "code": "061422",
@@ -6173,15 +6173,15 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/60/Escudo_de_Valverde_de_Burguillos.svg"
   },
   {
     "code": "061438",
     "name": "Valverde de Leganés",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/74/Bandera_de_Valverde_de_Legan%C3%A9s.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/57/Escudo_de_Valverde_de_Legan%C3%A9s.svg"
   },
   {
     "code": "061443",
@@ -6197,7 +6197,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_Valverde_de_M%C3%A9rida.svg"
   },
   {
     "code": "061469",
@@ -6213,14 +6213,14 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/64/Escudo_de_Valle_de_Matamoros_%28Badajoz%29.svg"
   },
   {
     "code": "061481",
     "name": "Valle de Santa Ana",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Valle_de_Santa_Ana_Spain.svg",
     "coat_of_arms": null
   },
   {
@@ -6252,7 +6252,7 @@
     "name": "Villalba de los Barros",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Bandera_villalba.svg",
     "coat_of_arms": null
   },
   {
@@ -6260,8 +6260,8 @@
     "name": "Villanueva de la Serena",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Flag_of_Villanueva_de_la_Serena_Spain.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/96/Escudo_de_Villanueva_de_la_Serena.svg"
   },
   {
     "code": "061540",
@@ -6276,15 +6276,15 @@
     "name": "Villar del Rey",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/96/Bandera_de_Villar_del_Rey_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Escudo_de_Villar_del_Rey_%28Badajoz%29.svg"
   },
   {
     "code": "061566",
     "name": "Villar de Rena",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/14/Flag_of_Villar_de_Rena_Spain.svg",
     "coat_of_arms": null
   },
   {
@@ -6292,7 +6292,7 @@
     "name": "Villarta de los Montes",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Villarta_de_los_Montes.png",
     "coat_of_arms": null
   },
   {
@@ -6300,8 +6300,8 @@
     "name": "Zafra",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Zafra.png",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/22/Escudo-de-zafra.svg"
   },
   {
     "code": "061591",
@@ -6309,7 +6309,7 @@
     "code_autonomy": "11",
     "code_province": "06",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Escudo_de_Zah%C3%ADnos_%28Badajoz%29.svg"
   },
   {
     "code": "061605",
@@ -6332,8 +6332,8 @@
     "name": "Zarza, La",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/78/Bandera_de_La_Zarza_%28Badajoz%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Escudo_de_La_Zarza.svg"
   },
   {
     "code": "069017",
@@ -6356,8 +6356,8 @@
     "name": "Guadiana del Caudillo",
     "code_autonomy": "11",
     "code_province": "06",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Bandera_de_Guadiana_del_Caudillo.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Escudo_de_Guadiana_del_Caudillo.svg"
   },
   {
     "code": "070012",
