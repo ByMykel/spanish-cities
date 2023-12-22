@@ -6365,15 +6365,15 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Escudo_de_Alar%C3%B3_%28Islas_Baleares%29_2.svg"
   },
   {
     "code": "070027",
     "name": "Alaior",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/12/Bandera_de_Alayor_%28Islas_Baleares%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/00/Escut_d%27Alaior.svg"
   },
   {
     "code": "070033",
@@ -6381,7 +6381,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/5/57/Escudo_de_Alcudia_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070048",
@@ -6389,7 +6389,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Escudo_de_Algaida_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070051",
@@ -6397,7 +6397,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Escut_d%27Andratx.svg"
   },
   {
     "code": "070064",
@@ -6405,7 +6405,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/73/Escudo_de_Art%C3%A1_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070070",
@@ -6413,7 +6413,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Escudo_de_Ba%C3%B1albufar_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070086",
@@ -6421,7 +6421,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Escudo_de_Binisalem_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070099",
@@ -6429,7 +6429,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/71/Escudo_de_B%C3%BAger_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070103",
@@ -6437,7 +6437,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/12/Escudo_de_Bu%C3%B1ola_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070110",
@@ -6445,7 +6445,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Coat_of_Arms_of_Calvia.svg"
   },
   {
     "code": "070125",
@@ -6453,7 +6453,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Escut_de_Campanet.svg"
   },
   {
     "code": "070131",
@@ -6461,7 +6461,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/87/Escudo_de_Campos_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070146",
@@ -6469,7 +6469,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Escudo_de_Capdepera_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070159",
@@ -6477,7 +6477,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Escudo_de_Ciudadela_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070162",
@@ -6485,7 +6485,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Escudo_de_Consell_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070178",
@@ -6493,7 +6493,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/81/Coat_of_Arms_of_Costitx_%28Mallorca%29.svg"
   },
   {
     "code": "070184",
@@ -6501,7 +6501,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Escudo_de_Dey%C3%A1_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070197",
@@ -6509,7 +6509,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Escudo_de_Escorca_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070201",
@@ -6517,7 +6517,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/60/Coat_of_Arms_of_Esporles_%28Mallorca%29.svg"
   },
   {
     "code": "070218",
@@ -6525,15 +6525,15 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/15/Escudo_de_Estellenchs_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070223",
     "name": "Felanitx",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Bandera_de_Felanich_%28Islas_Baleares%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Escudo_de_Felanich_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070239",
@@ -6541,15 +6541,15 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/80/Escudo_de_Ferrer%C3%ADas_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070244",
     "name": "Formentera",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Bandera_de_Formentera.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/78/Escudo_de_Formentera_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070257",
@@ -6557,7 +6557,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Escudo_de_Fornaluch_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070260",
@@ -6565,7 +6565,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Arms_of_Ibiza_Town.svg"
   },
   {
     "code": "070276",
@@ -6573,7 +6573,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/2/22/Emblem_of_Inca_%28Spain%29.svg"
   },
   {
     "code": "070282",
@@ -6581,7 +6581,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Escudo_de_Lloret_de_Vista_Alegre_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070295",
@@ -6589,39 +6589,39 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Escudo_de_Lloseta_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070309",
     "name": "Llubí",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Bandera_de_Llub%C3%AD_%28Islas_Baleares%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/49/Escut_de_Llub%C3%AD.svg"
   },
   {
     "code": "070316",
     "name": "Llucmajor",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Bandera_de_Lluchmayor_%28Islas_Baleares%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/be/Emblem_of_Llucmajor.svg"
   },
   {
     "code": "070321",
     "name": "Maó-Mahón",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bandera_de_Mah%C3%B3n_%28Islas_Baleares%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Coat_of_Arms_of_Port_Mahon.svg"
   },
   {
     "code": "070337",
     "name": "Manacor",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/1/13/Bandera_de_Manacor_%28Islas_Baleares%29.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/8/87/Coat_of_Arms_of_Manacor.svg"
   },
   {
     "code": "070342",
@@ -6629,7 +6629,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Escudo_de_Mancor_del_Valle_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070355",
@@ -6637,7 +6637,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/6/60/Escudo_de_Mar%C3%ADa_de_la_Salud_%28Islas_Baleares%29.svg"
   },
   {
     "code": "070368",
@@ -6645,7 +6645,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Escudo_de_Marrach%C3%AD_%28Islas_Baleares%29_2.svg"
   },
   {
     "code": "070374",
@@ -6660,7 +6660,7 @@
     "name": "Montuïri",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/07/Bandera_de_Montuiri_%28Islas_Baleares%29.svg",
     "coat_of_arms": null
   },
   {
@@ -6677,7 +6677,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Arms_of_the_City_of_Palma%2C_Majorca.svg"
   },
   {
     "code": "070414",
@@ -6692,7 +6692,7 @@
     "name": "Pollença",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bandera_de_Pollen%C3%A7a.svg",
     "coat_of_arms": null
   },
   {
@@ -6708,7 +6708,7 @@
     "name": "Pobla, Sa",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bandera_de_La_Puebla_%28Islas_Baleares%29.svg",
     "coat_of_arms": null
   },
   {
@@ -6725,7 +6725,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/73/Coat_of_Arms_of_Sant_Antoni_de_Portmany.svg"
   },
   {
     "code": "070472",
@@ -6748,7 +6748,7 @@
     "name": "Sant Joan",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/96/Bandera_de_San_Juan_%28Islas_Baleares%29.svg",
     "coat_of_arms": null
   },
   {
@@ -6780,7 +6780,7 @@
     "name": "Santa Eugènia",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Bandera_de_Santa_Eug%C3%A8nia.svg",
     "coat_of_arms": null
   },
   {
@@ -6812,7 +6812,7 @@
     "name": "Santanyí",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Bandera_de_Santa%C3%B1%C3%AD_%28Islas_Baleares%29.svg",
     "coat_of_arms": null
   },
   {
@@ -6828,7 +6828,7 @@
     "name": "Salines, Ses",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bandera_de_Las_Salinas_%28Islas_Baleares%29.svg",
     "coat_of_arms": null
   },
   {
@@ -6836,7 +6836,7 @@
     "name": "Sineu",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Bandera_de_Sin%C3%A9u_%28Islas_Baleares%29.svg",
     "coat_of_arms": null
   },
   {
@@ -6845,7 +6845,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/01/Coat_of_Arms_of_S%C3%B3ller_%28Mallorca%29.svg"
   },
   {
     "code": "070624",
@@ -6876,7 +6876,7 @@
     "name": "Vilafranca de Bonany",
     "code_autonomy": "04",
     "code_province": "07",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Bandera_de_Villafranca_de_Bonany_%28Islas_Baleares%29.svg",
     "coat_of_arms": null
   },
   {
@@ -6885,7 +6885,7 @@
     "code_autonomy": "04",
     "code_province": "07",
     "flag": null,
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/91/Escudo_de_Aria%C3%B1y_%28Islas_Baleares%29.svg"
   },
   {
     "code": "079028",
