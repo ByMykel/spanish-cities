@@ -51,7 +51,7 @@
     "code": "09",
     "name": "Cataluña",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg",
-    "coat_of_arms": null
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Coats_of_arms_of_None.svg"
   },
   {
     "code": "10",
@@ -104,7 +104,7 @@
   {
     "code": "18",
     "name": "Ceuta",
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_Ceuta.svg",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Ceuta.svg",
     "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Escudo_de_Ceuta.svg"
   },
   {
