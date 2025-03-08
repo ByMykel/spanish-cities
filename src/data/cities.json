@@ -4,7 +4,7 @@
     "name": "Alegría-Dulantzi",
     "code_autonomy": "16",
     "code_province": "01",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Vlag_ontbreekt.svg",
     "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Escudo_de_Alegria_de_Alava-Dulantzi.svg"
   },
   {
@@ -308,8 +308,8 @@
     "name": "San Millán/Donemiliaga",
     "code_autonomy": "16",
     "code_province": "01",
-    "flag": null,
-    "coat_of_arms": null
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Vlag_ontbreekt.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Donemiliagako_armarria.svg"
   },
   {
     "code": "010549",

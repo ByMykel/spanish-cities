@@ -220,14 +220,14 @@
     "code": "17",
     "name": "Girona",
     "code_autonomy": "09",
-    "flag": null,
-    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Girona_province_%28unofficial%29.svg"
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bandera_antiga_de_la_provincia_de_Girona.svg",
+    "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/9/91/Escut_de_la_provincia_de_Girona.svg"
   },
   {
     "code": "25",
     "name": "Lleida",
     "code_autonomy": "09",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Vlag_ontbreekt.svg",
     "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/0/07/Escut_de_la_provincia_de_Lleida.svg"
   },
   {
@@ -241,21 +241,21 @@
     "code": "03",
     "name": "Alicante/Alacant",
     "code_autonomy": "10",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Vlag_ontbreekt.svg",
     "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/75/Escut_de_la_Prov%C3%ADncia_d%27Alacant.svg"
   },
   {
     "code": "12",
     "name": "Castellón/Castelló",
     "code_autonomy": "10",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Vlag_ontbreekt.svg",
     "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/7/79/Escut_de_la_Prov%C3%ADncia_de_Castell%C3%B3.svg"
   },
   {
     "code": "46",
     "name": "Valencia/València",
     "code_autonomy": "10",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Vlag_ontbreekt.svg",
     "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Escut_de_la_Prov%C3%ADncia_de_Val%C3%A8ncia.svg"
   },
   {
@@ -276,7 +276,7 @@
     "code": "15",
     "name": "Coruña, A",
     "code_autonomy": "12",
-    "flag": null,
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Vlag_ontbreekt.svg",
     "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/4/41/Escudo_de_la_provincia_de_A_Coru%C3%B1a.svg"
   },
   {
@@ -353,7 +353,7 @@
     "code": "51",
     "name": "Ceuta",
     "code_autonomy": "18",
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_Ceuta.svg",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Ceuta.svg",
     "coat_of_arms": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Escudo_de_Ceuta.svg"
   },
   {
