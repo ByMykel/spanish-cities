@@ -280,8 +280,8 @@ test({
       name: "San Nicolás del Puerto",
       code_autonomy: "01",
       code_province: "41",
-      flag: null,
-      coat_of_arms: null,
+      flag: "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg",
+      coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/2/25/Escudo_de_San_Nicol%C3%A1s_del_Puerto_%28Sevilla%29.svg",
     });
   },
 });
