@@ -1,7 +1,3 @@
 node_modules/
 dist/
 yarn.lock
-
-scripts/flags.txt
-scripts/coats.txt
-scripts/output.txt
