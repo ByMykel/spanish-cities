@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/all-spanish-cities"><img src="https://img.shields.io/npm/v/all-spanish-cities.svg?style=flat-square&color=c60b1e" alt="npm version"></a>
   <a href="https://www.npmjs.com/package/all-spanish-cities"><img src="https://img.shields.io/npm/dm/all-spanish-cities.svg?style=flat-square" alt="downloads"></a>
-  <a href="https://www.jsdelivr.com/package/npm/all-spanish-cities"><img src="https://data.jsdelivr.com/v1/package/npm/all-spanish-cities/badge?style=flat-square" alt="jsdelivr"></a>
+  <a href="https://www.jsdelivr.com/package/npm/all-spanish-cities"><img src="https://data.jsdelivr.com/v1/package/npm/all-spanish-cities/badge?style=square" alt="jsdelivr"></a>
   <a href="https://github.com/ByMykel/spanish-cities/actions"><img src="https://img.shields.io/github/actions/workflow/status/ByMykel/spanish-cities/tests.yml?style=flat-square" alt="tests"></a>
   <a href="LICENSE"><img src="https://img.shields.io/npm/l/all-spanish-cities.svg?style=flat-square" alt="license"></a>
 </p>
