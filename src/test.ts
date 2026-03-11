@@ -233,11 +233,11 @@ console.groupEnd();
 console.group("\nTesting cities.ts:");
 
 test({
-  name: "should return all 8131 cities",
+  name: "should return all 8132 cities",
   fn: () => {
     const result = cities();
 
-    assert.strictEqual((<City[]>result).length, 8131);
+    assert.strictEqual((<City[]>result).length, 8132);
   },
 });
 
