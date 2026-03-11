@@ -1,7 +1,21 @@
 import { autonomies } from "./autonomies";
 import { cities } from "./cities";
-import data from "./data/provinces.json";
+import rawData from "./data/provinces.json";
 import { FiltersProvince, Province } from "./types";
+
+const WIKIMEDIA_PREFIX = "https://upload.wikimedia.org/wikipedia/commons/";
+const PLACEHOLDER_FLAG = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg";
+const PLACEHOLDER_COAT = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg";
+
+const data: Province[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
+  ([code, name, code_autonomy, flag, coat_of_arms]) => ({
+    code,
+    name,
+    code_autonomy,
+    flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG,
+    coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT,
+  })
+);
 
 /**
  * Returns an array of provinces that match the specified filter criteria.
