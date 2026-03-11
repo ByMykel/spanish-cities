@@ -1012,10 +1012,29 @@
         // Data fetching
         const dataCache = {};
 
+        const WIKIMEDIA_PREFIX = "https://upload.wikimedia.org/wikipedia/commons/";
+        const PLACEHOLDER_FLAG = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg";
+        const PLACEHOLDER_COAT = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg";
+
+        function expandAutonomy([code, name, flag, coat_of_arms]) {
+            return { code, name, flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
+        }
+
+        function expandProvince([code, name, code_autonomy, flag, coat_of_arms]) {
+            return { code, name, code_autonomy, flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
+        }
+
+        function expandCity([code, name, code_autonomy, flag, coat_of_arms]) {
+            return { code, name, code_autonomy, code_province: code.substring(0, 2), flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
+        }
+
+        const expanders = { autonomies: expandAutonomy, provinces: expandProvince, cities: expandCity };
+
         async function fetchData(name) {
             if (dataCache[name]) return dataCache[name];
             const response = await fetch(`https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/src/data/${name}.json`);
-            const data = await response.json();
+            const raw = await response.json();
+            const data = raw.map(expanders[name]);
             dataCache[name] = data;
             return data;
         }
