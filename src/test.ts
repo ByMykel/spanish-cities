@@ -368,7 +368,7 @@ test({
 test({
   name: "provinces must have unique code",
   fn: () => {
-    groupByCode(autonomies());
+    groupByCode(provinces());
   },
 });
 
