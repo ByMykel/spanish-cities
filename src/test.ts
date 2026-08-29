@@ -5,15 +5,28 @@ import { provinces } from "./provinces";
 import { cities } from "./cities";
 import { Autonomy, City, Province } from "./types";
 
+let passed = 0;
+let failed = 0;
+
 const test = ({ name, fn }: { name: string; fn: () => void }) => {
   try {
     fn();
+    passed += 1;
     console.log(`✅ ${name}`);
   } catch (error) {
+    failed += 1;
     console.error(`❌ ${name}`);
     console.error(error);
   }
 };
+
+process.on("exit", () => {
+  console.log(`\n${passed} passed, ${failed} failed`);
+
+  if (failed > 0) {
+    process.exitCode = 1;
+  }
+});
 
 const groupByCode = (items: Autonomy[] | Province[] | City[]) => {
   const seenCodes = {} as {
