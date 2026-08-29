@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc && node scripts/copy-data.js",
     "typecheck": "tsc --noEmit",
     "test": "ts-node src/test.ts",
     "prepublishOnly": "npm run typecheck && npm test && npm run build"
