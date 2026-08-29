@@ -4,6 +4,7 @@ import { autonomies } from "./autonomies";
 import { provinces } from "./provinces";
 import { cities } from "./cities";
 import { Autonomy, City, Province } from "./types";
+import { PLACEHOLDER_COAT, PLACEHOLDER_FLAG } from "./internal/constants";
 
 let passed = 0;
 let failed = 0;
@@ -305,7 +306,7 @@ test({
       name: "San Nicolás del Puerto",
       code_autonomy: "01",
       code_province: "41",
-      flag: "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg",
+      flag: PLACEHOLDER_FLAG,
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/2/25/Escudo_de_San_Nicol%C3%A1s_del_Puerto_%28Sevilla%29.svg",
       has_flag: false,
       has_coat_of_arms: true,
@@ -375,9 +376,6 @@ console.group("\nTesting general things:");
 test({
   name: "has_flag is false exactly when flag is the placeholder",
   fn: () => {
-    const PLACEHOLDER_FLAG =
-      "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg";
-
     const items = [...autonomies(), ...provinces(), ...cities()];
 
     assert(
@@ -390,9 +388,6 @@ test({
 test({
   name: "has_coat_of_arms is false exactly when coat_of_arms is the placeholder",
   fn: () => {
-    const PLACEHOLDER_COAT =
-      "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg";
-
     const items = [...autonomies(), ...provinces(), ...cities()];
 
     assert(

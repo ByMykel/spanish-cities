@@ -1,21 +1,15 @@
 import { autonomies } from "./autonomies";
 import { cities } from "./cities";
 import rawData from "./data/provinces.json";
+import { expandImages, matchesCode, matchesName } from "./internal/expand";
 import { FiltersProvince, Province } from "./types";
-
-const WIKIMEDIA_PREFIX = "https://upload.wikimedia.org/wikipedia/commons/";
-const PLACEHOLDER_FLAG = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg";
-const PLACEHOLDER_COAT = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg";
 
 const data: Province[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
   ([code, name, code_autonomy, flag, coat_of_arms]) => ({
     code,
     name,
     code_autonomy,
-    flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG,
-    coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT,
-    has_flag: Boolean(flag),
-    has_coat_of_arms: Boolean(coat_of_arms),
+    ...expandImages(flag, coat_of_arms),
   })
 );
 
@@ -32,9 +26,9 @@ export const provinces = (filters: FiltersProvince = {}): Province[] => {
   const { code, code_autonomy, name, with_autonomy = false, with_cities = false } = filters;
 
   const filtered = data.filter((province: Province) =>
-    (code === undefined || province.code == code) &&
-    (code_autonomy === undefined || province.code_autonomy == code_autonomy) &&
-    (name === undefined || province.name.toLocaleLowerCase().includes(name.toLocaleLowerCase()))
+    matchesCode(province.code, code) &&
+    matchesCode(province.code_autonomy, code_autonomy) &&
+    matchesName(province.name, name)
   );
 
   return filtered.map((province: Province) => ({
