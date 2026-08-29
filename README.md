@@ -44,7 +44,20 @@ npm install all-spanish-cities
 ### CDN Usage
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/all-spanish-cities/dist/index.js"></script>
+<script type="module">
+  import { cities } from "https://cdn.jsdelivr.net/npm/all-spanish-cities@2/+esm";
+
+  console.log(cities({ code_province: "28" }).length);
+</script>
+```
+
+The ESM build is plain modules, so a page that only needs provinces can point
+straight at that dataset and download ~5 KB instead of ~730 KB:
+
+```html
+<script type="module">
+  import { provinces } from "https://cdn.jsdelivr.net/npm/all-spanish-cities@2/dist/esm/standalone/provinces.js";
+</script>
 ```
 
 ## Usage
