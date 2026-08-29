@@ -4,17 +4,14 @@ Reconcile current cities.json with INE 2026 data (diccionario26.xlsx).
 Adds new municipalities, renames updated ones, and preserves existing image URLs.
 """
 
-import json
 import os
 import openpyxl
 
+from data_format import CITIES_PATH, load_cities, save_cities
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 XLSX_PATH = os.path.join(ROOT, "diccionario26.xlsx")
-CITIES_PATH = os.path.join(ROOT, "src", "data", "cities.json")
 REPORT_PATH = os.path.join(ROOT, "scripts", "reconciliation_report.txt")
-
-NO_FLAG = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg"
-NO_COAT = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg"
 
 
 def parse_xlsx(path):
@@ -41,16 +38,9 @@ def parse_xlsx(path):
     return municipalities
 
 
-def load_cities(path):
-    """Load current cities.json and return dict of code -> city object."""
-    with open(path, "r", encoding="utf-8") as f:
-        cities_list = json.load(f)
-    return {c["code"]: c for c in cities_list}
-
-
 def reconcile():
     ine_data = parse_xlsx(XLSX_PATH)
-    current_cities = load_cities(CITIES_PATH)
+    current_cities = {c["code"]: c for c in load_cities(CITIES_PATH)}
 
     report_lines = []
     report_lines.append(f"INE 2026 Reconciliation Report")
@@ -110,19 +100,18 @@ def reconcile():
             city["code_province"] = ine_entry["code_province"]
             updated_cities.append(city)
         else:
-            # New city - add with placeholder images
+            # New city - no images known yet
             updated_cities.append({
                 "code": code,
                 "name": ine_entry["name"],
                 "code_autonomy": ine_entry["code_autonomy"],
                 "code_province": ine_entry["code_province"],
-                "flag": NO_FLAG,
-                "coat_of_arms": NO_COAT,
+                "flag": None,
+                "coat_of_arms": None,
             })
 
     # Write updated cities.json
-    with open(CITIES_PATH, "w", encoding="utf-8") as f:
-        json.dump(updated_cities, f, ensure_ascii=False, indent=2)
+    save_cities(updated_cities, CITIES_PATH)
 
     report_lines.append(f"RESULT:")
     report_lines.append(f"  Updated cities.json: {len(updated_cities)} cities")
