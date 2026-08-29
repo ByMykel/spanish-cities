@@ -106,4 +106,9 @@
   "exclude": [
     "src/test.ts"
   ],
+  /* Relative imports carry .js extensions so the ESM build resolves under
+     Node. ts-node needs its resolver to map those back to .ts at runtime. */
+  "ts-node": {
+    "experimentalResolver": true
+  },
 }

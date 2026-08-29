@@ -1,6 +1,6 @@
 import rawData from "../data/cities.json";
-import { expandImages, matchesCode, matchesName } from "../internal/expand";
-import { City, FiltersCityBase } from "../types";
+import { expandImages, matchesCode, matchesName } from "../internal/expand.js";
+import { City, FiltersCityBase } from "../types/index.js";
 
 const data: City[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
   ([code, name, code_autonomy, flag, coat_of_arms]) => ({

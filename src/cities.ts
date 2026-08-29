@@ -1,7 +1,7 @@
-import { autonomies as selectAutonomies } from "./standalone/autonomies";
-import { cities as selectCities } from "./standalone/cities";
-import { provinces as selectProvinces } from "./standalone/provinces";
-import { FiltersCity, City } from "./types";
+import { autonomies as selectAutonomies } from "./standalone/autonomies.js";
+import { cities as selectCities } from "./standalone/cities.js";
+import { provinces as selectProvinces } from "./standalone/provinces.js";
+import { FiltersCity, City } from "./types/index.js";
 
 /**
  * Returns an array of cities that match the specified filter criteria.

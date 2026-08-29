@@ -65,6 +65,28 @@ const results = cities({ name: "Barcelona" });
 const [almeria] = provinces({ name: "Almería", with_autonomy: true });
 ```
 
+### Smaller Imports
+
+The package root loads all three datasets, because `with_provinces`,
+`with_cities`, `with_autonomy` and `with_province` can join across any of them.
+The city data alone is ~720 KB, which is a lot to ship if you only need a
+province dropdown.
+
+Each dataset is also published on its own subpath. These accept the same
+filters **minus** the `with_*` relations, and load nothing else:
+
+```js
+import { autonomies } from "all-spanish-cities/autonomies";  // ~2 KB
+import { provinces } from "all-spanish-cities/provinces";    // ~5 KB
+import { cities } from "all-spanish-cities/cities";          // ~720 KB
+
+provinces({ code_autonomy: "01" });  // works
+provinces({ with_cities: true });    // not available here - use the root import
+```
+
+Bundled with esbuild, importing `provinces` from the subpath produces 6 KB
+against 736 KB from the root.
+
 ## API
 
 ### `autonomies(filters?)`

@@ -1,6 +1,6 @@
 import rawData from "../data/autonomies.json";
-import { expandImages, matchesCode, matchesName } from "../internal/expand";
-import { Autonomy, FiltersAutonomyBase } from "../types";
+import { expandImages, matchesCode, matchesName } from "../internal/expand.js";
+import { Autonomy, FiltersAutonomyBase } from "../types/index.js";
 
 const data: Autonomy[] = (rawData as unknown as [string, string, string | null, string | null][]).map(
   ([code, name, flag, coat_of_arms]) => ({

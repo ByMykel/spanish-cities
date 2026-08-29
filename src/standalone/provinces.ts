@@ -1,6 +1,6 @@
 import rawData from "../data/provinces.json";
-import { expandImages, matchesCode, matchesName } from "../internal/expand";
-import { FiltersProvinceBase, Province } from "../types";
+import { expandImages, matchesCode, matchesName } from "../internal/expand.js";
+import { FiltersProvinceBase, Province } from "../types/index.js";
 
 const data: Province[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
   ([code, name, code_autonomy, flag, coat_of_arms]) => ({

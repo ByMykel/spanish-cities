@@ -1,4 +1,4 @@
-import { PLACEHOLDER_COAT, PLACEHOLDER_FLAG, WIKIMEDIA_PREFIX } from "./constants";
+import { PLACEHOLDER_COAT, PLACEHOLDER_FLAG, WIKIMEDIA_PREFIX } from "./constants.js";
 
 export interface Images {
   flag: string;
