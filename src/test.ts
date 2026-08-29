@@ -98,6 +98,8 @@ test({
       flag: "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Extremadura%2C_Spain_%28with_coat_of_arms%29.svg",
       coat_of_arms:
         "https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_Extremadura.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
   },
 });
@@ -113,6 +115,8 @@ test({
       flag: "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Castile_and_Le%C3%B3n.svg",
       coat_of_arms:
         "https://upload.wikimedia.org/wikipedia/commons/2/24/Escudo_de_Castilla_y_Le%C3%B3n_-_Versi%C3%B3n_her%C3%A1ldica_oficial.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
 
     assert.deepStrictEqual((<Autonomy[]>result)[1], {
@@ -121,6 +125,8 @@ test({
       flag: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bandera_Castilla-La_Mancha.svg",
       coat_of_arms:
         "https://upload.wikimedia.org/wikipedia/commons/e/eb/Escudo_de_Castilla-La_Mancha.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
 
     assert.strictEqual((<Autonomy[]>result).length, 2);
@@ -188,6 +194,8 @@ test({
       code_autonomy: "07",
       flag: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_Burgos_Province.svg",
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Escudo_de_la_Provincia_de_Burgos.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
   },
 });
@@ -204,6 +212,8 @@ test({
       code_autonomy: "11",
       flag: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Provincia_de_Badajoz_-_Bandera.svg",
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Provincia_de_Badajoz_-_Escudo.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
     assert.deepStrictEqual((<Province[]>result)[1], {
       code: "10",
@@ -211,6 +221,8 @@ test({
       code_autonomy: "11",
       flag: "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_the_province_of_C%C3%A1ceres.svg",
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_la_Diputaci%C3%B3n_de_C%C3%A1ceres.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
   },
 });
@@ -295,6 +307,8 @@ test({
       code_province: "41",
       flag: "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg",
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/2/25/Escudo_de_San_Nicol%C3%A1s_del_Puerto_%28Sevilla%29.svg",
+      has_flag: false,
+      has_coat_of_arms: true,
     });
   },
 });
@@ -357,6 +371,42 @@ test({
 
 console.groupEnd();
 console.group("\nTesting general things:");
+
+test({
+  name: "has_flag is false exactly when flag is the placeholder",
+  fn: () => {
+    const PLACEHOLDER_FLAG =
+      "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg";
+
+    const items = [...autonomies(), ...provinces(), ...cities()];
+
+    assert(
+      items.every((item) => item.has_flag === (item.flag !== PLACEHOLDER_FLAG))
+    );
+    assert.strictEqual(items.filter((item) => !item.has_flag).length, 3641);
+  },
+});
+
+test({
+  name: "has_coat_of_arms is false exactly when coat_of_arms is the placeholder",
+  fn: () => {
+    const PLACEHOLDER_COAT =
+      "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg";
+
+    const items = [...autonomies(), ...provinces(), ...cities()];
+
+    assert(
+      items.every(
+        (item) =>
+          item.has_coat_of_arms === (item.coat_of_arms !== PLACEHOLDER_COAT)
+      )
+    );
+    assert.strictEqual(
+      items.filter((item) => !item.has_coat_of_arms).length,
+      1250
+    );
+  },
+});
 
 test({
   name: "autonomies must have unique code",

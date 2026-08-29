@@ -86,8 +86,10 @@ Returns an array of Spanish autonomous communities.
 interface Autonomy {
   code: string;
   name: string;
-  flag: string;
-  coat_of_arms: string;
+  flag: string;              // placeholder URL when has_flag is false
+  coat_of_arms: string;      // placeholder URL when has_coat_of_arms is false
+  has_flag: boolean;
+  has_coat_of_arms: boolean;
   provinces?: Province[];  // when with_provinces: true
   cities?: City[];         // when with_cities: true
 }
@@ -130,8 +132,10 @@ interface Province {
   code: string;
   name: string;
   code_autonomy: string;
-  flag: string;
-  coat_of_arms: string;
+  flag: string;              // placeholder URL when has_flag is false
+  coat_of_arms: string;      // placeholder URL when has_coat_of_arms is false
+  has_flag: boolean;
+  has_coat_of_arms: boolean;
   autonomy?: Autonomy;     // when with_autonomy: true
   cities?: City[];         // when with_cities: true
 }
@@ -176,8 +180,10 @@ interface City {
   name: string;
   code_autonomy: string;
   code_province: string;
-  flag: string | null;
-  coat_of_arms: string | null;
+  flag: string;              // placeholder URL when has_flag is false
+  coat_of_arms: string;      // placeholder URL when has_coat_of_arms is false
+  has_flag: boolean;
+  has_coat_of_arms: boolean;
   autonomy?: Autonomy;     // when with_autonomy: true
   province?: Province;     // when with_province: true
 }
@@ -195,6 +201,25 @@ cities({ name: "Valverde" });
 // Get a specific city with full context
 cities({ code: "280796", with_autonomy: true, with_province: true });
 // → [{ name: "Madrid", autonomy: { name: "Comunidad de Madrid", ... }, province: { ... } }]
+```
+
+## Flags & Coats of Arms
+
+Not every municipality has a known flag or coat of arms. `flag` and
+`coat_of_arms` are always a URL so they can be dropped straight into an
+`<img>`, falling back to a neutral placeholder image when nothing is known.
+Use `has_flag` and `has_coat_of_arms` to tell the two apart:
+
+```js
+import { cities } from "all-spanish-cities";
+
+const [city] = cities({ code: "410883" });
+
+city.flag;      // → ".../no_flag.svg" (placeholder)
+city.has_flag;  // → false
+
+// Render only real flags
+cities().filter((city) => city.has_flag);
 ```
 
 ## Data Sources

@@ -15,6 +15,8 @@ const data: City[] = (rawData as unknown as [string, string, string, string | nu
     code_province: code.substring(0, 2),
     flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG,
     coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT,
+    has_flag: Boolean(flag),
+    has_coat_of_arms: Boolean(coat_of_arms),
   })
 );
 
