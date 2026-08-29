@@ -3,12 +3,43 @@
   "version": "2.2.1",
   "description": "A library that provides data on Spain's autonomies, provinces, and cities, including their codes, names, flags, and coats of arms for seamless integration into your applications.",
   "main": "dist/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js"
+    },
+    "./autonomies": {
+      "types": "./dist/standalone/autonomies.d.ts",
+      "import": "./dist/esm/standalone/autonomies.js",
+      "require": "./dist/standalone/autonomies.js"
+    },
+    "./provinces": {
+      "types": "./dist/standalone/provinces.d.ts",
+      "import": "./dist/esm/standalone/provinces.js",
+      "require": "./dist/standalone/provinces.js"
+    },
+    "./cities": {
+      "types": "./dist/standalone/cities.d.ts",
+      "import": "./dist/esm/standalone/cities.js",
+      "require": "./dist/standalone/cities.js"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
-    "/dist"
+    "dist"
   ],
   "scripts": {
-    "test": "ts-node src/test.ts"
+    "clean": "rimraf dist",
+    "build:cjs": "tsc && node scripts/copy-data.js",
+    "build:esm": "tsc --project tsconfig.esm.json && node scripts/build-esm.js",
+    "build": "npm run clean && npm run build:cjs && npm run build:esm",
+    "typecheck": "tsc --noEmit",
+    "test": "ts-node src/test.ts",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -30,8 +61,13 @@
     "url": "https://github.com/ByMykel/spanish-cities/issues"
   },
   "homepage": "https://github.com/ByMykel/spanish-cities#readme",
+  "engines": {
+    "node": ">=16"
+  },
   "devDependencies": {
     "@types/node": "^18.11.19",
-    "ts-node": "^10.9.1"
+    "rimraf": "^5.0.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
   }
 }

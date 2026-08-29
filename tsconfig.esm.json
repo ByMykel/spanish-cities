@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "es2020",
+    /* module: es2020 would otherwise default this to "classic". */
+    "moduleResolution": "node",
+    "outDir": "./dist/esm",
+    /* Declarations are emitted once by the CommonJS build and shared by both. */
+    "declaration": false
+  }
+}

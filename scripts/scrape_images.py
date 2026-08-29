@@ -4,7 +4,6 @@ Scrape Wikimedia Commons for SVG flags and coats of arms of Spanish municipaliti
 Match them to cities in cities.json using fuzzy string matching.
 """
 
-import json
 import os
 import re
 import time
@@ -12,12 +11,10 @@ import unicodedata
 import requests
 from rapidfuzz import fuzz, process
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CITIES_PATH = os.path.join(ROOT, "src", "data", "cities.json")
-REPORT_PATH = os.path.join(ROOT, "scripts", "image_matching_report.txt")
+from data_format import CITIES_PATH, load_cities, save_cities
 
-NO_FLAG = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg"
-NO_COAT = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPORT_PATH = os.path.join(ROOT, "scripts", "image_matching_report.txt")
 
 API_URL = "https://commons.wikimedia.org/w/api.php"
 USER_AGENT = "SpanishCitiesBot/1.0 (https://github.com/ByMykel/spanish-cities)"
@@ -426,9 +423,7 @@ def match_images_to_cities(cities_by_province, file_url_map, image_type):
 
 
 def main():
-    # Load cities
-    with open(CITIES_PATH, "r", encoding="utf-8") as f:
-        cities = json.load(f)
+    cities = load_cities(CITIES_PATH)
 
     # Group cities by province
     province_cities = {}
@@ -467,10 +462,7 @@ def main():
         report_lines.append(f"Province {prov_code} ({num_cities} cities)")
         report_lines.append("-" * 40)
 
-        for image_type, cat_key, placeholder in [
-            ("flags", "flags", NO_FLAG),
-            ("coats", "coats", NO_COAT),
-        ]:
+        for image_type, cat_key in [("flags", "flags"), ("coats", "coats")]:
             category = cats.get(cat_key)
             if not category:
                 report_lines.append(f"  {image_type}: no category defined, skipping")
@@ -527,16 +519,14 @@ def main():
     report_lines.append(f"  Flag matches: {total_flag_matches}")
     report_lines.append(f"  Coat of arms matches: {total_coat_matches}")
 
-    # Count cities still with placeholders
-    no_flag_count = sum(1 for c in cities if c["flag"] == NO_FLAG)
-    no_coat_count = sum(1 for c in cities if c["coat_of_arms"] == NO_COAT)
+    # Count cities still without images
+    no_flag_count = sum(1 for c in cities if not c["flag"])
+    no_coat_count = sum(1 for c in cities if not c["coat_of_arms"])
     report_lines.append(f"  Cities without flag: {no_flag_count}")
     report_lines.append(f"  Cities without coat of arms: {no_coat_count}")
 
-    # Write updated cities.json (maintaining sort order)
-    cities_sorted = sorted(cities, key=lambda c: c["code"])
-    with open(CITIES_PATH, "w", encoding="utf-8") as f:
-        json.dump(cities_sorted, f, ensure_ascii=False, indent=2)
+    # Write updated cities.json (save_cities sorts by code)
+    save_cities(cities, CITIES_PATH)
 
     # Write report
     report_text = "\n".join(report_lines)

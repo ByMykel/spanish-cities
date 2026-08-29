@@ -1,21 +1,7 @@
-import { autonomies } from "./autonomies";
-import { cities } from "./cities";
-import rawData from "./data/provinces.json";
-import { FiltersProvince, Province } from "./types";
-
-const WIKIMEDIA_PREFIX = "https://upload.wikimedia.org/wikipedia/commons/";
-const PLACEHOLDER_FLAG = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg";
-const PLACEHOLDER_COAT = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg";
-
-const data: Province[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
-  ([code, name, code_autonomy, flag, coat_of_arms]) => ({
-    code,
-    name,
-    code_autonomy,
-    flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG,
-    coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT,
-  })
-);
+import { autonomies as selectAutonomies } from "./standalone/autonomies.js";
+import { cities as selectCities } from "./standalone/cities.js";
+import { provinces as selectProvinces } from "./standalone/provinces.js";
+import { FiltersProvince, Province } from "./types/index.js";
 
 /**
  * Returns an array of provinces that match the specified filter criteria.
@@ -29,15 +15,15 @@ const data: Province[] = (rawData as unknown as [string, string, string, string 
 export const provinces = (filters: FiltersProvince = {}): Province[] => {
   const { code, code_autonomy, name, with_autonomy = false, with_cities = false } = filters;
 
-  const filtered = data.filter((province: Province) =>
-    (code === undefined || province.code == code) &&
-    (code_autonomy === undefined || province.code_autonomy == code_autonomy) &&
-    (name === undefined || province.name.toLocaleLowerCase().includes(name.toLocaleLowerCase()))
-  );
+  const filtered = selectProvinces({ code, code_autonomy, name });
+
+  if (!with_autonomy && !with_cities) {
+    return filtered;
+  }
 
   return filtered.map((province: Province) => ({
     ...province,
-    ...(with_autonomy && { autonomy: autonomies({ code: province.code_autonomy })[0] }),
-    ...(with_cities && { cities: cities({ code_province: province.code }) })
+    ...(with_autonomy && { autonomy: selectAutonomies({ code: province.code_autonomy })[0] }),
+    ...(with_cities && { cities: selectCities({ code_province: province.code }) })
   }));
 };

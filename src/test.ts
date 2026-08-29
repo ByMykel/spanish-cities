@@ -4,16 +4,30 @@ import { autonomies } from "./autonomies";
 import { provinces } from "./provinces";
 import { cities } from "./cities";
 import { Autonomy, City, Province } from "./types";
+import { PLACEHOLDER_COAT, PLACEHOLDER_FLAG } from "./internal/constants";
+
+let passed = 0;
+let failed = 0;
 
 const test = ({ name, fn }: { name: string; fn: () => void }) => {
   try {
     fn();
+    passed += 1;
     console.log(`✅ ${name}`);
   } catch (error) {
+    failed += 1;
     console.error(`❌ ${name}`);
     console.error(error);
   }
 };
+
+process.on("exit", () => {
+  console.log(`\n${passed} passed, ${failed} failed`);
+
+  if (failed > 0) {
+    process.exitCode = 1;
+  }
+});
 
 const groupByCode = (items: Autonomy[] | Province[] | City[]) => {
   const seenCodes = {} as {
@@ -85,6 +99,8 @@ test({
       flag: "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Extremadura%2C_Spain_%28with_coat_of_arms%29.svg",
       coat_of_arms:
         "https://upload.wikimedia.org/wikipedia/commons/e/e6/Escudo_de_Extremadura.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
   },
 });
@@ -100,6 +116,8 @@ test({
       flag: "https://upload.wikimedia.org/wikipedia/commons/1/13/Flag_of_Castile_and_Le%C3%B3n.svg",
       coat_of_arms:
         "https://upload.wikimedia.org/wikipedia/commons/2/24/Escudo_de_Castilla_y_Le%C3%B3n_-_Versi%C3%B3n_her%C3%A1ldica_oficial.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
 
     assert.deepStrictEqual((<Autonomy[]>result)[1], {
@@ -108,6 +126,8 @@ test({
       flag: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bandera_Castilla-La_Mancha.svg",
       coat_of_arms:
         "https://upload.wikimedia.org/wikipedia/commons/e/eb/Escudo_de_Castilla-La_Mancha.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
 
     assert.strictEqual((<Autonomy[]>result).length, 2);
@@ -175,6 +195,8 @@ test({
       code_autonomy: "07",
       flag: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_Burgos_Province.svg",
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Escudo_de_la_Provincia_de_Burgos.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
   },
 });
@@ -191,6 +213,8 @@ test({
       code_autonomy: "11",
       flag: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Provincia_de_Badajoz_-_Bandera.svg",
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Provincia_de_Badajoz_-_Escudo.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
     assert.deepStrictEqual((<Province[]>result)[1], {
       code: "10",
@@ -198,16 +222,20 @@ test({
       code_autonomy: "11",
       flag: "https://upload.wikimedia.org/wikipedia/commons/9/95/Flag_of_the_province_of_C%C3%A1ceres.svg",
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/4/48/Escudo_de_la_Diputaci%C3%B3n_de_C%C3%A1ceres.svg",
+      has_flag: true,
+      has_coat_of_arms: true,
     });
   },
 });
 
 test({
-  name: 'should return 6 provinces when name is "Ri"',
+  name: 'should return 7 provinces when name is "Ri"',
   fn: () => {
+    // Almería joins the 6 accent-sensitive matches now that search ignores
+    // diacritics.
     const result = provinces({ name: "Ri" });
 
-    assert.strictEqual((<Province[]>result).length, 6);
+    assert.strictEqual((<Province[]>result).length, 7);
   },
 });
 
@@ -280,8 +308,10 @@ test({
       name: "San Nicolás del Puerto",
       code_autonomy: "01",
       code_province: "41",
-      flag: "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg",
+      flag: PLACEHOLDER_FLAG,
       coat_of_arms: "https://upload.wikimedia.org/wikipedia/commons/2/25/Escudo_de_San_Nicol%C3%A1s_del_Puerto_%28Sevilla%29.svg",
+      has_flag: false,
+      has_coat_of_arms: true,
     });
   },
 });
@@ -346,6 +376,163 @@ console.groupEnd();
 console.group("\nTesting general things:");
 
 test({
+  name: "has_flag is false exactly when flag is the placeholder",
+  fn: () => {
+    const items = [...autonomies(), ...provinces(), ...cities()];
+
+    assert(
+      items.every((item) => item.has_flag === (item.flag !== PLACEHOLDER_FLAG))
+    );
+    assert.strictEqual(items.filter((item) => !item.has_flag).length, 3641);
+  },
+});
+
+test({
+  name: "has_coat_of_arms is false exactly when coat_of_arms is the placeholder",
+  fn: () => {
+    const items = [...autonomies(), ...provinces(), ...cities()];
+
+    assert(
+      items.every(
+        (item) =>
+          item.has_coat_of_arms === (item.coat_of_arms !== PLACEHOLDER_COAT)
+      )
+    );
+    assert.strictEqual(
+      items.filter((item) => !item.has_coat_of_arms).length,
+      1250
+    );
+  },
+});
+
+test({
+  name: "code filters stay loose after indexing",
+  fn: () => {
+    // The code index keys on the stored zero-padded form, so every spelling
+    // that used to match through == must still resolve to the same row.
+    for (const code of ["09", 9, 9.0] as (string | number)[]) {
+      assert.deepStrictEqual(
+        provinces({ code }).map((province) => province.name),
+        ["Burgos"],
+        `province code ${JSON.stringify(code)}`
+      );
+    }
+
+    // A number is coerced, but "09" == "9" compares two strings and is false,
+    // so an unpadded string has never matched. Indexing must not change that.
+    for (const code of ["9", "009"]) {
+      assert.deepStrictEqual(
+        provinces({ code }),
+        [],
+        `province code ${JSON.stringify(code)}`
+      );
+    }
+
+    for (const code of ["280796", 280796] as (string | number)[]) {
+      assert.deepStrictEqual(
+        cities({ code }).map((city) => city.name),
+        ["Madrid"],
+        `city code ${JSON.stringify(code)}`
+      );
+    }
+
+    assert.deepStrictEqual(
+      autonomies({ code: 11 }).map((autonomy) => autonomy.name),
+      ["Extremadura"]
+    );
+    assert.strictEqual(cities({ code: "280796", code_province: "41" }).length, 0);
+    assert.strictEqual(cities({ code: "280796", code_province: "28" }).length, 1);
+    assert.deepStrictEqual(
+      cities({ code_province: "28", name: "Madrid" }).map((city) => city.name),
+      ["Humanes de Madrid", "Madrid", "Rivas-Vaciamadrid", "Rozas de Madrid, Las"]
+    );
+  },
+});
+
+test({
+  name: "name search ignores diacritics",
+  fn: () => {
+    assert.deepStrictEqual(
+      provinces({ name: "malaga" }).map((province) => province.name),
+      ["Málaga"]
+    );
+    assert.deepStrictEqual(
+      provinces({ name: "Málaga" }).map((province) => province.name),
+      ["Málaga"]
+    );
+    assert.deepStrictEqual(
+      cities({ name: "Vitoria-Gasteiz" }).map((city) => city.name),
+      ["Vitoria-Gasteiz"]
+    );
+  },
+});
+
+test({
+  name: "name search accepts the natural order of INE-inverted names",
+  fn: () => {
+    const found = (name: string) =>
+      [...autonomies({ name }), ...provinces({ name }), ...cities({ name })].map(
+        (item) => item.name
+      );
+
+    // Some names are both an autonomy and a province, hence the repeats.
+    assert.deepStrictEqual(found("Comunidad de Madrid"), ["Madrid, Comunidad de"]);
+    assert.deepStrictEqual(found("Illes Balears"), ["Balears, Illes", "Balears, Illes"]);
+    assert.deepStrictEqual(found("A Coruna"), ["Coruña, A", "Coruña, A"]);
+    assert.deepStrictEqual(found("l'Atzubia"), ["Atzúbia, l'"]);
+    assert.deepStrictEqual(found("Rioja, La"), ["Rioja, La", "Rioja, La"]);
+  },
+});
+
+test({
+  name: "name search matches either half of a bilingual name",
+  fn: () => {
+    assert.deepStrictEqual(
+      cities({ name: "Burgelu" }).map((city) => city.name),
+      ["Elburgo/Burgelu"]
+    );
+    assert.deepStrictEqual(
+      cities({ name: "Elburgo" }).map((city) => city.name),
+      ["Elburgo/Burgelu"]
+    );
+  },
+});
+
+test({
+  name: "results are fresh objects, not references into the dataset",
+  fn: () => {
+    const first = cities({ code: "410883" })[0];
+    first.name = "MUTATED";
+
+    assert.strictEqual(
+      cities({ code: "410883" })[0].name,
+      "San Nicolás del Puerto"
+    );
+  },
+});
+
+test({
+  name: "standalone modules load only their own dataset",
+  fn: () => {
+    // Each standalone module must be importable without dragging in the
+    // others, which is what makes the subpath exports worth having.
+    const loaded = () =>
+      Object.keys(require.cache).filter((path) => /data[\\/]\w+\.json$/.test(path));
+
+    for (const key of Object.keys(require.cache)) {
+      if (/[\\/](standalone|data)[\\/]/.test(key)) delete require.cache[key];
+    }
+
+    require("./standalone/provinces");
+
+    assert.deepStrictEqual(
+      loaded().map((path) => path.split(/[\\/]/).pop()),
+      ["provinces.json"]
+    );
+  },
+});
+
+test({
   name: "autonomies must have unique code",
   fn: () => {
     groupByCode(autonomies());
@@ -355,7 +542,7 @@ test({
 test({
   name: "provinces must have unique code",
   fn: () => {
-    groupByCode(autonomies());
+    groupByCode(provinces());
   },
 });
 

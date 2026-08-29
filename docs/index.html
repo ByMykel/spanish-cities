@@ -8,7 +8,7 @@
     <!-- Primary Meta Tags -->
     <title>All Spanish Cities - Explore Spain's Autonomies, Provinces & Cities</title>
     <meta name="title" content="All Spanish Cities - Explore Spain's Autonomies, Provinces & Cities">
-    <meta name="description" content="Discover all 8,131 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes from INE. Free open-source library for developers.">
+    <meta name="description" content="Discover all 8,132 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes from INE. Free open-source library for developers.">
     <meta name="keywords" content="Spain, Spanish cities, autonomies, provinces, flags, coat of arms, INE codes, municipalities, España, ciudades, provincias, comunidades autónomas">
     <meta name="author" content="ByMykel">
     <meta name="robots" content="index, follow">
@@ -29,7 +29,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bymykel.github.io/spanish-cities/">
     <meta property="og:title" content="All Spanish Cities - Explore Spain's Autonomies, Provinces & Cities">
-    <meta property="og:description" content="Discover all 8,131 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes. Free open-source library.">
+    <meta property="og:description" content="Discover all 8,132 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes. Free open-source library.">
     <meta property="og:image" content="https://raw.githubusercontent.com/ByMykel/spanish-cities/main/docs/og-image.png">
     <meta property="og:image:alt" content="All Spanish Cities - Browse Spain's geographic data">
     <meta property="og:locale" content="en_US">
@@ -39,7 +39,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://bymykel.github.io/spanish-cities/">
     <meta name="twitter:title" content="All Spanish Cities - Explore Spain's Autonomies, Provinces & Cities">
-    <meta name="twitter:description" content="Discover all 8,131 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes.">
+    <meta name="twitter:description" content="Discover all 8,132 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes.">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/ByMykel/spanish-cities/main/docs/og-image.png">
 
     <!-- Structured Data -->
@@ -190,7 +190,6 @@
             font-size: 0.875rem;
             font-weight: 500;
             transition: background var(--transition);
-            backdrop-filter: blur(10px);
         }
 
         .github-link:hover {
@@ -339,7 +338,7 @@
             color: var(--color-text-secondary);
             text-decoration: none;
             border-radius: var(--radius-md);
-            transition: all var(--transition);
+            transition: background var(--transition), border-color var(--transition), color var(--transition);
             white-space: nowrap;
         }
 
@@ -402,7 +401,6 @@
             outline: none;
             transition: background var(--transition);
             appearance: none;
-            backdrop-filter: blur(10px);
         }
 
         .filter-select option {
@@ -455,8 +453,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 1.5rem;
-            content-visibility: auto;
-            contain-intrinsic-size: auto 500px;
         }
 
         /* Card */
@@ -467,13 +463,11 @@
             border: 1px solid var(--color-border);
             display: flex;
             flex-direction: column;
-            contain: layout style paint;
             position: relative;
-            transition: border-color 0.2s ease;
-        }
-
-        .card:hover {
-            border-color: var(--color-border);
+            /* Belongs on the card, not the grid: on the grid it only pays off
+               while the whole list is offscreen. */
+            content-visibility: auto;
+            contain-intrinsic-size: auto 260px;
         }
 
         .card__media {
@@ -502,12 +496,10 @@
             object-fit: contain;
             opacity: 0;
             transition: opacity 0.3s ease;
-            will-change: opacity;
         }
 
         .card__media-item img.loaded {
             opacity: 1;
-            will-change: auto;
         }
 
         .card__media-item.loading {
@@ -815,7 +807,7 @@
             box-shadow: var(--shadow-lg);
             opacity: 0;
             visibility: hidden;
-            transition: all var(--transition);
+            transition: background var(--transition), border-color var(--transition), color var(--transition);
             z-index: 50;
         }
 
@@ -859,7 +851,7 @@
             border: 1px solid var(--color-border);
             border-radius: var(--radius-sm);
             cursor: pointer;
-            transition: all var(--transition);
+            transition: background var(--transition), border-color var(--transition), color var(--transition);
             text-decoration: none;
         }
 
@@ -972,15 +964,15 @@
                 <div class="tabs" id="tabs">
                     <a href="?tab=autonomies" class="tab" data-tab="autonomies">
                         Autonomies
-                        <span class="tab-count" id="count-autonomies">19</span>
+                        <span class="tab-count" id="count-autonomies">&mdash;</span>
                     </a>
                     <a href="?tab=provinces" class="tab" data-tab="provinces">
                         Provinces
-                        <span class="tab-count" id="count-provinces">52</span>
+                        <span class="tab-count" id="count-provinces">&mdash;</span>
                     </a>
                     <a href="?tab=cities" class="tab" data-tab="cities">
                         Cities
-                        <span class="tab-count" id="count-cities">8,131</span>
+                        <span class="tab-count" id="count-cities">&mdash;</span>
                     </a>
                 </div>
                 <div class="results-info" id="resultsInfo">
@@ -1009,61 +1001,43 @@
     </div>
 
     <script type="module">
-        // Data fetching
-        const dataCache = {};
+        // Must be published to npm before this page is deployed - jsDelivr
+        // serves it from the registry.
+        const LIBRARY_VERSION = '2.3.0';
+        const LIBRARY_CDN = `https://cdn.jsdelivr.net/npm/all-spanish-cities@${LIBRARY_VERSION}/dist/esm/standalone/`;
 
-        const WIKIMEDIA_PREFIX = "https://upload.wikimedia.org/wikipedia/commons/";
-        const PLACEHOLDER_FLAG = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg";
-        const PLACEHOLDER_COAT = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg";
+        const modules = {};
 
-        function expandAutonomy([code, name, flag, coat_of_arms]) {
-            return { code, name, flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
+        function loadDataset(name) {
+            // import() caches, but hold the promise so concurrent callers
+            // (a tab switch mid-render) share one request.
+            modules[name] ??= import(`${LIBRARY_CDN}${name}.js`).then(
+                (module) => {
+                    showTabCount(name, module[name]().length);
+                    return module;
+                },
+                (error) => {
+                    // Uncache, or a retry replays the same rejection forever.
+                    delete modules[name];
+                    throw error;
+                }
+            );
+
+            return modules[name];
         }
 
-        function expandProvince([code, name, code_autonomy, flag, coat_of_arms]) {
-            return { code, name, code_autonomy, flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
+        async function query(name, filters = {}) {
+            const module = await loadDataset(name);
+            return module[name](filters);
         }
 
-        function expandCity([code, name, code_autonomy, flag, coat_of_arms]) {
-            return { code, name, code_autonomy, code_province: code.substring(0, 2), flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
-        }
+        const isLoaded = (name) => name in modules;
 
-        const expanders = { autonomies: expandAutonomy, provinces: expandProvince, cities: expandCity };
-
-        async function fetchData(name) {
-            if (dataCache[name]) return dataCache[name];
-            const response = await fetch(`https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/src/data/${name}.json`);
-            const raw = await response.json();
-            const data = raw.map(expanders[name]);
-            dataCache[name] = data;
-            return data;
-        }
-
-        async function autonomies(filter) {
-            const data = await fetchData('autonomies');
-            if (filter?.name) {
-                const searchTerm = filter.name.toLowerCase();
-                return data.filter(item => item.name.toLowerCase().includes(searchTerm));
-            }
-            return data;
-        }
-
-        async function provinces(filter) {
-            const data = await fetchData('provinces');
-            if (filter?.name) {
-                const searchTerm = filter.name.toLowerCase();
-                return data.filter(item => item.name.toLowerCase().includes(searchTerm));
-            }
-            return data;
-        }
-
-        async function cities(filter) {
-            const data = await fetchData('cities');
-            if (filter?.name) {
-                const searchTerm = filter.name.toLowerCase();
-                return data.filter(item => item.name.toLowerCase().includes(searchTerm));
-            }
-            return data;
+        // Each count waits for its own tab: loading all three up front just for
+        // the numbers would pull the ~720 KB of city data on first paint.
+        function showTabCount(name, total) {
+            const el = document.getElementById(`count-${name}`);
+            if (el) el.textContent = total.toLocaleString();
         }
 
         // State
@@ -1110,19 +1084,22 @@
         // Get entities by tab
         async function getEntitiesByTab(search = '') {
             const tab = getCurrentTab();
-            const filter = search ? { name: search } : undefined;
 
             updateTabUI(tab);
 
-            switch (tab) {
-                case 'provinces':
-                    return provinces(filter);
-                case 'cities':
-                    return cities(filter);
-                case 'autonomies':
-                default:
-                    return autonomies(filter);
+            const filters = {};
+            if (search) filters.name = search;
+
+            // The library applies these, so the page does not filter twice.
+            if (tab === 'cities') {
+                const autonomy = getParam('autonomy');
+                const province = getParam('province');
+
+                if (autonomy) filters.code_autonomy = autonomy;
+                if (province) filters.code_province = province;
             }
+
+            return query(tab === 'provinces' || tab === 'cities' ? tab : 'autonomies', filters);
         }
 
         // Update results count
@@ -1159,9 +1136,42 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
                 </svg>
                 <h3>No results found</h3>
-                <p>No matches for "${searchTerm}". Try a different search term.</p>
             `;
+
+            // searchTerm comes from the URL, so it must never reach innerHTML.
+            const message = document.createElement('p');
+            message.textContent = `No matches for "${searchTerm}". Try a different search term.`;
+            empty.appendChild(message);
+
             return empty;
+        }
+
+        function createErrorState(error) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'empty-state';
+            wrapper.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/>
+                </svg>
+                <h3>Could not load the data</h3>
+            `;
+
+            const message = document.createElement('p');
+            message.textContent = `all-spanish-cities@${LIBRARY_VERSION} could not be fetched from jsDelivr. Check your connection and try again.`;
+            wrapper.appendChild(message);
+
+            const retry = document.createElement('button');
+            retry.className = 'filters-clear visible';
+            retry.type = 'button';
+            retry.textContent = 'Retry';
+            retry.addEventListener('click', () => {
+                renderEntities(document.getElementById('searchInput').value);
+            });
+            wrapper.appendChild(retry);
+
+            console.error('[all-spanish-cities] dataset load failed', error);
+
+            return wrapper;
         }
 
         // Download icon SVG
@@ -1221,83 +1231,57 @@
             return button;
         }
 
-        // Create card
+        function createMediaItem(entity, kind) {
+            const isFlag = kind === 'Flag';
+            const url = isFlag ? entity.flag : entity.coat_of_arms;
+            const known = isFlag ? entity.has_flag : entity.has_coat_of_arms;
+
+            const item = document.createElement('div');
+            item.className = known
+                ? 'card__media-item loading'
+                : 'card__media-item card__media-item--empty';
+
+            // When the entity has no image of this kind the URL is a generic
+            // placeholder, so there is nothing worth showing or downloading.
+            if (known) {
+                const img = document.createElement('img');
+                img.src = url;
+                img.alt = `${isFlag ? 'Flag' : 'Coat of arms'} of ${entity.name}`;
+                img.loading = 'lazy';
+                img.decoding = 'async';
+                img.onload = () => {
+                    img.classList.add('loaded');
+                    item.classList.remove('loading');
+                };
+                img.onerror = () => {
+                    item.classList.remove('loading');
+                    item.classList.add('card__media-item--empty');
+                    img.remove();
+                    item.querySelector('.card__download')?.remove();
+                };
+
+                item.appendChild(img);
+                item.appendChild(createDownloadButton(url, entity.name, kind));
+            }
+
+            const label = document.createElement('span');
+            label.className = 'card__media-label';
+            label.textContent = known ? kind : `No ${kind.toLowerCase()}`;
+            item.appendChild(label);
+
+            return item;
+        }
+
         function createCard(entity) {
             const card = document.createElement('div');
             card.className = 'card';
 
             const media = document.createElement('div');
             media.className = 'card__media';
-
-            // Flag
-            const flagItem = document.createElement('div');
-            flagItem.className = entity.flag ? 'card__media-item loading' : 'card__media-item card__media-item--empty';
-
-            if (entity.flag) {
-                const flagImg = document.createElement('img');
-                flagImg.src = entity.flag;
-                flagImg.alt = `Flag of ${entity.name}`;
-                flagImg.loading = 'lazy';
-                flagImg.onload = () => {
-                    flagImg.classList.add('loaded');
-                    flagItem.classList.remove('loading');
-                };
-                flagImg.onerror = () => {
-                    flagItem.classList.remove('loading');
-                    flagItem.classList.add('card__media-item--empty');
-                    flagImg.remove();
-                    // Remove download button if image fails
-                    const btn = flagItem.querySelector('.card__download');
-                    if (btn) btn.remove();
-                };
-                flagItem.appendChild(flagImg);
-
-                // Add download button for flag
-                flagItem.appendChild(createDownloadButton(entity.flag, entity.name, 'Flag'));
-            }
-
-            const flagLabel = document.createElement('span');
-            flagLabel.className = 'card__media-label';
-            flagLabel.textContent = 'Flag';
-            flagItem.appendChild(flagLabel);
-            media.appendChild(flagItem);
-
-            // Coat of arms
-            const coatItem = document.createElement('div');
-            coatItem.className = entity.coat_of_arms ? 'card__media-item loading' : 'card__media-item card__media-item--empty';
-
-            if (entity.coat_of_arms) {
-                const coatImg = document.createElement('img');
-                coatImg.src = entity.coat_of_arms;
-                coatImg.alt = `Coat of arms of ${entity.name}`;
-                coatImg.loading = 'lazy';
-                coatImg.onload = () => {
-                    coatImg.classList.add('loaded');
-                    coatItem.classList.remove('loading');
-                };
-                coatImg.onerror = () => {
-                    coatItem.classList.remove('loading');
-                    coatItem.classList.add('card__media-item--empty');
-                    coatImg.remove();
-                    // Remove download button if image fails
-                    const btn = coatItem.querySelector('.card__download');
-                    if (btn) btn.remove();
-                };
-                coatItem.appendChild(coatImg);
-
-                // Add download button for coat of arms
-                coatItem.appendChild(createDownloadButton(entity.coat_of_arms, entity.name, 'Coat'));
-            }
-
-            const coatLabel = document.createElement('span');
-            coatLabel.className = 'card__media-label';
-            coatLabel.textContent = 'Coat';
-            coatItem.appendChild(coatLabel);
-            media.appendChild(coatItem);
-
+            media.appendChild(createMediaItem(entity, 'Flag'));
+            media.appendChild(createMediaItem(entity, 'Coat'));
             card.appendChild(media);
 
-            // Content
             const content = document.createElement('div');
             content.className = 'card__content';
 
@@ -1429,7 +1413,7 @@
             const selectedProvince = getParam('province') || '';
 
             // Populate autonomies dropdown
-            const autonomiesData = await fetchData('autonomies');
+            const autonomiesData = await query('autonomies');
             autonomySelect.innerHTML = '<option value="">All autonomies</option>';
             autonomiesData.sort((a, b) => a.name.localeCompare(b.name)).forEach(a => {
                 const option = document.createElement('option');
@@ -1440,10 +1424,10 @@
             autonomySelect.value = selectedAutonomy;
 
             // Populate provinces dropdown (filtered by selected autonomy)
-            const provincesData = await fetchData('provinces');
-            const filteredProvinces = selectedAutonomy
-                ? provincesData.filter(p => p.code_autonomy === selectedAutonomy)
-                : provincesData;
+            const filteredProvinces = await query(
+                'provinces',
+                selectedAutonomy ? { code_autonomy: selectedAutonomy } : {}
+            );
             provinceSelect.innerHTML = '<option value="">All provinces</option>';
             filteredProvinces.sort((a, b) => a.name.localeCompare(b.name)).forEach(p => {
                 const option = document.createElement('option');
@@ -1456,40 +1440,31 @@
             clearBtn.classList.toggle('visible', !!(selectedAutonomy || selectedProvince));
         }
 
-        // Apply filters to entities
-        function applyFilters(entities) {
-            const autonomyCode = document.getElementById('filterAutonomy').value;
-            const provinceCode = document.getElementById('filterProvince').value;
-
-            let result = entities;
-            if (autonomyCode) {
-                result = result.filter(e => e.code_autonomy === autonomyCode);
-            }
-            if (provinceCode) {
-                result = result.filter(e => e.code_province === provinceCode);
-            }
-            return result;
-        }
-
         // Render entities
         async function renderEntities(searchTerm = '') {
             const itemsContainer = document.getElementById('items');
             const tab = getCurrentTab();
-            const isCached = !!dataCache[tab];
 
             // Only show skeletons on first (uncached) load
-            if (!isCached) {
+            if (!isLoaded(tab)) {
                 itemsContainer.innerHTML = '';
                 for (let i = 0; i < 8; i++) {
                     itemsContainer.appendChild(createLoadingSkeleton());
                 }
             }
 
-            await updateFiltersUI();
+            try {
+                await updateFiltersUI();
 
-            // Fetch data
-            currentEntities = await getEntitiesByTab(searchTerm);
-            filteredEntities = tab === 'cities' ? applyFilters(currentEntities) : currentEntities;
+                    currentEntities = await getEntitiesByTab(searchTerm);
+            } catch (error) {
+                itemsContainer.innerHTML = '';
+                itemsContainer.appendChild(createErrorState(error));
+                updateResultsCount(0);
+                return;
+            }
+
+            filteredEntities = currentEntities;
             totalPages = Math.max(1, Math.ceil(filteredEntities.length / ITEMS_PER_PAGE));
             const urlPage = parseInt(getParam('page')) || 1;
             currentPage = Math.min(Math.max(1, urlPage), totalPages);
@@ -1590,10 +1565,25 @@
         // Setup scroll to top
         function setupScrollToTop() {
             const scrollTop = document.getElementById('scrollTop');
+            let visible = false;
+            let queued = false;
 
+            // Passive and frame-coalesced: a scroll listener that writes to the
+            // DOM on every event janks the scroll.
             window.addEventListener('scroll', () => {
-                scrollTop.classList.toggle('visible', window.scrollY > 500);
-            });
+                if (queued) return;
+                queued = true;
+
+                requestAnimationFrame(() => {
+                    queued = false;
+
+                    const shouldShow = window.scrollY > 500;
+                    if (shouldShow === visible) return;
+
+                    visible = shouldShow;
+                    scrollTop.classList.toggle('visible', shouldShow);
+                });
+            }, { passive: true });
 
             scrollTop.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });

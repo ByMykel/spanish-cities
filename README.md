@@ -44,7 +44,20 @@ npm install all-spanish-cities
 ### CDN Usage
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/all-spanish-cities/dist/index.js"></script>
+<script type="module">
+  import { cities } from "https://cdn.jsdelivr.net/npm/all-spanish-cities@2/+esm";
+
+  console.log(cities({ code_province: "28" }).length);
+</script>
+```
+
+The ESM build is plain modules, so a page that only needs provinces can point
+straight at that dataset and download ~5 KB instead of ~730 KB:
+
+```html
+<script type="module">
+  import { provinces } from "https://cdn.jsdelivr.net/npm/all-spanish-cities@2/dist/esm/standalone/provinces.js";
+</script>
 ```
 
 ## Usage
@@ -64,6 +77,28 @@ const results = cities({ name: "Barcelona" });
 // Get province with its autonomy data
 const [almeria] = provinces({ name: "Almería", with_autonomy: true });
 ```
+
+### Smaller Imports
+
+The package root loads all three datasets, because `with_provinces`,
+`with_cities`, `with_autonomy` and `with_province` can join across any of them.
+The city data alone is ~720 KB, which is a lot to ship if you only need a
+province dropdown.
+
+Each dataset is also published on its own subpath. These accept the same
+filters **minus** the `with_*` relations, and load nothing else:
+
+```js
+import { autonomies } from "all-spanish-cities/autonomies";  // ~2 KB
+import { provinces } from "all-spanish-cities/provinces";    // ~5 KB
+import { cities } from "all-spanish-cities/cities";          // ~720 KB
+
+provinces({ code_autonomy: "01" });  // works
+provinces({ with_cities: true });    // not available here - use the root import
+```
+
+Bundled with esbuild, importing `provinces` from the subpath produces 6 KB
+against 736 KB from the root.
 
 ## API
 
@@ -86,8 +121,10 @@ Returns an array of Spanish autonomous communities.
 interface Autonomy {
   code: string;
   name: string;
-  flag: string;
-  coat_of_arms: string;
+  flag: string;              // placeholder URL when has_flag is false
+  coat_of_arms: string;      // placeholder URL when has_coat_of_arms is false
+  has_flag: boolean;
+  has_coat_of_arms: boolean;
   provinces?: Province[];  // when with_provinces: true
   cities?: City[];         // when with_cities: true
 }
@@ -130,8 +167,10 @@ interface Province {
   code: string;
   name: string;
   code_autonomy: string;
-  flag: string;
-  coat_of_arms: string;
+  flag: string;              // placeholder URL when has_flag is false
+  coat_of_arms: string;      // placeholder URL when has_coat_of_arms is false
+  has_flag: boolean;
+  has_coat_of_arms: boolean;
   autonomy?: Autonomy;     // when with_autonomy: true
   cities?: City[];         // when with_cities: true
 }
@@ -176,8 +215,10 @@ interface City {
   name: string;
   code_autonomy: string;
   code_province: string;
-  flag: string | null;
-  coat_of_arms: string | null;
+  flag: string;              // placeholder URL when has_flag is false
+  coat_of_arms: string;      // placeholder URL when has_coat_of_arms is false
+  has_flag: boolean;
+  has_coat_of_arms: boolean;
   autonomy?: Autonomy;     // when with_autonomy: true
   province?: Province;     // when with_province: true
 }
@@ -195,6 +236,25 @@ cities({ name: "Valverde" });
 // Get a specific city with full context
 cities({ code: "280796", with_autonomy: true, with_province: true });
 // → [{ name: "Madrid", autonomy: { name: "Comunidad de Madrid", ... }, province: { ... } }]
+```
+
+## Flags & Coats of Arms
+
+Not every municipality has a known flag or coat of arms. `flag` and
+`coat_of_arms` are always a URL so they can be dropped straight into an
+`<img>`, falling back to a neutral placeholder image when nothing is known.
+Use `has_flag` and `has_coat_of_arms` to tell the two apart:
+
+```js
+import { cities } from "all-spanish-cities";
+
+const [city] = cities({ code: "410883" });
+
+city.flag;      // → ".../no_flag.svg" (placeholder)
+city.has_flag;  // → false
+
+// Render only real flags
+cities().filter((city) => city.has_flag);
 ```
 
 ## Data Sources
