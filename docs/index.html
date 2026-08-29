@@ -190,7 +190,6 @@
             font-size: 0.875rem;
             font-weight: 500;
             transition: background var(--transition);
-            backdrop-filter: blur(10px);
         }
 
         .github-link:hover {
@@ -339,7 +338,7 @@
             color: var(--color-text-secondary);
             text-decoration: none;
             border-radius: var(--radius-md);
-            transition: all var(--transition);
+            transition: background var(--transition), border-color var(--transition), color var(--transition);
             white-space: nowrap;
         }
 
@@ -402,7 +401,6 @@
             outline: none;
             transition: background var(--transition);
             appearance: none;
-            backdrop-filter: blur(10px);
         }
 
         .filter-select option {
@@ -455,8 +453,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 1.5rem;
-            content-visibility: auto;
-            contain-intrinsic-size: auto 500px;
         }
 
         /* Card */
@@ -467,13 +463,12 @@
             border: 1px solid var(--color-border);
             display: flex;
             flex-direction: column;
-            contain: layout style paint;
             position: relative;
-            transition: border-color 0.2s ease;
-        }
-
-        .card:hover {
-            border-color: var(--color-border);
+            /* Skip rendering cards that are scrolled out of view. Belongs on
+               the card, not the grid - on the grid it only pays off while the
+               whole list is offscreen. */
+            content-visibility: auto;
+            contain-intrinsic-size: auto 260px;
         }
 
         .card__media {
@@ -502,12 +497,10 @@
             object-fit: contain;
             opacity: 0;
             transition: opacity 0.3s ease;
-            will-change: opacity;
         }
 
         .card__media-item img.loaded {
             opacity: 1;
-            will-change: auto;
         }
 
         .card__media-item.loading {
@@ -815,7 +808,7 @@
             box-shadow: var(--shadow-lg);
             opacity: 0;
             visibility: hidden;
-            transition: all var(--transition);
+            transition: background var(--transition), border-color var(--transition), color var(--transition);
             z-index: 50;
         }
 
@@ -859,7 +852,7 @@
             border: 1px solid var(--color-border);
             border-radius: var(--radius-sm);
             cursor: pointer;
-            transition: all var(--transition);
+            transition: background var(--transition), border-color var(--transition), color var(--transition);
             text-decoration: none;
         }
 
@@ -1216,6 +1209,7 @@
                 flagImg.src = entity.flag;
                 flagImg.alt = `Flag of ${entity.name}`;
                 flagImg.loading = 'lazy';
+                flagImg.decoding = 'async';
                 flagImg.onload = () => {
                     flagImg.classList.add('loaded');
                     flagItem.classList.remove('loading');
@@ -1249,6 +1243,7 @@
                 coatImg.src = entity.coat_of_arms;
                 coatImg.alt = `Coat of arms of ${entity.name}`;
                 coatImg.loading = 'lazy';
+                coatImg.decoding = 'async';
                 coatImg.onload = () => {
                     coatImg.classList.add('loaded');
                     coatItem.classList.remove('loading');
@@ -1553,10 +1548,25 @@
         // Setup scroll to top
         function setupScrollToTop() {
             const scrollTop = document.getElementById('scrollTop');
+            let visible = false;
+            let queued = false;
 
+            // Passive so the listener never blocks scrolling, coalesced into a
+            // frame, and only touching the DOM when the state actually flips.
             window.addEventListener('scroll', () => {
-                scrollTop.classList.toggle('visible', window.scrollY > 500);
-            });
+                if (queued) return;
+                queued = true;
+
+                requestAnimationFrame(() => {
+                    queued = false;
+
+                    const shouldShow = window.scrollY > 500;
+                    if (shouldShow === visible) return;
+
+                    visible = shouldShow;
+                    scrollTop.classList.toggle('visible', shouldShow);
+                });
+            }, { passive: true });
 
             scrollTop.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
