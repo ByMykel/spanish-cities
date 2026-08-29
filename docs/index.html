@@ -8,7 +8,7 @@
     <!-- Primary Meta Tags -->
     <title>All Spanish Cities - Explore Spain's Autonomies, Provinces & Cities</title>
     <meta name="title" content="All Spanish Cities - Explore Spain's Autonomies, Provinces & Cities">
-    <meta name="description" content="Discover all 8,131 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes from INE. Free open-source library for developers.">
+    <meta name="description" content="Discover all 8,132 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes from INE. Free open-source library for developers.">
     <meta name="keywords" content="Spain, Spanish cities, autonomies, provinces, flags, coat of arms, INE codes, municipalities, España, ciudades, provincias, comunidades autónomas">
     <meta name="author" content="ByMykel">
     <meta name="robots" content="index, follow">
@@ -29,7 +29,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bymykel.github.io/spanish-cities/">
     <meta property="og:title" content="All Spanish Cities - Explore Spain's Autonomies, Provinces & Cities">
-    <meta property="og:description" content="Discover all 8,131 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes. Free open-source library.">
+    <meta property="og:description" content="Discover all 8,132 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes. Free open-source library.">
     <meta property="og:image" content="https://raw.githubusercontent.com/ByMykel/spanish-cities/main/docs/og-image.png">
     <meta property="og:image:alt" content="All Spanish Cities - Browse Spain's geographic data">
     <meta property="og:locale" content="en_US">
@@ -39,7 +39,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://bymykel.github.io/spanish-cities/">
     <meta name="twitter:title" content="All Spanish Cities - Explore Spain's Autonomies, Provinces & Cities">
-    <meta name="twitter:description" content="Discover all 8,131 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes.">
+    <meta name="twitter:description" content="Discover all 8,132 Spanish cities, 52 provinces, and 19 autonomies. Browse flags, coats of arms, and official codes.">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/ByMykel/spanish-cities/main/docs/og-image.png">
 
     <!-- Structured Data -->
@@ -965,15 +965,15 @@
                 <div class="tabs" id="tabs">
                     <a href="?tab=autonomies" class="tab" data-tab="autonomies">
                         Autonomies
-                        <span class="tab-count" id="count-autonomies">19</span>
+                        <span class="tab-count" id="count-autonomies">&mdash;</span>
                     </a>
                     <a href="?tab=provinces" class="tab" data-tab="provinces">
                         Provinces
-                        <span class="tab-count" id="count-provinces">52</span>
+                        <span class="tab-count" id="count-provinces">&mdash;</span>
                     </a>
                     <a href="?tab=cities" class="tab" data-tab="cities">
                         Cities
-                        <span class="tab-count" id="count-cities">8,131</span>
+                        <span class="tab-count" id="count-cities">&mdash;</span>
                     </a>
                 </div>
                 <div class="results-info" id="resultsInfo">
@@ -1017,7 +1017,11 @@
         function loadDataset(name) {
             // import() caches, but hold the promise so concurrent callers
             // (a tab switch mid-render) share one request.
-            modules[name] ??= import(`${LIBRARY_CDN}${name}.js`);
+            modules[name] ??= import(`${LIBRARY_CDN}${name}.js`).then((module) => {
+                showTabCount(name, module[name]().length);
+                return module;
+            });
+
             return modules[name];
         }
 
@@ -1027,6 +1031,15 @@
         }
 
         const isLoaded = (name) => name in modules;
+
+        // Tab counts are filled in from the dataset once it loads, rather than
+        // written into the markup where they drifted from the real totals.
+        // Fetching all three up front just for the numbers would pull the
+        // ~720 KB of city data on first paint, so each waits for its own tab.
+        function showTabCount(name, total) {
+            const el = document.getElementById(`count-${name}`);
+            if (el) el.textContent = total.toLocaleString();
+        }
 
         // State
         const ITEMS_PER_PAGE = 24;
@@ -1192,6 +1205,48 @@
             return button;
         }
 
+        // One media slot: the flag or the coat of arms.
+        function createMediaItem(entity, kind) {
+            const isFlag = kind === 'Flag';
+            const url = isFlag ? entity.flag : entity.coat_of_arms;
+            const known = isFlag ? entity.has_flag : entity.has_coat_of_arms;
+
+            const item = document.createElement('div');
+            item.className = known
+                ? 'card__media-item loading'
+                : 'card__media-item card__media-item--empty';
+
+            // When the entity has no image of this kind the URL is a generic
+            // placeholder, so there is nothing worth showing or downloading.
+            if (known) {
+                const img = document.createElement('img');
+                img.src = url;
+                img.alt = `${isFlag ? 'Flag' : 'Coat of arms'} of ${entity.name}`;
+                img.loading = 'lazy';
+                img.decoding = 'async';
+                img.onload = () => {
+                    img.classList.add('loaded');
+                    item.classList.remove('loading');
+                };
+                img.onerror = () => {
+                    item.classList.remove('loading');
+                    item.classList.add('card__media-item--empty');
+                    img.remove();
+                    item.querySelector('.card__download')?.remove();
+                };
+
+                item.appendChild(img);
+                item.appendChild(createDownloadButton(url, entity.name, kind));
+            }
+
+            const label = document.createElement('span');
+            label.className = 'card__media-label';
+            label.textContent = known ? kind : `No ${kind.toLowerCase()}`;
+            item.appendChild(label);
+
+            return item;
+        }
+
         // Create card
         function createCard(entity) {
             const card = document.createElement('div');
@@ -1199,78 +1254,10 @@
 
             const media = document.createElement('div');
             media.className = 'card__media';
-
-            // Flag
-            const flagItem = document.createElement('div');
-            flagItem.className = entity.flag ? 'card__media-item loading' : 'card__media-item card__media-item--empty';
-
-            if (entity.flag) {
-                const flagImg = document.createElement('img');
-                flagImg.src = entity.flag;
-                flagImg.alt = `Flag of ${entity.name}`;
-                flagImg.loading = 'lazy';
-                flagImg.decoding = 'async';
-                flagImg.onload = () => {
-                    flagImg.classList.add('loaded');
-                    flagItem.classList.remove('loading');
-                };
-                flagImg.onerror = () => {
-                    flagItem.classList.remove('loading');
-                    flagItem.classList.add('card__media-item--empty');
-                    flagImg.remove();
-                    // Remove download button if image fails
-                    const btn = flagItem.querySelector('.card__download');
-                    if (btn) btn.remove();
-                };
-                flagItem.appendChild(flagImg);
-
-                // Add download button for flag
-                flagItem.appendChild(createDownloadButton(entity.flag, entity.name, 'Flag'));
-            }
-
-            const flagLabel = document.createElement('span');
-            flagLabel.className = 'card__media-label';
-            flagLabel.textContent = 'Flag';
-            flagItem.appendChild(flagLabel);
-            media.appendChild(flagItem);
-
-            // Coat of arms
-            const coatItem = document.createElement('div');
-            coatItem.className = entity.coat_of_arms ? 'card__media-item loading' : 'card__media-item card__media-item--empty';
-
-            if (entity.coat_of_arms) {
-                const coatImg = document.createElement('img');
-                coatImg.src = entity.coat_of_arms;
-                coatImg.alt = `Coat of arms of ${entity.name}`;
-                coatImg.loading = 'lazy';
-                coatImg.decoding = 'async';
-                coatImg.onload = () => {
-                    coatImg.classList.add('loaded');
-                    coatItem.classList.remove('loading');
-                };
-                coatImg.onerror = () => {
-                    coatItem.classList.remove('loading');
-                    coatItem.classList.add('card__media-item--empty');
-                    coatImg.remove();
-                    // Remove download button if image fails
-                    const btn = coatItem.querySelector('.card__download');
-                    if (btn) btn.remove();
-                };
-                coatItem.appendChild(coatImg);
-
-                // Add download button for coat of arms
-                coatItem.appendChild(createDownloadButton(entity.coat_of_arms, entity.name, 'Coat'));
-            }
-
-            const coatLabel = document.createElement('span');
-            coatLabel.className = 'card__media-label';
-            coatLabel.textContent = 'Coat';
-            coatItem.appendChild(coatLabel);
-            media.appendChild(coatItem);
-
+            media.appendChild(createMediaItem(entity, 'Flag'));
+            media.appendChild(createMediaItem(entity, 'Coat'));
             card.appendChild(media);
 
-            // Content
             const content = document.createElement('div');
             content.className = 'card__content';
 
