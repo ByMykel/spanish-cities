@@ -35,7 +35,7 @@ const byAutonomy = createIndex(data, (city) => city.code_autonomy);
 export const cities = (filters: FiltersCityBase = {}): City[] => {
   const { code, code_autonomy, code_province, name } = filters;
 
-  // Narrow through the most selective index available; null means scan all.
+  // null means scan everything.
   let candidates: number[] | null = null;
 
   if (code !== undefined) {
@@ -59,7 +59,7 @@ export const cities = (filters: FiltersCityBase = {}): City[] => {
 
   const result: City[] = [];
 
-  // Copy each row so callers cannot mutate the shared dataset.
+  // Rows are copied so callers cannot mutate the shared dataset.
   if (candidates === null) {
     for (let position = 0; position < data.length; position += 1) {
       if (matches(position)) result.push({ ...data[position] });

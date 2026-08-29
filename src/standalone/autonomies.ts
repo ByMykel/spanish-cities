@@ -29,7 +29,7 @@ const byCode = createIndex(data, (autonomy) => autonomy.code);
 export const autonomies = (filters: FiltersAutonomyBase = {}): Autonomy[] => {
   const { code, name } = filters;
 
-  // Narrow through the code index; null means scan all.
+  // null means scan everything.
   const candidates: number[] | null =
     code === undefined ? null : byCode(normalizeCode(code, 2));
 
@@ -38,7 +38,7 @@ export const autonomies = (filters: FiltersAutonomyBase = {}): Autonomy[] => {
 
   const result: Autonomy[] = [];
 
-  // Copy each row so callers cannot mutate the shared dataset.
+  // Rows are copied so callers cannot mutate the shared dataset.
   if (candidates === null) {
     for (let position = 0; position < data.length; position += 1) {
       if (matches(position)) result.push({ ...data[position] });

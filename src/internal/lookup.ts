@@ -1,9 +1,7 @@
 /**
- * Normalises a code filter to the stored, zero-padded form.
- *
- * Codes are compared loosely elsewhere, so both `9` and `"9"` match a stored
- * `"09"`. An index lookup needs an exact key, so numeric input is re-padded to
- * the stored width. Non-numeric input is passed through and simply misses.
+ * An index lookup needs an exact key, but codes are compared loosely, so a
+ * numeric `9` has to reach the stored `"09"`. Non-numeric input passes through
+ * and simply misses.
  */
 export const normalizeCode = (
   value: string | number,
@@ -15,10 +13,8 @@ export const normalizeCode = (
 };
 
 /**
- * Groups row positions by key, building the map on first use.
- *
- * Positions rather than rows, so the caller can keep using them to reach into
- * parallel structures such as the name index.
+ * Groups row positions by key, building the map on first use. Positions rather
+ * than rows, so callers can index into the parallel name index too.
  */
 export const createIndex = <T>(rows: T[], key: (row: T) => string) => {
   let index: Map<string, number[]> | null = null;
