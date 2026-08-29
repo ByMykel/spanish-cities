@@ -1,5 +1,5 @@
 import rawData from "../data/cities.json";
-import { expandImages, matchesCode, matchesName } from "../internal/expand.js";
+import { createNameMatcher, expandImages, matchesCode } from "../internal/expand.js";
 import { City, FiltersCityBase } from "../types/index.js";
 
 const data: City[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
@@ -11,6 +11,8 @@ const data: City[] = (rawData as unknown as [string, string, string, string | nu
     ...expandImages(flag, coat_of_arms),
   })
 );
+
+const matchesNameAt = createNameMatcher(data.map((city) => city.name));
 
 /**
  * Returns the cities that match the specified filter criteria.
@@ -30,10 +32,10 @@ export const cities = (filters: FiltersCityBase = {}): City[] => {
 
   // Copy each row so callers cannot mutate the shared dataset.
   return data.filter(
-    (city) =>
+    (city, index) =>
       matchesCode(city.code, code) &&
       matchesCode(city.code_autonomy, code_autonomy) &&
       matchesCode(city.code_province, code_province) &&
-      matchesName(city.name, name)
+      matchesNameAt(index, name)
   ).map((item) => ({ ...item }));
 };

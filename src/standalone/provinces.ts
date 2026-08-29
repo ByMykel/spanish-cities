@@ -1,5 +1,5 @@
 import rawData from "../data/provinces.json";
-import { expandImages, matchesCode, matchesName } from "../internal/expand.js";
+import { createNameMatcher, expandImages, matchesCode } from "../internal/expand.js";
 import { FiltersProvinceBase, Province } from "../types/index.js";
 
 const data: Province[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
@@ -10,6 +10,8 @@ const data: Province[] = (rawData as unknown as [string, string, string, string 
     ...expandImages(flag, coat_of_arms),
   })
 );
+
+const matchesNameAt = createNameMatcher(data.map((province) => province.name));
 
 /**
  * Returns the provinces that match the specified filter criteria.
@@ -28,9 +30,9 @@ export const provinces = (filters: FiltersProvinceBase = {}): Province[] => {
 
   // Copy each row so callers cannot mutate the shared dataset.
   return data.filter(
-    (province) =>
+    (province, index) =>
       matchesCode(province.code, code) &&
       matchesCode(province.code_autonomy, code_autonomy) &&
-      matchesName(province.name, name)
+      matchesNameAt(index, name)
   ).map((item) => ({ ...item }));
 };

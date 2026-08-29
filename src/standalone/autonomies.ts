@@ -1,5 +1,5 @@
 import rawData from "../data/autonomies.json";
-import { expandImages, matchesCode, matchesName } from "../internal/expand.js";
+import { createNameMatcher, expandImages, matchesCode } from "../internal/expand.js";
 import { Autonomy, FiltersAutonomyBase } from "../types/index.js";
 
 const data: Autonomy[] = (rawData as unknown as [string, string, string | null, string | null][]).map(
@@ -9,6 +9,8 @@ const data: Autonomy[] = (rawData as unknown as [string, string, string | null, 
     ...expandImages(flag, coat_of_arms),
   })
 );
+
+const matchesNameAt = createNameMatcher(data.map((autonomy) => autonomy.name));
 
 /**
  * Returns the autonomies that match the specified filter criteria.
@@ -26,6 +28,6 @@ export const autonomies = (filters: FiltersAutonomyBase = {}): Autonomy[] => {
 
   // Copy each row so callers cannot mutate the shared dataset.
   return data.filter(
-    (autonomy) => matchesCode(autonomy.code, code) && matchesName(autonomy.name, name)
+    (autonomy, index) => matchesCode(autonomy.code, code) && matchesNameAt(index, name)
   ).map((item) => ({ ...item }));
 };

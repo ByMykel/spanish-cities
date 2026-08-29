@@ -229,11 +229,13 @@ test({
 });
 
 test({
-  name: 'should return 6 provinces when name is "Ri"',
+  name: 'should return 7 provinces when name is "Ri"',
   fn: () => {
+    // Almería joins the 6 accent-sensitive matches now that search ignores
+    // diacritics.
     const result = provinces({ name: "Ri" });
 
-    assert.strictEqual((<Province[]>result).length, 6);
+    assert.strictEqual((<Province[]>result).length, 7);
   },
 });
 
@@ -399,6 +401,57 @@ test({
     assert.strictEqual(
       items.filter((item) => !item.has_coat_of_arms).length,
       1250
+    );
+  },
+});
+
+test({
+  name: "name search ignores diacritics",
+  fn: () => {
+    assert.deepStrictEqual(
+      provinces({ name: "malaga" }).map((province) => province.name),
+      ["Málaga"]
+    );
+    assert.deepStrictEqual(
+      provinces({ name: "Málaga" }).map((province) => province.name),
+      ["Málaga"]
+    );
+    assert.deepStrictEqual(
+      cities({ name: "Vitoria-Gasteiz" }).map((city) => city.name),
+      ["Vitoria-Gasteiz"]
+    );
+  },
+});
+
+test({
+  name: "name search accepts the natural order of INE-inverted names",
+  fn: () => {
+    const found = (name: string) =>
+      [...autonomies({ name }), ...provinces({ name }), ...cities({ name })].map(
+        (item) => item.name
+      );
+
+    // Some names are both an autonomy and a province, hence the repeats.
+    assert.deepStrictEqual(found("Comunidad de Madrid"), ["Madrid, Comunidad de"]);
+    assert.deepStrictEqual(found("Illes Balears"), ["Balears, Illes", "Balears, Illes"]);
+    assert.deepStrictEqual(found("A Coruna"), ["Coruña, A", "Coruña, A"]);
+    assert.deepStrictEqual(found("l'Atzubia"), ["Atzúbia, l'"]);
+
+    // The stored form still matches.
+    assert.deepStrictEqual(found("Rioja, La"), ["Rioja, La", "Rioja, La"]);
+  },
+});
+
+test({
+  name: "name search matches either half of a bilingual name",
+  fn: () => {
+    assert.deepStrictEqual(
+      cities({ name: "Burgelu" }).map((city) => city.name),
+      ["Elburgo/Burgelu"]
+    );
+    assert.deepStrictEqual(
+      cities({ name: "Elburgo" }).map((city) => city.name),
+      ["Elburgo/Burgelu"]
     );
   },
 });
