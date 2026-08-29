@@ -1009,62 +1009,31 @@
     </div>
 
     <script type="module">
-        // Data fetching
-        const dataCache = {};
+        // This page runs the published library rather than reimplementing it,
+        // so the demo and the package can never disagree about what a filter
+        // returns. Each dataset lives on its own module, so opening the page
+        // on the autonomies tab does not download the ~720 KB of city data.
+        //
+        // NOTE: bump this whenever a release changes the demo, and publish to
+        // npm before deploying the page - jsDelivr serves it from the registry.
+        const LIBRARY_VERSION = '2.3.0';
+        const LIBRARY_CDN = `https://cdn.jsdelivr.net/npm/all-spanish-cities@${LIBRARY_VERSION}/dist/esm/standalone/`;
 
-        const WIKIMEDIA_PREFIX = "https://upload.wikimedia.org/wikipedia/commons/";
-        const PLACEHOLDER_FLAG = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_flag.svg";
-        const PLACEHOLDER_COAT = "https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/no_coat.svg";
+        const modules = {};
 
-        function expandAutonomy([code, name, flag, coat_of_arms]) {
-            return { code, name, flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
+        function loadDataset(name) {
+            // import() caches, but hold the promise so concurrent callers
+            // (a tab switch mid-render) share one request.
+            modules[name] ??= import(`${LIBRARY_CDN}${name}.js`);
+            return modules[name];
         }
 
-        function expandProvince([code, name, code_autonomy, flag, coat_of_arms]) {
-            return { code, name, code_autonomy, flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
+        async function query(name, filters = {}) {
+            const module = await loadDataset(name);
+            return module[name](filters);
         }
 
-        function expandCity([code, name, code_autonomy, flag, coat_of_arms]) {
-            return { code, name, code_autonomy, code_province: code.substring(0, 2), flag: flag ? WIKIMEDIA_PREFIX + flag : PLACEHOLDER_FLAG, coat_of_arms: coat_of_arms ? WIKIMEDIA_PREFIX + coat_of_arms : PLACEHOLDER_COAT };
-        }
-
-        const expanders = { autonomies: expandAutonomy, provinces: expandProvince, cities: expandCity };
-
-        async function fetchData(name) {
-            if (dataCache[name]) return dataCache[name];
-            const response = await fetch(`https://raw.githubusercontent.com/ByMykel/spanish-cities/refs/heads/main/src/data/${name}.json`);
-            const raw = await response.json();
-            const data = raw.map(expanders[name]);
-            dataCache[name] = data;
-            return data;
-        }
-
-        async function autonomies(filter) {
-            const data = await fetchData('autonomies');
-            if (filter?.name) {
-                const searchTerm = filter.name.toLowerCase();
-                return data.filter(item => item.name.toLowerCase().includes(searchTerm));
-            }
-            return data;
-        }
-
-        async function provinces(filter) {
-            const data = await fetchData('provinces');
-            if (filter?.name) {
-                const searchTerm = filter.name.toLowerCase();
-                return data.filter(item => item.name.toLowerCase().includes(searchTerm));
-            }
-            return data;
-        }
-
-        async function cities(filter) {
-            const data = await fetchData('cities');
-            if (filter?.name) {
-                const searchTerm = filter.name.toLowerCase();
-                return data.filter(item => item.name.toLowerCase().includes(searchTerm));
-            }
-            return data;
-        }
+        const isLoaded = (name) => name in modules;
 
         // State
         const ITEMS_PER_PAGE = 24;
@@ -1110,19 +1079,22 @@
         // Get entities by tab
         async function getEntitiesByTab(search = '') {
             const tab = getCurrentTab();
-            const filter = search ? { name: search } : undefined;
 
             updateTabUI(tab);
 
-            switch (tab) {
-                case 'provinces':
-                    return provinces(filter);
-                case 'cities':
-                    return cities(filter);
-                case 'autonomies':
-                default:
-                    return autonomies(filter);
+            const filters = {};
+            if (search) filters.name = search;
+
+            // The library applies these, so the page does not filter twice.
+            if (tab === 'cities') {
+                const autonomy = getParam('autonomy');
+                const province = getParam('province');
+
+                if (autonomy) filters.code_autonomy = autonomy;
+                if (province) filters.code_province = province;
             }
+
+            return query(tab === 'provinces' || tab === 'cities' ? tab : 'autonomies', filters);
         }
 
         // Update results count
@@ -1435,7 +1407,7 @@
             const selectedProvince = getParam('province') || '';
 
             // Populate autonomies dropdown
-            const autonomiesData = await fetchData('autonomies');
+            const autonomiesData = await query('autonomies');
             autonomySelect.innerHTML = '<option value="">All autonomies</option>';
             autonomiesData.sort((a, b) => a.name.localeCompare(b.name)).forEach(a => {
                 const option = document.createElement('option');
@@ -1446,10 +1418,10 @@
             autonomySelect.value = selectedAutonomy;
 
             // Populate provinces dropdown (filtered by selected autonomy)
-            const provincesData = await fetchData('provinces');
-            const filteredProvinces = selectedAutonomy
-                ? provincesData.filter(p => p.code_autonomy === selectedAutonomy)
-                : provincesData;
+            const filteredProvinces = await query(
+                'provinces',
+                selectedAutonomy ? { code_autonomy: selectedAutonomy } : {}
+            );
             provinceSelect.innerHTML = '<option value="">All provinces</option>';
             filteredProvinces.sort((a, b) => a.name.localeCompare(b.name)).forEach(p => {
                 const option = document.createElement('option');
@@ -1462,29 +1434,13 @@
             clearBtn.classList.toggle('visible', !!(selectedAutonomy || selectedProvince));
         }
 
-        // Apply filters to entities
-        function applyFilters(entities) {
-            const autonomyCode = document.getElementById('filterAutonomy').value;
-            const provinceCode = document.getElementById('filterProvince').value;
-
-            let result = entities;
-            if (autonomyCode) {
-                result = result.filter(e => e.code_autonomy === autonomyCode);
-            }
-            if (provinceCode) {
-                result = result.filter(e => e.code_province === provinceCode);
-            }
-            return result;
-        }
-
         // Render entities
         async function renderEntities(searchTerm = '') {
             const itemsContainer = document.getElementById('items');
             const tab = getCurrentTab();
-            const isCached = !!dataCache[tab];
 
             // Only show skeletons on first (uncached) load
-            if (!isCached) {
+            if (!isLoaded(tab)) {
                 itemsContainer.innerHTML = '';
                 for (let i = 0; i < 8; i++) {
                     itemsContainer.appendChild(createLoadingSkeleton());
@@ -1493,9 +1449,10 @@
 
             await updateFiltersUI();
 
-            // Fetch data
+            // getEntitiesByTab passes the autonomy and province filters to the
+            // library, so what comes back is already the final set.
             currentEntities = await getEntitiesByTab(searchTerm);
-            filteredEntities = tab === 'cities' ? applyFilters(currentEntities) : currentEntities;
+            filteredEntities = currentEntities;
             totalPages = Math.max(1, Math.ceil(filteredEntities.length / ITEMS_PER_PAGE));
             const urlPage = parseInt(getParam('page')) || 1;
             currentPage = Math.min(Math.max(1, urlPage), totalPages);
