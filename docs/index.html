@@ -1017,10 +1017,18 @@
         function loadDataset(name) {
             // import() caches, but hold the promise so concurrent callers
             // (a tab switch mid-render) share one request.
-            modules[name] ??= import(`${LIBRARY_CDN}${name}.js`).then((module) => {
-                showTabCount(name, module[name]().length);
-                return module;
-            });
+            modules[name] ??= import(`${LIBRARY_CDN}${name}.js`).then(
+                (module) => {
+                    showTabCount(name, module[name]().length);
+                    return module;
+                },
+                (error) => {
+                    // Drop the rejected promise so a retry re-requests it
+                    // instead of replaying the failure forever.
+                    delete modules[name];
+                    throw error;
+                }
+            );
 
             return modules[name];
         }
@@ -1146,6 +1154,37 @@
             empty.appendChild(message);
 
             return empty;
+        }
+
+        // Shown when a dataset cannot be loaded at all, so a CDN outage or a
+        // version that is not published yet reads as a failure rather than an
+        // empty page.
+        function createErrorState(error) {
+            const wrapper = document.createElement('div');
+            wrapper.className = 'empty-state';
+            wrapper.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/>
+                </svg>
+                <h3>Could not load the data</h3>
+            `;
+
+            const message = document.createElement('p');
+            message.textContent = `all-spanish-cities@${LIBRARY_VERSION} could not be fetched from jsDelivr. Check your connection and try again.`;
+            wrapper.appendChild(message);
+
+            const retry = document.createElement('button');
+            retry.className = 'filters-clear visible';
+            retry.type = 'button';
+            retry.textContent = 'Retry';
+            retry.addEventListener('click', () => {
+                renderEntities(document.getElementById('searchInput').value);
+            });
+            wrapper.appendChild(retry);
+
+            console.error('[all-spanish-cities] dataset load failed', error);
+
+            return wrapper;
         }
 
         // Download icon SVG
@@ -1429,11 +1468,19 @@
                 }
             }
 
-            await updateFiltersUI();
+            try {
+                await updateFiltersUI();
 
-            // getEntitiesByTab passes the autonomy and province filters to the
-            // library, so what comes back is already the final set.
-            currentEntities = await getEntitiesByTab(searchTerm);
+                // getEntitiesByTab passes the autonomy and province filters to
+                // the library, so what comes back is already the final set.
+                currentEntities = await getEntitiesByTab(searchTerm);
+            } catch (error) {
+                itemsContainer.innerHTML = '';
+                itemsContainer.appendChild(createErrorState(error));
+                updateResultsCount(0);
+                return;
+            }
+
             filteredEntities = currentEntities;
             totalPages = Math.max(1, Math.ceil(filteredEntities.length / ITEMS_PER_PAGE));
             const urlPage = parseInt(getParam('page')) || 1;
