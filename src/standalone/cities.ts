@@ -1,5 +1,6 @@
 import rawData from "../data/cities.json";
 import { createNameMatcher, expandImages, matchesCode } from "../internal/expand.js";
+import { createIndex, normalizeCode } from "../internal/lookup.js";
 import { City, FiltersCityBase } from "../types/index.js";
 
 const data: City[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
@@ -13,6 +14,10 @@ const data: City[] = (rawData as unknown as [string, string, string, string | nu
 );
 
 const matchesNameAt = createNameMatcher(data.map((city) => city.name));
+
+const byCode = createIndex(data, (city) => city.code);
+const byProvince = createIndex(data, (city) => city.code_province);
+const byAutonomy = createIndex(data, (city) => city.code_autonomy);
 
 /**
  * Returns the cities that match the specified filter criteria.
@@ -30,12 +35,40 @@ const matchesNameAt = createNameMatcher(data.map((city) => city.name));
 export const cities = (filters: FiltersCityBase = {}): City[] => {
   const { code, code_autonomy, code_province, name } = filters;
 
-  // Copy each row so callers cannot mutate the shared dataset.
-  return data.filter(
-    (city, index) =>
+  // Narrow through the most selective index available; null means scan all.
+  let candidates: number[] | null = null;
+
+  if (code !== undefined) {
+    candidates = byCode(normalizeCode(code, 6));
+  } else if (code_province !== undefined) {
+    candidates = byProvince(normalizeCode(code_province, 2));
+  } else if (code_autonomy !== undefined) {
+    candidates = byAutonomy(normalizeCode(code_autonomy, 2));
+  }
+
+  const matches = (position: number): boolean => {
+    const city = data[position];
+
+    return (
       matchesCode(city.code, code) &&
       matchesCode(city.code_autonomy, code_autonomy) &&
       matchesCode(city.code_province, code_province) &&
-      matchesNameAt(index, name)
-  ).map((item) => ({ ...item }));
+      matchesNameAt(position, name)
+    );
+  };
+
+  const result: City[] = [];
+
+  // Copy each row so callers cannot mutate the shared dataset.
+  if (candidates === null) {
+    for (let position = 0; position < data.length; position += 1) {
+      if (matches(position)) result.push({ ...data[position] });
+    }
+  } else {
+    for (const position of candidates) {
+      if (matches(position)) result.push({ ...data[position] });
+    }
+  }
+
+  return result;
 };

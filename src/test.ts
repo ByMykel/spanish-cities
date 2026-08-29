@@ -406,6 +406,52 @@ test({
 });
 
 test({
+  name: "code filters stay loose after indexing",
+  fn: () => {
+    // The code index keys on the stored zero-padded form, so every spelling
+    // that used to match through == must still resolve to the same row.
+    for (const code of ["09", 9, 9.0] as (string | number)[]) {
+      assert.deepStrictEqual(
+        provinces({ code }).map((province) => province.name),
+        ["Burgos"],
+        `province code ${JSON.stringify(code)}`
+      );
+    }
+
+    // A number is coerced, but "09" == "9" compares two strings and is false,
+    // so an unpadded string has never matched. Indexing must not change that.
+    for (const code of ["9", "009"]) {
+      assert.deepStrictEqual(
+        provinces({ code }),
+        [],
+        `province code ${JSON.stringify(code)}`
+      );
+    }
+
+    for (const code of ["280796", 280796] as (string | number)[]) {
+      assert.deepStrictEqual(
+        cities({ code }).map((city) => city.name),
+        ["Madrid"],
+        `city code ${JSON.stringify(code)}`
+      );
+    }
+
+    assert.deepStrictEqual(
+      autonomies({ code: 11 }).map((autonomy) => autonomy.name),
+      ["Extremadura"]
+    );
+
+    // Combined filters still intersect rather than short-circuit.
+    assert.strictEqual(cities({ code: "280796", code_province: "41" }).length, 0);
+    assert.strictEqual(cities({ code: "280796", code_province: "28" }).length, 1);
+    assert.deepStrictEqual(
+      cities({ code_province: "28", name: "Madrid" }).map((city) => city.name),
+      ["Humanes de Madrid", "Madrid", "Rivas-Vaciamadrid", "Rozas de Madrid, Las"]
+    );
+  },
+});
+
+test({
   name: "name search ignores diacritics",
   fn: () => {
     assert.deepStrictEqual(

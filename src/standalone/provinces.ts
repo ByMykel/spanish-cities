@@ -1,5 +1,6 @@
 import rawData from "../data/provinces.json";
 import { createNameMatcher, expandImages, matchesCode } from "../internal/expand.js";
+import { createIndex, normalizeCode } from "../internal/lookup.js";
 import { FiltersProvinceBase, Province } from "../types/index.js";
 
 const data: Province[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
@@ -12,6 +13,9 @@ const data: Province[] = (rawData as unknown as [string, string, string, string 
 );
 
 const matchesNameAt = createNameMatcher(data.map((province) => province.name));
+
+const byCode = createIndex(data, (province) => province.code);
+const byAutonomy = createIndex(data, (province) => province.code_autonomy);
 
 /**
  * Returns the provinces that match the specified filter criteria.
@@ -28,11 +32,37 @@ const matchesNameAt = createNameMatcher(data.map((province) => province.name));
 export const provinces = (filters: FiltersProvinceBase = {}): Province[] => {
   const { code, code_autonomy, name } = filters;
 
-  // Copy each row so callers cannot mutate the shared dataset.
-  return data.filter(
-    (province, index) =>
+  // Narrow through the most selective index available; null means scan all.
+  let candidates: number[] | null = null;
+
+  if (code !== undefined) {
+    candidates = byCode(normalizeCode(code, 2));
+  } else if (code_autonomy !== undefined) {
+    candidates = byAutonomy(normalizeCode(code_autonomy, 2));
+  }
+
+  const matches = (position: number): boolean => {
+    const province = data[position];
+
+    return (
       matchesCode(province.code, code) &&
       matchesCode(province.code_autonomy, code_autonomy) &&
-      matchesNameAt(index, name)
-  ).map((item) => ({ ...item }));
+      matchesNameAt(position, name)
+    );
+  };
+
+  const result: Province[] = [];
+
+  // Copy each row so callers cannot mutate the shared dataset.
+  if (candidates === null) {
+    for (let position = 0; position < data.length; position += 1) {
+      if (matches(position)) result.push({ ...data[position] });
+    }
+  } else {
+    for (const position of candidates) {
+      if (matches(position)) result.push({ ...data[position] });
+    }
+  }
+
+  return result;
 };
