@@ -440,8 +440,6 @@ test({
       autonomies({ code: 11 }).map((autonomy) => autonomy.name),
       ["Extremadura"]
     );
-
-    // Combined filters still intersect rather than short-circuit.
     assert.strictEqual(cities({ code: "280796", code_province: "41" }).length, 0);
     assert.strictEqual(cities({ code: "280796", code_province: "28" }).length, 1);
     assert.deepStrictEqual(
@@ -482,8 +480,6 @@ test({
     assert.deepStrictEqual(found("Illes Balears"), ["Balears, Illes", "Balears, Illes"]);
     assert.deepStrictEqual(found("A Coruna"), ["Coruña, A", "Coruña, A"]);
     assert.deepStrictEqual(found("l'Atzubia"), ["Atzúbia, l'"]);
-
-    // The stored form still matches.
     assert.deepStrictEqual(found("Rioja, La"), ["Rioja, La", "Rioja, La"]);
   },
 });

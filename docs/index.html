@@ -464,9 +464,8 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            /* Skip rendering cards that are scrolled out of view. Belongs on
-               the card, not the grid - on the grid it only pays off while the
-               whole list is offscreen. */
+            /* Belongs on the card, not the grid: on the grid it only pays off
+               while the whole list is offscreen. */
             content-visibility: auto;
             contain-intrinsic-size: auto 260px;
         }
@@ -1002,13 +1001,8 @@
     </div>
 
     <script type="module">
-        // This page runs the published library rather than reimplementing it,
-        // so the demo and the package can never disagree about what a filter
-        // returns. Each dataset lives on its own module, so opening the page
-        // on the autonomies tab does not download the ~720 KB of city data.
-        //
-        // NOTE: bump this whenever a release changes the demo, and publish to
-        // npm before deploying the page - jsDelivr serves it from the registry.
+        // Must be published to npm before this page is deployed - jsDelivr
+        // serves it from the registry.
         const LIBRARY_VERSION = '2.3.0';
         const LIBRARY_CDN = `https://cdn.jsdelivr.net/npm/all-spanish-cities@${LIBRARY_VERSION}/dist/esm/standalone/`;
 
@@ -1023,8 +1017,7 @@
                     return module;
                 },
                 (error) => {
-                    // Drop the rejected promise so a retry re-requests it
-                    // instead of replaying the failure forever.
+                    // Uncache, or a retry replays the same rejection forever.
                     delete modules[name];
                     throw error;
                 }
@@ -1040,10 +1033,8 @@
 
         const isLoaded = (name) => name in modules;
 
-        // Tab counts are filled in from the dataset once it loads, rather than
-        // written into the markup where they drifted from the real totals.
-        // Fetching all three up front just for the numbers would pull the
-        // ~720 KB of city data on first paint, so each waits for its own tab.
+        // Each count waits for its own tab: loading all three up front just for
+        // the numbers would pull the ~720 KB of city data on first paint.
         function showTabCount(name, total) {
             const el = document.getElementById(`count-${name}`);
             if (el) el.textContent = total.toLocaleString();
@@ -1147,8 +1138,7 @@
                 <h3>No results found</h3>
             `;
 
-            // Built with textContent: searchTerm comes from the URL and must
-            // never be interpolated into HTML.
+            // searchTerm comes from the URL, so it must never reach innerHTML.
             const message = document.createElement('p');
             message.textContent = `No matches for "${searchTerm}". Try a different search term.`;
             empty.appendChild(message);
@@ -1156,9 +1146,6 @@
             return empty;
         }
 
-        // Shown when a dataset cannot be loaded at all, so a CDN outage or a
-        // version that is not published yet reads as a failure rather than an
-        // empty page.
         function createErrorState(error) {
             const wrapper = document.createElement('div');
             wrapper.className = 'empty-state';
@@ -1244,7 +1231,6 @@
             return button;
         }
 
-        // One media slot: the flag or the coat of arms.
         function createMediaItem(entity, kind) {
             const isFlag = kind === 'Flag';
             const url = isFlag ? entity.flag : entity.coat_of_arms;
@@ -1286,7 +1272,6 @@
             return item;
         }
 
-        // Create card
         function createCard(entity) {
             const card = document.createElement('div');
             card.className = 'card';
@@ -1471,9 +1456,7 @@
             try {
                 await updateFiltersUI();
 
-                // getEntitiesByTab passes the autonomy and province filters to
-                // the library, so what comes back is already the final set.
-                currentEntities = await getEntitiesByTab(searchTerm);
+                    currentEntities = await getEntitiesByTab(searchTerm);
             } catch (error) {
                 itemsContainer.innerHTML = '';
                 itemsContainer.appendChild(createErrorState(error));
@@ -1585,8 +1568,8 @@
             let visible = false;
             let queued = false;
 
-            // Passive so the listener never blocks scrolling, coalesced into a
-            // frame, and only touching the DOM when the state actually flips.
+            // Passive and frame-coalesced: a scroll listener that writes to the
+            // DOM on every event janks the scroll.
             window.addEventListener('scroll', () => {
                 if (queued) return;
                 queued = true;

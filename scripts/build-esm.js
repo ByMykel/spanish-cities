@@ -41,7 +41,6 @@ for (const file of dataFiles) {
   console.log(`build-esm: data/${file} -> data/${path.basename(target)}`);
 }
 
-// Point the emitted imports at the new modules.
 const rewriteJsonImports = (dir) => {
   let count = 0;
 
@@ -76,7 +75,6 @@ fs.writeFileSync(
   JSON.stringify({ type: "module" }, null, 2) + "\n"
 );
 
-// Nothing should still reach for a .json module.
 const assertNoJsonImports = (dir) => {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
