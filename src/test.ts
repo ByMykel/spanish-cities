@@ -404,6 +404,40 @@ test({
 });
 
 test({
+  name: "results are fresh objects, not references into the dataset",
+  fn: () => {
+    const first = cities({ code: "410883" })[0];
+    first.name = "MUTATED";
+
+    assert.strictEqual(
+      cities({ code: "410883" })[0].name,
+      "San Nicolás del Puerto"
+    );
+  },
+});
+
+test({
+  name: "standalone modules load only their own dataset",
+  fn: () => {
+    // Each standalone module must be importable without dragging in the
+    // others, which is what makes the subpath exports worth having.
+    const loaded = () =>
+      Object.keys(require.cache).filter((path) => /data[\\/]\w+\.json$/.test(path));
+
+    for (const key of Object.keys(require.cache)) {
+      if (/[\\/](standalone|data)[\\/]/.test(key)) delete require.cache[key];
+    }
+
+    require("./standalone/provinces");
+
+    assert.deepStrictEqual(
+      loaded().map((path) => path.split(/[\\/]/).pop()),
+      ["provinces.json"]
+    );
+  },
+});
+
+test({
   name: "autonomies must have unique code",
   fn: () => {
     groupByCode(autonomies());

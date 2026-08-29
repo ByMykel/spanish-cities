@@ -1,23 +1,35 @@
-export interface FiltersAutonomy {
+/** Filters that need only the autonomies dataset. */
+export interface FiltersAutonomyBase {
   code?: string | number;
   name?: string;
-  with_provinces?: boolean;
-  with_cities?: boolean;
 }
 
-export interface FiltersProvince {
+/** Filters that need only the provinces dataset. */
+export interface FiltersProvinceBase {
   code?: string | number;
   code_autonomy?: string | number;
   name?: string;
-  with_autonomy?: boolean;
-  with_cities?: boolean;
 }
 
-export interface FiltersCity {
+/** Filters that need only the cities dataset. */
+export interface FiltersCityBase {
   code?: string | number;
   code_autonomy?: string | number;
   code_province?: string | number;
   name?: string;
+}
+
+export interface FiltersAutonomy extends FiltersAutonomyBase {
+  with_provinces?: boolean;
+  with_cities?: boolean;
+}
+
+export interface FiltersProvince extends FiltersProvinceBase {
+  with_autonomy?: boolean;
+  with_cities?: boolean;
+}
+
+export interface FiltersCity extends FiltersCityBase {
   with_autonomy?: boolean;
   with_province?: boolean;
 }

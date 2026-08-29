@@ -1,18 +1,7 @@
-import { autonomies } from "./autonomies";
-import rawData from "./data/cities.json";
-import { provinces } from "./provinces";
-import { expandImages, matchesCode, matchesName } from "./internal/expand";
+import { autonomies as selectAutonomies } from "./standalone/autonomies";
+import { cities as selectCities } from "./standalone/cities";
+import { provinces as selectProvinces } from "./standalone/provinces";
 import { FiltersCity, City } from "./types";
-
-const data: City[] = (rawData as unknown as [string, string, string, string | null, string | null][]).map(
-  ([code, name, code_autonomy, flag, coat_of_arms]) => ({
-    code,
-    name,
-    code_autonomy,
-    code_province: code.substring(0, 2),
-    ...expandImages(flag, coat_of_arms),
-  })
-);
 
 /**
  * Returns an array of cities that match the specified filter criteria.
@@ -27,16 +16,15 @@ const data: City[] = (rawData as unknown as [string, string, string, string | nu
 export const cities = (filters: FiltersCity = {}): City[] => {
   const { code, code_autonomy, code_province, name, with_autonomy = false, with_province = false } = filters;
 
-  const filtered = data.filter((city: City) =>
-    matchesCode(city.code, code) &&
-    matchesCode(city.code_autonomy, code_autonomy) &&
-    matchesCode(city.code_province, code_province) &&
-    matchesName(city.name, name)
-  );
+  const filtered = selectCities({ code, code_autonomy, code_province, name });
+
+  if (!with_autonomy && !with_province) {
+    return filtered;
+  }
 
   return filtered.map((city: City) => ({
     ...city,
-    ...(with_autonomy && { autonomy: autonomies({ code: city.code_autonomy })[0] }),
-    ...(with_province && { province: provinces({ code: city.code_province })[0] })
+    ...(with_autonomy && { autonomy: selectAutonomies({ code: city.code_autonomy })[0] }),
+    ...(with_province && { province: selectProvinces({ code: city.code_province })[0] })
   }));
 }
